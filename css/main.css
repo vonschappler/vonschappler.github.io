@@ -1,0 +1,29 @@
+/* CSS Document */
+
+ body {
+	 background-color: #FFFFFF;
+}
+.ui.menu .item img.logo {
+	margin-right: 1.5em;
+}
+.container.text {
+	padding-top: 4em;
+	padding-left: 2em;
+	background-color: #FFFFFF !important;
+	min-width: 80%;
+	border-color: teal !important;
+}
+.wireframe {
+	margin-top: 2em;
+}
+.ui.footer.segment {
+	margin: 5em 0em 0em;
+	padding: 5em 0em;
+}
+
+.carrousel.container.text, .carrousel.container.text > h1{
+	background-color: #1b1c1d !important;
+	color: #FFFFFF !important;
+	min-height: 30% !important;
+	border-color: teal !important;
+}
