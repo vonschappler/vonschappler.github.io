@@ -1350,12 +1350,12 @@ $.fn.search.settings = {
         badChars     = /[&<>"'`]/g,
         shouldEscape = /[&<>"'`]/,
         escape       = {
-          "&": "&",
-          "<": "<",
-          ">": ">",
-          '"': """,
-          "'": "'",
-          "`": "`"
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#x27;",
+          "`": "&#x60;"
         },
         escapedChar  = function(chr) {
           return escape[chr];
@@ -1417,7 +1417,7 @@ $.fn.search.settings = {
               if(result[fields.image] !== undefined) {
                 html += ''
                   + '<div class="image">'
-                  + ' <img src="../../../../semantic/components/' + result[fields.image] + '">'
+                  + ' <img src="' + result[fields.image] + '">'
                   + '</div>'
                 ;
               }
@@ -1444,7 +1444,7 @@ $.fn.search.settings = {
         });
         if(response[fields.action]) {
           html += ''
-          + '<a href="../../../../semantic/components/' + response[fields.action][fields.actionURL] + '" class="action">'
+          + '<a href="' + response[fields.action][fields.actionURL] + '" class="action">'
           +   response[fields.action][fields.actionText]
           + '</a>';
         }
@@ -1461,7 +1461,7 @@ $.fn.search.settings = {
         // each result
         $.each(response[fields.results], function(index, result) {
           if(result[fields.url]) {
-            html  += '<a class="result" href="../../../../semantic/components/' + result[fields.url] + '">';
+            html  += '<a class="result" href="' + result[fields.url] + '">';
           }
           else {
             html  += '<a class="result">';
@@ -1469,7 +1469,7 @@ $.fn.search.settings = {
           if(result[fields.image] !== undefined) {
             html += ''
               + '<div class="image">'
-              + ' <img src="../../../../semantic/components/' + result[fields.image] + '">'
+              + ' <img src="' + result[fields.image] + '">'
               + '</div>'
             ;
           }
