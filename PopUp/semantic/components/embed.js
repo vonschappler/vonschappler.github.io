@@ -317,7 +317,7 @@ $.fn.embed = function(parameters) {
             for (index in parameters) {
               urlString.push( encodeURIComponent(index) + '=' + encodeURIComponent( parameters[index] ) );
             }
-            return urlString.join('&amp;');
+            return urlString.join('&');
           }
         },
 
@@ -677,7 +677,7 @@ $.fn.embed.settings = {
         html += '<i class="' + icon + ' icon"></i>';
       }
       if(image) {
-        html += '<img class="placeholder" src="' + image + '">';
+        html += '<img class="placeholder" src="../../../../semantic/components/' + image + '">';
       }
       return html;
     }
