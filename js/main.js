@@ -1,22 +1,21 @@
 // JavaScript Document
+$(document).ready(function() {
+	// fix menu when passed
+	$('.masthead').visibility({
+		once: false,
+		onBottomPassed: function() {
+			$('.fixed.menu').transition('fade in');
+		},
+		onBottomPassedReverse: function() {
+			$('.fixed.menu').transition('fade out');
+		}
+	});
+	
+	// create sidebar and attach to menu open
+	$('.ui.sidebar').sidebar('attach events', '.toc.item');
+	$('.ui.embed').embed();
+	
+	
 
-function landing() {
-	//var home = './pages/home.html';
-	var home = '/pages/home.html'; //github
-	$('#page').load(home);
-	$(document).setTitle("von Schappler Gaming - HOME");
-	//alert("Carregando " + page + " no link\n" + home);
-	return false;
-}
-
-	function loadPages() {
-		$('.item').click (function () {
-			var page = $(this).attr('href');
-			//var link = './pages/' + page + '.html';
-			var link = '/pages/' + page + '.html'; //gitub
-			$('#page').load(link);
-			return false;
-		});
-	}
-
-
+	
+});
