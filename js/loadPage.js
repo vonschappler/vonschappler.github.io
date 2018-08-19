@@ -8,15 +8,10 @@ $(document).ready(function() {
 		window.scrollTo(0, 0);
 		var page = $(this).attr('href');
 		$('.pusher').fadeOut(500, function() {
-			
 			$('.pusher').hide().load('./pages/' + page + '.html', function() {
-				
 				$('.pusher').fadeIn(500);
-				
 			});
 		});
-	
-		//load('./pages/' + page + '.html');
 		return false;
 	});
 });
