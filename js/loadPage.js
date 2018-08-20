@@ -12,6 +12,7 @@ $(document).ready(function() {
 				$('.pusher').fadeIn(500);
 			});
 		});
+		//$(".pusher").load('./pages/' + page + '.html');
 		return false;
 	});
 });
