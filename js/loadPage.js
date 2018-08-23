@@ -5,9 +5,14 @@ $(document).ready(function() {
 	
 	//load page by click
 	$('.item').click(function() {
-		var page = $(this).attr('href');
 		window.scrollTo(0, 0);
-		$('.pusher').load('./pages/' + page + '.html');
+		var page = $(this).attr('href');
+		$('.pusher').fadeOut(500, function() {
+			$('.pusher').hide().load('./pages/' + page + '.html', function() {
+				$('.pusher').fadeIn(500);
+			});
+		});
+		//$(".pusher").load('./pages/' + page + '.html');
 		return false;
 	});
 });
