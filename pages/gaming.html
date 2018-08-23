@@ -90,7 +90,7 @@
 							</ul>
 						</p>
 						<p align="left">
-							Para ver uma lista detalhada dos jogos, <a onClick="showGamesModal();" style="cursor: pointer">clique aqui</a>.
+							Para ver uma lista detalhada dos jogos, <a onClick="showLibGame();" style="cursor: pointer">clique aqui</a>.
 						</p>
 					</div>
 				</div>
@@ -145,6 +145,15 @@
 				</div>
 			</div>
 		</div>	
+	</div>
+</div>
+
+<div id="game" class="ui fullscreen long modal">
+<!--<div>-->
+	<i class="close icon"></i>
+	<div class="header" >Biblioteca de Jogos</div>
+	<div id="tableLoad" class="content">
+		<script>mkGameList();</script>
 	</div>
 </div>
 
