@@ -151,7 +151,7 @@
 <div id="game" class="ui fullscreen long modal">
 <!--<div>-->
 	<i class="close icon"></i>
-	<div class="header" >Biblioteca de Jogos*</div>
+	<div class="header center aligned" align="center"><b>Biblioteca de Jogos</b>*<br><span style="font-size: 12px">(ordenada alfabeticamente)</span></div>
 	<div id="tableLoad" class="scrolling content">
 		<script>
 			$.ajax({
@@ -159,7 +159,7 @@
 				dataType:"text",
 				success:function(data){
 					var game_data = data.split(/\r?\n|\r/);
-					var table_data = '<table class="ui striped table"><thead>';
+					var table_data = '<table class="ui celled inverted striped table"><thead>';
 					for(var count = 0; count<game_data.length; count++){
 						var cell_data = game_data[count].split(";");
 						table_data += '<tr>';
