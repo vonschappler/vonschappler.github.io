@@ -5,48 +5,43 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		
-		<title>Untitled Document</title>
+		<title></title>
 
 		<link rel="stylesheet" href="./semantic/semantic.min.css">
 		<link rel="stylesheet" href="./css/main.css">
+        <script src="./js/jquery-3.3.1.min.js"></script>
 	
 	</head>
 	
 	<body>
 		<!-- Following Menu -->
 		<div class="ui large top inverted hidden fixed menu">
-			<div class="ui container">
-				<div class="header item"><img src="./img/logo.png" alt="" class="ui mini image" style="padding-right: 5px">von Schappler TV</div>
-				<a href="index" class="item"><i class="home icon"></i> Início</a>
-				<!--<a href="social" class="item"><i class="feed icon"></i> Social</a>-->
-				<a href="gaming" class="item"><i class="gamepad icon"></i> Gaming</a>
-				<a href="partners" class="item"><i class="users icon"></i> Parceiros</a>
-				<a href="about" class="item"><i class="help icon"> </i> Sobre</a>
-			</div>
+			<div class="ui container"></div>
 		</div>
 		
 		<!-- Sidebar Menu -->
-		<div class="ui vertical inverted sidebar menu">
-			<div class="header item">von Schappler TV</div>
-			<a href="index" class="item">Início <i class="home icon"></i></a>
-			<!--<a href="social" class="item"><i class="feed icon"></i>Social</a>-->
-			<a href="gaming" class="item"><i class="gamepad icon"></i>Gaming </a> 
-			<a href="partners" class="item"><i class="users icon"></i>Parceiros </a>
-			<a href="about" class="item"><i class="help icon"></i>Sobre </a>
-		</div>
+		<div class="ui vertical inverted sidebar menu"></div>
 		
 		<!-- Page Contents -->
 		<div class="pusher"></div>
 		
-		<script src="./js/jquery-3.3.1.min.js"></script>
+		
+		
 		<script>
 			$(document).ready(function() {
-				window.scrollTo(0, 0);
-				$('.pusher').load('./pages/index.html');
+                window.scrollTo(0, 0);
+				$('.pusher').load('./pages/index.html',function() {
+				    $('#pageMenu').load('./pages/menu.html #mainMenu');
+                    $(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
+				    $(".sidebar.menu").load("./pages/menu.html #sideMenu");
+                });
 				return false;
-			})
+			});
+                        
 		</script>
-		<script src="./semantic/semantic.min.js"></script>
 	</body>
+    
+    <script src="./js/loadPage.js"></script>
+	<script src="./semantic/semantic.min.js"></script>
 
 </html> 

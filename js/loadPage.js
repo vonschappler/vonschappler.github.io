@@ -9,9 +9,21 @@ function showLibGame() {
 		.modal('show');
 }
 
-$(document).ready(function() {
+function showModal(a) {
+	$('#modal').load('./pages/' + a + '.html', function() {
+		$("#modal")
+		.modal({
+			blurring: true
+		})
+		.modal('setting', 'transition', 'horizontal flip')
+		.modal('show');	
+	});
+}
+
+$(document).ready(function(){
+	
 	window.scrollTo(0, 0);
-	//carrefa o rodapé
+	//carrega o rodapé
 	$('.footer').load('./pages/footer.html');
 	
 	//carrega ao clicar no menu
@@ -21,10 +33,13 @@ $(document).ready(function() {
 		
 		$('.pusher').fadeOut(500, function() {
 			$('.pusher').hide().load('./pages/' + page + '.html', function() {
+				$('#pageMenu').load('./pages/menu.html #mainMenu');
+				$(".sidebar.menu").load("./pages/menu.html #sideMenu");
+				$(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
 				$('.pusher').fadeIn(500);
 			});
 		});
-		//$(".pusher").load('./pages/' + page + '.html');
+		
 		return false;
 	});
 });
