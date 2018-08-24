@@ -151,10 +151,35 @@
 <div id="game" class="ui fullscreen long modal">
 <!--<div>-->
 	<i class="close icon"></i>
-	<div class="header" >Biblioteca de Jogos (lista em fase de atualização)</div>
-	<div id="tableLoad" class="content">
-		<script>mkGameList();</script>
+	<div class="header" >Biblioteca de Jogos*</div>
+	<div id="tableLoad" class="scrolling content">
+		<script>
+			$.ajax({
+				url:"./txt/games.csv",
+				dataType:"text",
+				success:function(data){
+					var game_data = data.split(/\r?\n|\r/);
+					var table_data = '<table class="ui striped table"><thead>';
+					for(var count = 0; count<game_data.length; count++){
+						var cell_data = game_data[count].split(";");
+						table_data += '<tr>';
+						for(var cell_count=0; cell_count<cell_data.length; cell_count++){
+							if(count === 0){
+								table_data += '<th>'+cell_data[cell_count]+'</th>';
+							} else {
+								table_data += '<td>'+cell_data[cell_count]+'</td>';
+							}
+						}
+						table_data += '</tr>';
+					}
+					table_data += '</table>';
+					
+					$('#tableLoad.content').html(table_data);
+				}
+			});
+		</script>
 	</div>
+	<div class="extra content"><span>*Os jogos em mídia fisica não foram adicionados.</span></div>
 </div>
 
 <div class="ui inverted vertical footer segment" align="center"></div>
