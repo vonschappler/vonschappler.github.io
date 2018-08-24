@@ -23,25 +23,26 @@
 		<div class="ui vertical inverted sidebar menu"></div>
 		
 		<!-- Page Contents -->
-		<div class="pusher"></div>
-		
-		
-		
-		<script>
-			$(document).ready(function() {
-                window.scrollTo(0, 0);
-				$('.pusher').load('./pages/index.html',function() {
-				    $('#pageMenu').load('./pages/menu.html #mainMenu');
-                    $(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
-				    $(".sidebar.menu").load("./pages/menu.html #sideMenu");
+		<div class="pusher">
+            <script>
+                $(document).ready(function() {
+                    window.scrollTo(0, 0);
+                    $('.pusher').load('./pages/index.html',function() {
+                        $('#pageMenu').load('./pages/menu.html #mainMenu');
+                        $(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
+                        $(".sidebar.menu").load("./pages/menu.html #sideMenu");
+                    });
+                    return false;
                 });
-				return false;
-			});
-                        
-		</script>
+            </script>
+        </div>
 	</body>
     
     <script src="./js/loadPage.js"></script>
 	<script src="./semantic/semantic.min.js"></script>
+    <script>
+        location.reload();
+        break;
+    </script>
 
 </html> 
