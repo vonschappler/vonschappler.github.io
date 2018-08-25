@@ -16,7 +16,8 @@ function showModal(a) {
 			blurring: true
 		})
 		.modal('setting', 'transition', 'horizontal flip')
-		.modal('show');	
+		.modal('show');
+		$('.ui.embed').embed();
 	});
 }
 
