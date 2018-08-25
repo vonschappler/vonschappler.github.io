@@ -30,7 +30,7 @@ $(document).ready(function(){
 	$('.item').click(function() {
 		var page = $(this).attr('href');
 		window.scrollTo(0, 0);
-		
+		$(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
 		$('.pusher').fadeOut(500, function() {
 			$('.pusher').hide().load('./pages/' + page + '.html', function() {
 				$('#pageMenu').load('./pages/menu.html #mainMenu');

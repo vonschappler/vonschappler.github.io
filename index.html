@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		
 		<title></title>
-        <script src="./js/jquery-3.3.1.min.js"></script>
 		<link rel="stylesheet" href="./semantic/semantic.min.css">
 		<link rel="stylesheet" href="./css/main.css">
 
@@ -20,26 +19,38 @@
         <div class="ui large top inverted hidden fixed menu"></div>
         
         <!-- Sidebar Menu -->
-		<div class="ui vertical inverted sidebar menu"></div>
+        
+        <div class="ui vertical inverted sidebar menu">
+			<div class="header item">von Schappler TV</div>
+			<a href="index" class="item">Início <i class="home icon"></i></a>
+			<a href="gaming" class="item"><i class="gamepad icon"></i>Gaming </a> 
+			<a href="partners" class="item"><i class="users icon"></i>Parceiros </a>
+            <a href="news" class="item"><i class="feed icon"></i>Novidade</a>
+			<a href="about" class="item"><i class="help icon"></i>Sobre </a>
+		</div>
         
 		<!-- Page Contents -->
-		<div class="pusher">
-            <script>
-                $(document).ready(function() {
-                    window.scrollTo(0, 0);
-                    $('.pusher').load('./pages/index.html',function() {
-                        $('#pageMenu').load('./pages/menu.html #mainMenu');
-                        $(".sidebar.menu").load("./pages/menu.html #sideMenu");
-                        $(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
-                    });
-                    return false;
+		<div class="pusher"></div>
+        
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                
+                window.scrollTo(0, 0);
+                $(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
+                $('.pusher').load('./pages/index.html',function() {
+                    $('#pageMenu').load('./pages/menu.html #mainMenu');
+                    //$(".sidebar.menu").load("./pages/menu.html #sideMenu");
+                    //$(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
                 });
-            </script>
-        </div>
+                return false;
+            });
+        </script>
+
 	</body>
 
+    <script src="./semantic/semantic.min.js"></script>
     
-    <script src="./js/loadPage.js"></script>
-	<script src="./semantic/semantic.min.js"></script>
+    
 
 </html> 
