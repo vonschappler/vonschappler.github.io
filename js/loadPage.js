@@ -24,6 +24,9 @@ $(document).ready(function(){
 	
 	window.scrollTo(0, 0);
 	//carrega o rodapé
+	$('#pageMenu').load('./pages/menu.html #mainMenu');
+	$(".sidebar.menu").load("./pages/menu.html #sideMenu");
+	$(".hidden.fixed.menu").load("./pages/menu.html #fixedMenu");
 	$('.footer').load('./pages/footer.html');
 	
 	//carrega ao clicar no menu
