@@ -33,6 +33,7 @@ $(document).ready(function(){
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
 			$('.pusher').hide().load('./pages/' + page + '.html', function() {
+				
 				$('.pusher').fadeIn(500);
 			});
 		});
