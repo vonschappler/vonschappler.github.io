@@ -23,21 +23,41 @@ function showModal(a) {
 
 $(document).ready(function(){
 	
-	window.scrollTo(0, 0);
-	//carrega o rodapé
-	$('.footer').load('./pages/footer.html');
-	
-	//carrega ao clicar no menu
 	$('.item').click(function() {
-		var page = $(this).attr('href');
+		var url = $(this).attr('href');
+		var toLoad = url.split("/");
+		var lang = toLoad[0];
+		var page = toLoad[1];
+		var newUrl = lang + '/' + page;
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
-			$('.pusher').hide().load('./pages/' + page + '.html', function() {
+			
+
+			$('.pusher').hide().load('./pages/' + newUrl + '.html', function() {
+				$('.pusher').fadeIn(500);
 				
+			});
+			
+		});
+
+		$('.ui.embed').embed();
+		return false;
+				
+	});
+	
+	$('.button').click(function() {
+		var url = $(this).attr('href');
+		var toLoad = url.split("/");
+		var lang = toLoad[0];
+		var page = toLoad[1];
+		window.scrollTo(0, 0);
+		$('.pusher').fadeOut(500, function() {
+			$('.pusher').hide().load('./pages/' +  lang + "/" + page + '.html', function() {
 				$('.pusher').fadeIn(500);
 			});
 		});
-		
+		$('.ui.embed').embed();
 		return false;
 	});
+	
 });

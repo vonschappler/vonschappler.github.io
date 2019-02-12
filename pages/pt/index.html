@@ -1,0 +1,73 @@
+<!doctype html>
+<div class="ui inverted vertical masthead center aligned segment">
+	<div id="menu"></div>
+	
+	<div class="ui vertical inverted stripe segment">
+		<div class="ui middle aligned stackable grid container">
+			<div class="row">
+				<div class="six wide right floated column" style="padding-bottom: -5.0em; padding-top: -5.0em">
+					<img src="./img/vonSchapplerFull.png" class="ui medium circular image centered aligned" alt="">
+				</div>
+				<div class="ten wide column">
+					<h1 class="ui inverted header">Ol&aacute;! Eu sou von Schappler</h1>
+					<h2 class="inverted header">e esse é o website do meu canal, <strong>vonSchapplerTV!</strong></h2>
+					<h2 class="inverted header">Seja bem vindo!</h2>
+					<span align="center"><br>Eu sou um jogador n00b, streamer e produtor independente de conteúdo!</span>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			
+<div class="ui vertical stripe segment" style="padding-bottom: -2.0em!important; padding-top: -2.0em!important">
+	<div class="ui top aligned stackable grid container">
+		<div class="row ">
+			<div class="eight wide column">
+				<h3 class="ui header" align="right">Estou aqui para desvendar histórias,<br>porque... Sou um 'loremaníaco'</h3>
+				<p align = "right">Esse site/canal está aqui para fornecer as gameplays mais "n00b" possíveis enquanto desvendamos juntos a história central dos jogos que apresentamos aqui!<br><br>
+				Assim sendo, não me preocupo em trazer uma excelente gameplay ou dar dicas/truques para uma melhor jogabilidade. Esse canal é um lugar para todos os novatos se divertirem e baterem papo enquanto faço o meu melhor para desvendar tudo o que for possível (em termos de história central/lore) durante nossas "jogatinas". </p>
+			</div>
+			<div class="eight wide right floated column">
+				<h3 class="ui header" align="left"> Assita aqui jogos "antigos",<br>desconhecidos ou "fora de moda"</h3>
+				<p align="left">Sim! A maioria dos jogos que eu jogo em minhas sessões de stream são "antigos" (e ao falar "jogos antigos", quero dizer, jogos com pelo menos 5 anos ou mais de lançamento)!<br><br>Dito isso, eu estou trabalhando lentamente para expandir minha biblioteca de jogos, lembrando que a maioria dos jogos encaixam nessa condição principal - eles têm pelo menos "5 anos de idade". Tenha em mente que alguns deles eu <strong>NUNCA</strong> joguei antes, sendo então jogos inéditos para minha pessoa! </p>
+			</div>
+		</div>
+	</div>
+</div>
+			
+<div class="ui vertical stripe quote segment" style="padding-top: -2.0em">
+	<div class="ui equal width stackable internally celled grid">
+		<div class="center aligned row">
+			<div class="column">
+				<h3><i class="chat icon"></i>"Não gosto de seguir padrões..."</h3>
+				<p>A premissa maior das gameplays apresentadas aqui é justamente mostrar que é possível jogar e se divertir jogando, sem ser elitista ou sem seguir padrões
+				que muitos exigem por aí. Jogos que oferecem liberdade total para você fazer o que quiser com seu personagem, são perfeitos para mostrar o quanto essa premissa se faz verdadeira e a razão pela qual fazer uso dela é a melhor forma para se jogar.</p>
+			</div>
+
+			<div class="column">
+				<h3>"Desperte o n00b em você!"<i class="chat icon"></i></h3>
+				<p>Ooooops! Sim, tenho certeza que isso é clichê, mas essa é a verdade! Temos que nos abraçar como somos, não importa se somos apenas iniciantes ou profissionais no mundo gamer! Então, vamos nos certificar de que abracemos nossas identidades e nos divirtamos sendo quem somos, dizendo um “gigantesco NÃO” a todos os padrões que estão sendo impostos atualmente a todos os jogadores, princialmente os iniciantes!</p>
+			</div>
+		</div>
+	</div>
+</div>
+			
+	
+<div class="ui inverted vertical footer segment" align="center"></div>
+
+
+
+<script src="./semantic/semantic.min.js"></script>
+<script src="./js/loadPage.js"></script>
+<script src="./js/main.js"></script>
+<script>
+	document.title = "[Bem vindo!] - vonSchapplerTV Website";
+	$('#menu').load('./pages/pt/menu.html', function() {
+		$('#addM').append('<a class=\"item\" href=\"en/index\"><i class=\"us flag\"></i>English</a>');
+	});
+	$('#hidMenu').load('./pages/pt/menuHidden.html', function() {
+		$('#addH').append('<a class=\"item\" href=\"en/index\"><i class=\"us flag\"></i>English</a>');
+	});
+	$('.footer').load('./pages/pt/footer.html');
+</script>
