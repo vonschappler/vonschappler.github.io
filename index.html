@@ -17,6 +17,17 @@
 		<script src="./fullcalendar-3.9.0/fullcalendar.min.js"></script>
 		<script src="./fullcalendar-3.9.0/gcal.min.js"></script>
 		<script src="./fullcalendar-3.9.0/locale-all.js"></script>
+		<script>
+            $(document).ready(function() {
+				window.scrollTo(0, 0);
+				$('.pusher').load('./pages/en/index.html');
+				$('.ui.embed').embed();
+
+				return false;
+			});
+        </script>
+		<script src="./js/loadPage.js"></script>
+		<script src="./js/main.js"></script>
 
 	
 	</head>
@@ -29,15 +40,7 @@
 		<!-- Page Contents -->
 		<div class="pusher"></div>
         
-        <script>
-            $(document).ready(function() {
-				window.scrollTo(0, 0);
-				$('.pusher').load('./pages/en/index.html');
-				$('.ui.embed').embed();
 
-				return false;
-			});
-        </script>
 
 	</body>
 
