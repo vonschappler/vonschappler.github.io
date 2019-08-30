@@ -20,8 +20,6 @@
 		<script src="./fullcalendar-3.9.0/gcal.min.js"></script>
 		<script src="./fullcalendar-3.9.0/locale-all.js"></script>
         <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-		<script src="./js/loadPage.js"></script>
-		<script src="./js/main.js"></script>
 				
 
 	
@@ -39,14 +37,15 @@
         
 	</body>
 
-    	<script>
-            $(document).ready(function() {
-				window.scrollTo(0, 0);
-				$('.pusher').load('./pages/en/index.html');
-				$('.ui.embed').embed();
-
-				return false;
-			});
-        </script>
+   	<script>
+		$(document).ready(function() {
+			window.scrollTo(0, 0);
+			$('.pusher').load('./pages/en/index.html');
+			$('.ui.embed').embed();
+			return false;
+		});
+	</script>
+	<script src="./js/loadPage.js"></script>
+	<script src="./js/main.js"></script>
     
 </html>
