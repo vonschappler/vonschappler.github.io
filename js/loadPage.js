@@ -70,12 +70,13 @@ function showModal(a) {
 });*/
 
 function loadPage() {
-		$('.item').click(function() {
-		var url = $(this).attr('href');
-		var toLoad = url.split("/");
-		var lang = toLoad[0];
-		var page = toLoad[1];
-		var newUrl = './pages/' + lang + '/' + page + '.html';
+	$('.item').click(function() {
+		var a = $(this).attr('href');
+		window.alert(a);
+		//var toLoad = url.split("/");
+		//var lang = toLoad[0];
+		//var page = toLoad[1];
+		var newUrl = './pages/' + a + '.html';
 		window.alert(newUrl);
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
