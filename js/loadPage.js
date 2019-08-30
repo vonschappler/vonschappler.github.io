@@ -28,13 +28,12 @@ $(document).ready(function(){
 		var toLoad = url.split("/");
 		var lang = toLoad[0];
 		var page = toLoad[1];
-		var newUrl = lang + '/' + page;
-		window.alert(newUrl);
+		var newUrl = lang + '/' + page + '.html';
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
 			
 
-			$('.pusher').hide().load('./pages/' + newUrl + '.html', function() {
+			$('.pusher').hide().load('./pages/' + newUrl, function() {
 				$('.pusher').fadeIn(500);
 				
 			});
