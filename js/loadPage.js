@@ -69,15 +69,15 @@ function showModal(a) {
 	
 });*/
 
-function loadPage() {
-	$('.item').click(function() {
-		var a = $(this).attr('href');
-		window.alert(a);
+function loadPage(a) {
+	//window.alert(a);
+	//$('.item').click(function() {
+		
 		//var toLoad = url.split("/");
 		//var lang = toLoad[0];
 		//var page = toLoad[1];
 		var newUrl = './pages/' + a + '.html';
-		window.alert(newUrl);
+		//window.alert(newUrl);
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
 			
@@ -87,7 +87,7 @@ function loadPage() {
 				
 			});
 			
-		});
+		//});
 
 		$('.ui.embed').embed();
 		return false;
