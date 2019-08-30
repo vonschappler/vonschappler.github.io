@@ -191,10 +191,10 @@
 <script>
 	document.title = "[Partners] - vonSchapplerTV Website";
 	$('#menu').load('./pages/en/menu.html', function() {
-		$('#addM').append('<a class=\"item\" href=\"pt/partners\"><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+		$('#addM').append('<a class=\"item\" onClick=loadPage(\"pt/partners\")><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
 	});
 	$('#hidMenu').load('./pages/en/menuHidden.html', function() {
-		$('#addH').append('<a class=\"item\" href=\"pt/partners\"><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+		$('#addH').append('<a class=\"item\" onClick=loadPage(\"pt/partners\")><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
 	});
 	$('.footer').load('./pages/en/footer.html');
 	

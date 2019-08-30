@@ -61,10 +61,10 @@
 <script>
 	document.title = "[Welcome!] - vonSchapplerTV Website";
 	$('#menu').load('./pages/en/menu.html', function() {
-		$('#addM').append('<a class=\"item\" href=\"pt/index\"><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+		$('#addM').append('<a class=\"item\" onClick=loadPage(\'pt/index\')><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
 	});
 	$('#hidMenu').load('./pages/en/menuHidden.html', function() {
-		$('#addH').append('<a class=\"item\" href=\"pt/index\"><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+		$('#addH').append('<a class=\"item\" onClick=loadPage(\'pt/index\')><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
 	});
 	$('.footer').load('./pages/en/footer.html');
 </script>

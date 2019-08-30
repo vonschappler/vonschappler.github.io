@@ -64,10 +64,10 @@
 <script>
 	document.title = "[Bem vindo!] - vonSchapplerTV Website";
 	$('#menu').load('./pages/pt/menu.html', function() {
-		$('#addM').append('<a class=\"item\" href=\"en/index\"><i class=\"us flag\"></i>English</a>');
+		$('#addM').append('<a class=\"item\" onClick=loadPage(\"en/index\")><i class=\"us flag\"></i>English</a>');
 	});
 	$('#hidMenu').load('./pages/pt/menuHidden.html', function() {
-		$('#addH').append('<a class=\"item\" href=\"en/index\"><i class=\"us flag\"></i>English</a>');
+		$('#addH').append('<a class=\"item\" onClick=loadPage(\"en/index\")><i class=\"us flag\"></i>English</a>');
 	});
 	$('.footer').load('./pages/pt/footer.html');
 </script>

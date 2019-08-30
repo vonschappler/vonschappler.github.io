@@ -1,6 +1,5 @@
 // JavaScript Document
 function showLibGame() {
-	
 	$('#game')
 		.modal({
 			blurring: true
@@ -21,98 +20,15 @@ function showModal(a) {
 	});
 }
 
-/*$(document).ready(function(){
-	
-	$('.item').click(function() {
-		var url = $(this).attr('href');
-		var toLoad = url.split("/");
-		var lang = toLoad[0];
-		var page = toLoad[1];
-		var newUrl = './pages/' + lang + '/' + page + '.html';
-		window.alert(newUrl);
-		window.scrollTo(0, 0);
-		$('.pusher').fadeOut(500, function() {
-			
-
-			$('.pusher').hide().load(newUrl, function() {
-				$('.pusher').fadeIn(500);
-				
-			});
-			
-		});
-
-		$('.ui.embed').embed();
-		return false;
-				
-	});
-	
-	$('.button').click(function() {
-		var url = $(this).attr('href');
-		var toLoad = url.split("/");
-		var lang = toLoad[0];
-		var page = toLoad[1];
-		var newUrl = './pages/' + lang + '/' + page + '.html';
-		window.alert(newUrl);
-		window.scrollTo(0, 0);
-		$('.pusher').fadeOut(500, function() {
-			
-
-			$('.pusher').hide().load(newUrl, function() {
-				$('.pusher').fadeIn(500);
-				
-			});
-			
-		});
-		$('.ui.embed').embed();
-		return false;
-	});
-	
-});*/
-
 function loadPage(a) {
-	//window.alert(a);
-	//$('.item').click(function() {
-		
-		//var toLoad = url.split("/");
-		//var lang = toLoad[0];
-		//var page = toLoad[1];
-		var newUrl = './pages/' + a + '.html';
-		//window.alert(newUrl);
-		window.scrollTo(0, 0);
-		$('.pusher').fadeOut(500, function() {
-			
-
-			$('.pusher').hide().load(newUrl, function() {
-				$('.pusher').fadeIn(500);
-				
-			});
-			
-		//});
-
-		$('.ui.embed').embed();
-		return false;
-				
-	});
-	
-	$('.button').click(function() {
-		var url = $(this).attr('href');
-		var toLoad = url.split("/");
-		var lang = toLoad[0];
-		var page = toLoad[1];
-		var newUrl = './pages/' + lang + '/' + page + '.html';
-		window.alert(newUrl);
-		window.scrollTo(0, 0);
-		$('.pusher').fadeOut(500, function() {
-			
-
-			$('.pusher').hide().load(newUrl, function() {
-				$('.pusher').fadeIn(500);
-				
-			});
-			
+	var newUrl = './pages/' + a + '.html';
+	window.scrollTo(0, 0);
+	$('.pusher').fadeOut(500, function() {
+		$('.pusher').hide().load(newUrl, function() {
+			$('.pusher').fadeIn(500);
 		});
+		
 		$('.ui.embed').embed();
 		return false;
 	});
-
 }
