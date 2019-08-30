@@ -26,15 +26,16 @@ $(document).ready(function(){
 	$('.item').click(function() {
 		var url = $(this).attr('href');
 		var toLoad = url.split("/");
-		var lang = toLoad[0];
-		var page = toLoad[1];
-		var newUrl = lang + '/' + page;
+		var dir = toLoad[0];
+		var lang = toLoad[1];
+		var page = toLoad[2];
+		var newUrl = dir + '/' + lang + '/' + page;
 		window.alert(newUrl);
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
 			
 
-			$('.pusher').hide().load('/pages/' + newUrl, function() {
+			$('.pusher').hide().load(newUrl, function() {
 				$('.pusher').fadeIn(500);
 				
 			});
@@ -49,15 +50,16 @@ $(document).ready(function(){
 	$('.button').click(function() {
 		var url = $(this).attr('href');
 		var toLoad = url.split("/");
-		var lang = toLoad[0];
-		var page = toLoad[1];
-		var newUrl = lang + '/' + page;
+		var dir = toLoad[0];
+		var lang = toLoad[1];
+		var page = toLoad[2];
+		var newUrl = dir + '/' + lang + '/' + page;
 		window.alert(newUrl);
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
 			
 
-			$('.pusher').hide().load('/pages/' + newUrl, function() {
+			$('.pusher').hide().load(newUrl, function() {
 				$('.pusher').fadeIn(500);
 				
 			});
