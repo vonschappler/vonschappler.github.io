@@ -29,6 +29,7 @@ $(document).ready(function(){
 		var lang = toLoad[0];
 		var page = toLoad[1];
 		var newUrl = lang + '/' + page + '.html';
+		window.alert(newUrl);
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
 			
@@ -50,11 +51,17 @@ $(document).ready(function(){
 		var toLoad = url.split("/");
 		var lang = toLoad[0];
 		var page = toLoad[1];
+		var newUrl = lang + '/' + page + '.html';
+		window.alert(newUrl);
 		window.scrollTo(0, 0);
 		$('.pusher').fadeOut(500, function() {
-			$('.pusher').hide().load('./pages/' +  lang + "/" + page + '.html', function() {
+			
+
+			$('.pusher').hide().load('./pages/' + newUrl, function() {
 				$('.pusher').fadeIn(500);
+				
 			});
+			
 		});
 		$('.ui.embed').embed();
 		return false;
