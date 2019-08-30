@@ -34,7 +34,7 @@ $(document).ready(function(){
 		$('.pusher').fadeOut(500, function() {
 			
 
-			$('.pusher').hide().load('./pages/' + newUrl, function() {
+			$('.pusher').hide().load('/pages/' + newUrl, function() {
 				$('.pusher').fadeIn(500);
 				
 			});
@@ -57,7 +57,7 @@ $(document).ready(function(){
 		$('.pusher').fadeOut(500, function() {
 			
 
-			$('.pusher').hide().load('./pages/' + newUrl, function() {
+			$('.pusher').hide().load('/pages/' + newUrl, function() {
 				$('.pusher').fadeIn(500);
 				
 			});
