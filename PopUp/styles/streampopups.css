@@ -1,57 +1,121 @@
-<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
-
-@font-face 
-{
-    font-family: 'Sansation';
-    /*src: url('/fonts/CaviarDreams.ttf');*/
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('user_custom.css');
 
 body 
 { 
-    background-color: transparent; 
-    font-family: "Sansation";
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.messageBox 
+.messageBox /*Defaults to top left. */
 {
-    border-top: 15px solid #1b1c1d;
+    border-top: 15px solid #1d335f;
     width: 350px;
-    background-color: #16b2ab; 
+    background-color: #294886;
     color: #fff;
     font-size: 10pt;
-    display: none; 
-    padding: 15px 10px 15px 10px; 
-    margin: 0px 0px 0px 0px; 
-    position: fixed; 
-    left: 0; 
+    display: none;
+    padding: 15px 10px 15px 10px;
+    margin: 0px 0px 0px 0px;
+    position: fixed;
+    left: 0;
     top: 20px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
-.messageBoxNoBG
+.messageBox.left
 {
+    left: 0;
+    top: 20px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.messageBox.right
+{
+    left: auto;
+    right: 0;
+    top: 20;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.messageBox.btm, .messageBox.btm.left
+{
+    left: 0;
+    top: 750;
+    border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.messageBox.btm.right
+{
+    left: auto;
+    right: 0;
+    top: 750;
+    border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.messageBox.noBg
+{
+    border: none;
     width: 350px;
+    background-color: transparent;
     color: #fff;
     font-size: 10pt;
-    display: none; 
-    padding: 15px 10px 15px 10px; 
-    margin: 0px 0px 0px 0px; 
-    position: fixed; 
-    left: 0; 
+    display: none;
+    padding: 15px 10px 15px 10px;
+    margin: 0px 0px 0px 0px;
+    position: fixed;
+    left: 0;
     top: 200px;
+}
+
+/* Font Awesome Icon in a messageBox */
+.messageBox .far, .messageBox .fas, .messageBox .fab
+{
+    align-self: center;
+    font-size: 32pt;
 }
 
 .hdrContainer
 {
-    color: white; 
-    display: none; 
-    padding: 5px 0px 0px 0px; 
-    margin: 0px auto 0px auto;
+    color: white;
+    font-size: 25pt;
+    display: none;
+    padding: 6px 0px 6px 0px;
+    vertical-align: middle !important;
+    align-content: center;
+    align-items: center;
 }
 
-.vcenter 
+.hdrContainer.row
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Font Awesome Icon in header. */
+.hdrContainer .far, .hdrContainer .fas, .hdrContainer .fab
+{
+    align-self: center;
+    font-size: 26pt;
+}
+
+.vcenter
 { 
-    display: flex; 
-    align-items: center; 
-    vertical-align: middle !important; 
-    height: 100%; 
+    display: flex;
+	margin: auto;
+    align-items: center;
+    vertical-align: middle !important;
+    height: 100%;
 }
