@@ -5,14 +5,29 @@
 	<div class="ui vertical inverted stripe segment">
 		<div class="ui middle aligned stackable grid container">
 			<div class="row">
+				<div class="sixteen wide floated column">
+					<h1 class="ui inverted header">Hello, I am von Schappler!</h1>
+				</div>
+			</div>
+			<div class="row">
 				<div class="six wide right floated column" style="padding-bottom: -5.0em; padding-top: -5.0em">
-					<img src="./img/vonSchapplerFull.png" class="ui medium circular image centered aligned" alt="">
+					<img src="./img/vonSchapplerFull.png" class="ui medium circular image centered aligned" alt=""><br>
+					<span align="center">I'm a <strong>Brazilian Twitch Affiliate streamer</strong>,  looking for my place in the streaming community.<br>I enjoy playing history contents on games.</span>
 				</div>
 				<div class="ten wide column">
-					<h1 class="ui inverted header">Hello! I am von Schappler</h1>
-					<h2 class="inverted header">and this is the homepage for my channel, <strong>vonSchapplerTV!</strong></h2>
-					<h2 class="inverted header">Welcome!</h2>
-					<span align="center"><br>I am a n00b gamer, a streamer and independent contents producer!</span>
+					<div class="ui fluid two column grid">
+						<!-- video -->
+						<div class="sixteen wide column">
+							<div class="ui fluid card">
+								<div id="homeVideo" class="ui embed"></div>
+							</div>
+						</div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button"onClick="openTwitch('von_schappler');" >Watch me Live</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="showModal('../pages/en/von_schappler')">Watch Here</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -55,6 +70,24 @@
 	
 <div class="ui inverted vertical footer segment" align="center"></div>
 
+<div id="modal" class="ui fullscreen long modal">
+	<i class="close icon"></i>
+</div>
+
+
+<script type="text/javascript">
+	var options = {
+		//width: <width>,
+		//height: 700,
+		//channel: "von_schappler",//,
+		//video: "<video ID>",
+		collection: "TPK8B2ug0BUaPA",
+		layout: "video-with-chat"
+	};
+	var player = new Twitch.Player("homeVideo", options);
+	player.setVolume(0.0);
+</script>
+
 <script src="./semantic/semantic.min.js"></script>
 <script src="./js/loadPage.js"></script>
 <script src="./js/main.js"></script>
@@ -67,4 +100,8 @@
 		$('#addH').append('<a class=\"item\" onClick=loadPage(\'pt/index\')><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
 	});
 	$('.footer').load('./pages/en/footer.html');
+	
+	function openTwitch(a) {
+		window.open("https://www.twitch.tv/" + a);
+	}
 </script>

@@ -1,3 +1,17 @@
+@font-face {
+  font-family: SansationBold;
+  src: url(../fonts/sansation_bold.ttf);
+}
+
+@font-face {
+	font-family: SansationNormal;
+	src: url("../fonts/Sansation_Regular.ttf");
+}
+
+html {
+	font-family: SansationNormal;
+}
+
 .hidden.menu {
   display: none;
 }
@@ -17,10 +31,12 @@
   margin-bottom: 0em;
   font-size: 4em;
   font-weight: normal;
+  font-family: SansationBold;
 }
 .masthead h2 {
   font-size: 1.7em;
   font-weight: normal;
+  font-family: SansationBold;
 }
 
 .ui.vertical.stripe {
