@@ -1,11 +1,11 @@
 @font-face {
   font-family: SansationBold;
-  src: url(/fonts/sansation_bold.ttf);
+  src: url("../fonts/sansation_bold.ttf");
 }
 
 @font-face {
 	font-family: SansationNormal;
-	src: url("/fonts/Sansation_Regular.ttf");
+	src: url("../fonts/Sansation_Regular.ttf");
 }
 
 html {
