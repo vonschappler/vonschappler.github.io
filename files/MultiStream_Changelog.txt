@@ -1,5 +1,12 @@
 ChangeLog
 
+v1.0.5
+ - Fixed an issue that would allow the AutoMessage to post messages just by setting
+   the game played by using the command "!setmultigame"
+ - Added an error message to warn about just setting the game but no casters added
+   to the multi-stream link.
+ - Fixed small typos in the main code that could cause conflict in some variables.
+
 v1.0.4
  - Fixed an issue that would cause the ScriptLog file to be saved incorrectly.
  - Log files now create a more detailed log of script usage.
