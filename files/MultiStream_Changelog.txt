@@ -1,0 +1,36 @@
+ChangeLog
+
+v1.0.5
+ - Fixed an issue that would allow the AutoMessage to post messages just by setting
+   the game played by using the command "!setmultigame"
+ - Added an error message to warn about just setting the game but no casters added
+   to the multi-stream link.
+ - Fixed small typos in the main code that could cause conflict in some variables.
+
+v1.0.4
+ - Fixed an issue that would cause the ScriptLog file to be saved incorrectly.
+ - Log files now create a more detailed log of script usage.
+ - Fixed an issue that prevented the log inside the Chatbot to display
+   correctly.
+
+v1.0.3
+ - Fixed a bug that caused !setmultion to override the game set manually.
+ - Fixed an issue to display other casters added to the URL in the log file
+   correctly.
+ - Added the possibility to auto-select the game currently played by using
+   "auto" after !setmultigame, e.g.:
+   !setmultigame auto
+- Fixed typos in the UI elements.
+
+v1.0.2
+ - Changed positioning of some UI elements to fit the script purpose.
+
+v1.0.1
+ - Created an option to display / save log file with changes in made during the
+   usage of the script.
+ - Updated ReadMe.txt to fit the changes above.
+ - Fixed a few typos in the main code of the script.
+ - Added an option to change multi-stream game manually.
+
+v1.0.0
+ - This is the initial launch, nothing to report.

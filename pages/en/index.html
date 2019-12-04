@@ -1,0 +1,107 @@
+<!doctype html>
+<div class="ui inverted vertical masthead center aligned segment">
+	<div id="menu"></div>
+	
+	<div class="ui vertical inverted stripe segment">
+		<div class="ui middle aligned stackable grid container">
+			<div class="row">
+				<div class="sixteen wide floated column">
+					<h1 class="ui inverted header">Hello, I am von Schappler!</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six wide right floated column" style="padding-bottom: -5.0em; padding-top: -5.0em">
+					<img src="./img/vonSchapplerFull.png" class="ui medium circular image centered aligned" alt=""><br>
+					<span align="center">I'm a <strong>Brazilian Twitch Affiliate streamer</strong>,  looking for my place in the streaming community.<br>I enjoy playing history contents on games.</span>
+				</div>
+				<div class="ten wide column">
+					<div class="ui fluid two column grid">
+						<!-- video -->
+						<div class="sixteen wide column">
+							<div class="ui fluid card">
+								<div id="homeVideo" class="ui embed"></div>
+							</div>
+						</div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button"onClick="openTwitch('von_schappler');" >Watch me Live</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="showModal('../pages/en/von_schappler')">Watch Here</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			
+<div class="ui vertical stripe segment" style="padding-bottom: -2.0em!important; padding-top: -2.0em!important">
+	<div class="ui top aligned stackable grid container">
+		<div class="row ">
+			<div class="eight wide column">
+				<h3 class="ui header" align="right">I am here to uncover lore,<br> because... I am a loremaniac</h3>
+				<p align="right">Our website/channel is here to provide the n00biest gameplays we could find around as uncover the lore for the games we play!<br><br>
+				Just as I said, I do not stand out for an excellent gameplay or tips for other players. My channel is a place for all newbies to have fun and chat as we do our best to uncover everything possible during our gameplays and keep track on the main lore of each game I play.</p>
+			</div>
+			<div class="eight wide right floated column">
+				
+				<h3 class="ui header" align="left">Watch me playing "old" games,<br>unknown or outside the trends</h3>
+				<p align="left">Yeah! Most of the games I play on my stream sessions are "old" (by old, I mean, games with at least 5 or more years from launch)!<br><br>With that in mind, I am working slowly to expand my game library and most of the games I play fits that main condition - they are at least 5 years old. Keep in mind that some of them I have <strong>NEVER</strong> played before!</p>
+			</div>
+		</div>
+	</div>
+</div>
+			
+<div class="ui vertical stripe quote segment" style="padding-top: -2.0em">
+	<div class="ui equal width stackable internally celled grid">
+		<div class="center aligned row">
+			<div class="column">
+				<h3><i class="chat icon"></i>"I don't follow the 'standards'..."</h3>
+				<p>With my gameplays, aside the little rompants when dealing with "unexpected situations", what I want to achieve is to show it's possible to have fun and enjoy any game without getting into that "standard" most players want - maximum level, TOP gear and other things like! As a unique person, I enjoy pretty much playing on my UNIQUE way and I am here to show that <strong>YOU CAN DO THAT TOO</strong>!</p>
+			</div>
+
+			<div class="column">
+				<h3>"Wake up the n00b within!"<i class="chat icon"></i></h3>
+				<p>Ooooops! Yeah, I am pretty sure this might be a cliché, but that's the truth! We have to embrace ourselves as we are, no matter if we are just starter players or professional ones! So, let's make sure we embrace our n00bselves and have lots of fun just being ourselves, by saying a "huge-big-fat NO" to all those standards which are being imposed to newcomers to the gaming community!</p>
+			</div>
+		</div>
+	</div>
+</div>
+			
+	
+<div class="ui inverted vertical footer segment" align="center"></div>
+
+<div id="modal" class="ui fullscreen long modal">
+	<i class="close icon"></i>
+</div>
+
+
+<script type="text/javascript">
+	var options = {
+		//width: <width>,
+		//height: 700,
+		//channel: "von_schappler",//,
+		//video: "<video ID>",
+		collection: "TPK8B2ug0BUaPA",
+		layout: "video-with-chat"
+	};
+	var player = new Twitch.Player("homeVideo", options);
+	player.setVolume(0.0);
+</script>
+
+<script src="./semantic/semantic.min.js"></script>
+<script src="./js/loadPage.js"></script>
+<script src="./js/main.js"></script>
+<script>
+	document.title = "[Welcome!] - vonSchapplerTV Website";
+	$('#menu').load('./pages/en/menu.html', function() {
+		$('#addM').append('<a class=\"item\" onClick=loadPage(\'pt/index\')><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+	});
+	$('#hidMenu').load('./pages/en/menuHidden.html', function() {
+		$('#addH').append('<a class=\"item\" onClick=loadPage(\'pt/index\')><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+	});
+	$('.footer').load('./pages/en/footer.html');
+	
+	function openTwitch(a) {
+		window.open("https://www.twitch.tv/" + a);
+	}
+</script>

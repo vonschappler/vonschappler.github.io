@@ -1,0 +1,35 @@
+<!doctype html>
+<div class="ui inverted vertical masthead center aligned segment">
+	<div id="pageMenu" class="ui container"></div>
+	
+	<div class="ui text container">
+	  <h1 class="ui inverted header">Stream de PizzaMaid</h1>
+	  <!--<h4 class="ui inverted header">You are now watching to PizzaMaid live stream</h4>-->
+	</div>
+</div>
+			
+<div class="ui inverted container" style="padding-top: 2.0em; padding-bottom:2.0em;">
+	<div class="ui fluid two column grid">
+		<!-- video -->
+		<div class="sixteen wide column">
+			<div class="ui fluid card">
+				<div id="stream" class="ui embed"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var options = {
+		//width: <width>,
+		//height: 700,
+		channel: "PizzaMaid",//,
+		//video: "<video ID>",
+		//collection: "<collection ID>",
+		layout: "video-with-chat"
+	};
+	var player = new Twitch.Player("stream", options);
+	player.setVolume(0.5);
+	if ($('#modal').hasClass('.hidden')) {
+		player.pause();
+	}
+</script>
