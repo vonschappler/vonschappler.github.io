@@ -17,7 +17,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/aladar.png">
+						<img id="aladar" class="left floated rounded mini ui image">
 						<div class="header">aladar</div>
 						<div class="meta">Comandante do "Frog Army"</div>
 					</div>
@@ -33,7 +33,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/amethystkorn.jpg">
+						<img id='Amethystkorn' class="left floated rounded mini ui image">
 						<div class="header">Amethystkorn</div>
 						<div class="meta">Supervisora da "Gem Mine"</div>
 					</div>
@@ -49,7 +49,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/ariebelles.jpeg">
+						<img id="ArieBelles" class="left floated rounded mini ui image">
 						<div class="header">ArieBelles</div>
 						<div class="meta"></div>
 					</div>
@@ -65,7 +65,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/criptogirl.png">
+						<img id="CriptoGirl" class="left floated rounded mini ui image">
 						<div class="header">CriptoGirl</div>
 						<div class="meta">A Super-heroína Brasileira</div>
 					</div>
@@ -81,7 +81,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/fairlyoddpanda.png">
+						<img id="FairlyOddPanda" class="left floated rounded mini ui image">
 						<div class="header">FairlyOddPanda</div>
 						<div class="meta">A "Mamãe" Panda</div>
 					</div>
@@ -97,7 +97,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/karalena.jpg">
+						<img id="Karalena" class="left floated rounded mini ui image">
 						<div class="header">Karalena</div>
 						<div class="meta">A Senhora das Borboletas</div>
 					</div>
@@ -113,7 +113,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/pizzamaid.png">
+						<img id="PizzaMaid" class="left floated rounded mini ui image">
 						<div class="header">PizzaMaid</div>
 						<div class="meta">A donzela chefe do "Caf'ino Roe-yalle"</div>
 					</div>
@@ -129,7 +129,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/randomxness.png">
+						<img id="Randomxness" class="left floated rounded mini ui image">
 						<div class="header">Randomxness</div>
 						<div class="meta">Apenas uma garota aletória? Acho que não!</div>
 					</div>
@@ -146,7 +146,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/skyewasthelimit.png">
+						<img id="skyewasthelimit" class="left floated rounded mini ui image">
 						<div class="header">skyewasthelimit</div>
 						<div class="meta">O derrubador de limites no Twitch</div>
 					</div>
@@ -162,7 +162,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/wxdpl.png">
+						<img id="Wxdpl" class="left floated rounded mini ui image">
 						<div class="header">Wxdpl</div>
 						<div class="meta">O "bear lover"</div>
 					</div>
@@ -178,7 +178,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/xlninjamanlx.png">
+						<img id="xlNinjaManlx" class="left floated rounded mini ui image">
 						<div class="header">xlNinjaManlx</div>
 						<div class="meta">O mestre do Dojo</div>
 					</div>
@@ -194,7 +194,7 @@
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
-						<img class="left floated rounded mini ui image" src="./img/vonschappler.png">
+						<img id="von_Schappler" class="left floated rounded mini ui image">
 						<div class="header">Seu cartão aqui!</div>
 						<div class="meta">Clique <a href="mailto:vonschappler.gaming@gmail.com?subject=Promova-me, por favor!">aqui</a> para ter seu nome neste card!</div>
 					</div>
@@ -222,6 +222,14 @@
 <script src="./js/loadPage.js"></script>
 <script src="./js/main.js"></script>
 <script>
+	$(document).ready(function() {
+		var partners = ['aladar', 'Amethystkorn', 'ArieBelles', 'CriptoGirl', 'FairlyOddPanda',
+			'Karalena', 'PizzaMaid', 'Randomxness', 'skyewasthelimit', 'Wxdpl', 'xlNinjaManlx', 'von_Schappler']
+		for (i=0; i<partners.length; i++) {
+			getImage(partners[i])
+		}
+	});
+
 	document.title = "[Parceiros] - vonSchapplerTV Website";
 	$('#menu').load('./pages/pt/menu.html', function() {
 		$('#addM').append('<a class=\"item\" onClick=loadPage(\"en/partners\")><i class=\"us flag\"></i>English</a>');
@@ -233,5 +241,19 @@
 	
 	function openTwitch(a) {
 		window.open("https://www.twitch.tv/" + a);
+	}
+
+	function getImage(name) {
+		$.ajax({
+			url: 'https://decapi.me/twitch/avatar/' + name,
+			async: true,
+			type: 'GET',
+			success: function (data) {
+				if (data) {
+					imgField = document.getElementById(name)
+					imgField.src = data
+				}
+			}
+		});
 	}
 </script>
