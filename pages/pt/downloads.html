@@ -13,6 +13,32 @@
 	<div class="ui raised segment left aligned">
 	<h1 class="ui big teal label left ribbon">Scripts para o Streamlabs Chatbot (interface em inglês)</h1><br><br>
 		<div class="ui three column grid">
+			<!-- CustomShoutOut -->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<div class="ui teal right corner label"><i class="file icon"></i></div>
+						<div class="header">Custom ShoutOut (text version)</div>
+						<div class="meta">AutoShoutOuts com mensagens customizadas</div>
+					</div>
+					<div class="content">
+						<div class="meta left aligned" style="margin-left: 0.2em">
+							<span>Lançamento: 21/dez/2019</span><br>
+							<span>Versao: v1.1.0:tv</span><br>
+							<span>Última atualização: 26/dez/2019</span><br>
+							<span>ChangeLog: </span><a href="../files/CustomShoutOut_Changelog.txt" target="_blank">leia aqui</a>
+						</div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="showModal('../pages/pt/customso')">Leia mais...</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onclick="download('../files/CustomShoutOutText_v1.1.0.zip')">Download
+						</div>
+
+					</div>
+				</div>
+			</div>
+
 			<!-- MultiStreaming -->
 			<div class="column">
 				<div class="ui fluid card">
@@ -80,7 +106,7 @@
 <script src="./js/loadPage.js"></script>
 <script src="./js/main.js"></script>
 <script>
-	document.title = "[Downloads] - vonSchapplerTV Website";
+	document.title = "[Downloads] - von_Schappler Website";
 	$('#menu').load('./pages/pt/menu.html', function() {
 		$('#addM').append('<a class=\"item\" onClick=loadPage(\"en/downloads\")><i class=\"us flag\"></i>English</a>');
 	});

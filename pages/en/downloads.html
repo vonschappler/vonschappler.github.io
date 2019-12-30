@@ -9,10 +9,36 @@
 </div>
 			
 <div class="ui fourteen wide center aligned container" style="padding-top: 2.0em; padding-bottom:2.0em;">
-	<h5 class="date right aligned" align="right">Updated on: Dec/02/2019</h5>
+	<h5 class="date right aligned" align="right">Updated on: Dec/31/2019</h5>
 	<div class="ui raised segment left aligned">
 	<h1 class="ui big teal label left ribbon">Streamlabs Chatbot Scripts</h1><br><br>
 		<div class="ui three column grid">
+			<!-- CustomShoutOut -->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<div class="ui teal right corner label"><i class="file icon"></i></div>
+						<div class="header">Custom ShoutOut (text version)</div>
+						<div class="meta">AutoShoutOuts with custom messages</div>
+					</div>
+					<div class="content">
+						<div class="meta left aligned" style="margin-left: 0.2em">
+							<span>Release date: Dec/21/2019</span><br>
+							<span>Version: v1.1.0:tv</span><br>
+							<span>Last Update: Dec/26/2019</span><br>
+							<span>ChangeLog: </span><a href="../files/CustomShoutOut_Changelog.txt" target="_blank">read here</a>
+						</div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="showModal('../pages/en/customso')">Read more...</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onclick="download('../files/CustomShoutOutText_v1.1.0.zip')">Download
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
 			<!-- MultiStreaming -->
 			<div class="column">
 				<div class="ui fluid card">
@@ -64,6 +90,7 @@
 				</div>
 			</div>
 		</div>
+
 		<span class="ui left aligned" href=""><br>* If you want to support this work, consider making donations on this <a href="https://rebrand.ly/vonDonations" target="_blank">link</a>.</span>
 		
 		<div class="ui section divider"></div>
@@ -80,7 +107,7 @@
 <script src="./js/loadPage.js"></script>
 <script src="./js/main.js"></script>
 <script>
-	document.title = "[Downloads] - vonSchapplerTV Website";
+	document.title = "[Downloads] - von Schappler Website";
 	$('#menu').load('./pages/en/menu.html', function() {
 		$('#addM').append('<a class=\"item\" onClick=loadPage(\"pt/downloads\")><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
 	});
