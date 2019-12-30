@@ -43,6 +43,9 @@
 	<script>
 		$(document).ready(function() {
 			window.scrollTo(0, 0);
+			window.onbeforeunload = function () {
+				window.scrollTo(0, 0);
+			};
 			$('.pusher').load('./pages/en/index.html');
 			$('.ui.embed').embed();
 			return false;

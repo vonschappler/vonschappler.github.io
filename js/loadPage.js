@@ -1,18 +1,20 @@
-// JavaScript Document
-function showLibGame() {
-	$('#game')
-		.modal({
-			blurring: true
-		})
-		.modal('setting', 'transition', 'horizontal flip')
-		.modal('show');
-}
-
 function showModal(a) {
+	
 	$('#modal').load('./pages/' + a + '.html', function() {
 		$("#modal")
 		.modal({
-			blurring: true
+			onShow: function() {
+				window.scrollTo(0, 0);
+			},
+			blurring: true,
+			onHidden: function() {
+				if (document.getElementById("gameList")) {
+					table = $("#gameList").DataTable()
+					table.destroy()
+				}
+				$(".ui.modal").remove();
+				$("body").append("<div id=\"modal\" class=\"ui fullscreen long modal\"><i class=\"close icon\"></i></div>");
+			}
 		})
 		.modal('setting', 'transition', 'horizontal flip')
 		.modal('show');
