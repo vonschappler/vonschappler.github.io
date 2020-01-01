@@ -414,14 +414,14 @@
             "status_en": "Finished off-stream",
             "status_pt": "Terminado fora das streams"
         }, {
-            "plat": "Steam",
+            "plat": "Epic, Steam",
             "title": "Darksiders II: Deathinitive Edition",
             "gameTime": 7620,
             "relDate": 2015,
             "status_en": "Finished off-stream",
             "status_pt": "Terminado fora das streams"
         }, {
-            "plat": "Steam",
+            "plat": "Epic, Steam",
             "title": "Darksiders: Warmastered Edition",
             "gameTime": 1980, 
             "relDate": 2016,
@@ -479,7 +479,7 @@
         }, {
             "plat": "Steam",
             "title": "Destiny 2",
-            "gameTime": 38460,
+            "gameTime": 39060,
             "relDate": 2017,
             "status_en": "Currently Streaming - Main game",
             "status_pt": "Atualmente fazendo streams - Jogo principal"
@@ -801,7 +801,7 @@
         }, {
             "plat": "Steam",
             "title": "Fear Effect Sedna",
-            "gameTime": 186,
+            "gameTime": 228,
             "relDate": 2018,
             "status_en": "Play casually off-stream",
             "status_pt": "Jogo casualmente fora das streams"
@@ -1067,7 +1067,7 @@
         }, {
             "plat": "Steam",
             "title": "Killsquad",
-            "gameTime": 594,
+            "gameTime": 798,
             "relDate": "Early Access",
             "status_en": "Play casually off-stream",
             "status_pt": "Jogo casualmente fora das streams"
@@ -1556,11 +1556,11 @@
             "status_pt": "Não jogo atualmente"
         }, {
             "plat": "Steam",
-            "title": "Raiders of the Broken Planet",
+            "title": "Spacelords",
             "gameTime": 1050,
             "relDate": 2017,
-            "status_en": "Not playing anymore",
-            "status_pt": "Não jogo atualmente"
+            "status_en": "Play casually off-stream",
+            "status_pt": "Jogo casualmente fora das streams"
         }, {
             "plat": "Epic",
             "title": "Rayman Legends",
@@ -1822,7 +1822,7 @@
             "status_pt": "Não jogo atualmente"
         } , {
             "plat": "Steam",
-            "title": "Storied: The Path of Destinies (*)",
+            "title": "Stories: The Path of Destinies (*)",
             "gameTime": 96,
             "relDate": 2016,
             "status_en": "Finished off-stream",
@@ -2299,7 +2299,7 @@
         }, {
             "plat": "Battle.Net",
             "title": "Overwatch (*)",
-            "gameTime": 0,
+            "gameTime": 91,
             "relDate": 2016,
             "status_en": "Play casually off-stream",
             "status_pt": "Jogo casualmente fora das streams"
@@ -2317,6 +2317,34 @@
             "relDate": 2010,
             "status_en": "Play casually off-stream",
             "status_pt": "Jogo casualmente fora das streams"
+        }, {
+            "plat": "Epic",
+            "title": "Hello Neighbor",
+            "gameTime": 0,
+            "relDate": 2017,
+            "status_en": "Never played",
+            "status_pt": "Não joguei ainda"
+        }, {
+            "plat": "Epic",
+            "title": "Steep",
+            "gameTime": 0,
+            "relDate": "N/A",
+            "status_en": "Never played",
+            "status_pt": "Não joguei ainda"
+        }, {
+            "plat": "Epic",
+            "title": "Yooka-Laylee and the Impossible Lair",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status_en": "Never played",
+            "status_pt": "Não joguei ainda"
+        }, {
+            "plat": "Uplay",
+            "title": "Rabbids Coding",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status_en": "Never played",
+            "status_pt": "Não joguei ainda"
         }
     ]
 }
