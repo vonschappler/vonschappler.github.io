@@ -58,7 +58,8 @@
     $('#gameListPT').DataTable({
         ajax: {
             url: './txt_json/games.json',
-            dataSrc:"games"
+            dataSrc:"games",
+            async: true
         },
         lengthChange: false,
         //autoWidth: false,
