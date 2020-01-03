@@ -56,7 +56,7 @@
     }    
     
     function tabledraw() {
-        $('#gameListPT').DataTable({
+        $('#gameListEN').DataTable({
             ajax: {
                 url: './txt_json/games.json',
                 dataSrc:"games",
@@ -68,7 +68,7 @@
             scrollCollapse: true,
             paging: true,
             pageLength: 75,
-            processing: true,
+            processing: false,
             columns: [
                 {"data": "plat"},
                 {"data": "title"},
