@@ -55,62 +55,68 @@
         return rhours + "h " + rminutes.pad(2) + "m";
     }    
     
-    $('#gameListPT').DataTable({
-        ajax: {
-            url: './txt_json/games.json',
-            dataSrc:"games",
-            async: true
-        },
-        lengthChange: false,
-        //autoWidth: false,
-        scrollY: '40vh',
-        scrollCollapse: true,
-        paging: true,
-        pageLength: 75,
-        processing: true,
-        columns: [
-            {"data": "plat"},
-            {"data": "title"},
-            {"data": "relDate"},
-            {"data": "gameTime"},
-            {"data": "status_pt"},
-            {"data": "gameTime"}
-        ],
-        order: [
-            [4, "asc"],
-            [1, "asc"],
-            [2, "asc"]
-        ],
-        columnDefs: [ {
-                targets: 0,
-                width: "20%"
-            }, {
-                targets: 1,
-                width: "30%"
-            },{
-                targets: 2,
-                width: "10%",
-                className: "ui center aligned",
-            }, {
-                targets: 3,
-                width: "15%",
-                //sType: 'numeric',
-                className: "ui right aligned",
-                render: function(data, type, row, meta) {
-                    print = timeConvert(data)
-                return print
-                },
-            }, {
-                targets: 4,
-                width: "25%"
-            }, {
-                targets: 5,
-                sType: 'numeric',
-                visible: false
-            }, { orderData: [5], 
-                targets: 3
-            }
-        ]
-    });
+    function tabledraw() {
+        $('#gameListPT').DataTable({
+            ajax: {
+                url: './txt_json/games.json',
+                dataSrc:"games",
+                async: true
+            },
+            lengthChange: false,
+            //autoWidth: false,
+            scrollY: '40vh',
+            scrollCollapse: true,
+            paging: true,
+            pageLength: 75,
+            processing: true,
+            columns: [
+                {"data": "plat"},
+                {"data": "title"},
+                {"data": "relDate"},
+                {"data": "gameTime"},
+                {"data": "status_pt"},
+                {"data": "gameTime"}
+            ],
+            order: [
+                [4, "asc"],
+                [1, "asc"],
+                [2, "asc"]
+            ],
+            columnDefs: [ {
+                    targets: 0,
+                    width: "20%"
+                }, {
+                    targets: 1,
+                    width: "30%"
+                },{
+                    targets: 2,
+                    width: "10%",
+                    className: "ui center aligned",
+                }, {
+                    targets: 3,
+                    width: "15%",
+                    //sType: 'numeric',
+                    className: "ui right aligned",
+                    render: function(data, type, row, meta) {
+                        print = timeConvert(data)
+                    return print
+                    },
+                }, {
+                    targets: 4,
+                    width: "25%"
+                }, {
+                    targets: 5,
+                    sType: 'numeric',
+                    visible: false
+                }, { orderData: [5], 
+                    targets: 3
+                }
+        ]   
+        });
+    }
+
+    $(document).ready(function(){
+        tabledraw();
+    })
     
 </script>
