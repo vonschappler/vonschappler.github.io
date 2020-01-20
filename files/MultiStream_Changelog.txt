@@ -1,5 +1,22 @@
 ChangeLog
 
+v1.1.0
+ - Fixed an issue that prevented the script to retrieve and load settings saved from UI.
+ - Added a field to allow setting other casters to create the multi-stream link via UI.
+   NOTE: Unlike setting the casters via command, filling this field will take effect ONLY
+         after pressing "Saving Settings" on the Script UI. If this field is empty, no link
+         will be created when using the command to create the link and user will need to
+         fill in this "new field" inline with the creation link command, e.g.:
+         !setmultion caster1 caster 2
+ - Added a command to set multi-provider by id, instead of just setting them from the UI.
+   NOTE: The id of multi-providers are displayed in the UI as a number next to the provider
+         name, e.g.: "Provider_Name ( id = 1 )" can be set with the specific set command
+         defined by using "!setcommand 1".
+ - Added a small global cooldown (of 5secs) on multi display command to avoid double use of
+   the multi link display by moderators and above perms hence those permission levels won't
+   have cooldowns on the multi-stream display command.
+ - Documentation was changed to reflect and detail changes made on the script usage. 
+
 v1.0.5
  - Fixed an issue that would allow the AutoMessage to post messages just by setting
    the game played by using the command "!setmultigame"

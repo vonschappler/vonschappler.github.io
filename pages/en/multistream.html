@@ -11,24 +11,37 @@
 <div class="ui fourteen wide container" style="padding-bottom: 2.0em; padding-top: 2.0em;">
 	<div class="ui raised segment">
 		<h4>
-			This script was initially developed to help me (as a streamer) to manage my multi-streaming sessions easily. For months I crossed around streamers making multi-streaming sessions and mostly having to add this feature as a stand-alone command to their bots, "forcing" them to edit the command every time they wanted to use with different friends. So, thinking on those streamers (and, of course, on me) I came with this script for the StreamLabs stand-alone chatbot.<br>
-			I still don't know IF I will work on a version for the same script for the in-built StreamLabs: OBS bot, but for the moment, considering the ability to develop things for this stand-alone bot, I will keep only with this version.<br>
-			It is needless to say, but I will make this note here: if you don't have the stand-alone version of the bot, you can download it from their page <a href="https://streamlabs.com/chatbot" target="_blank">here</a>. It's also important to note that (so far) the multi-streaming services resources available here are for Twitch only.<br><br>
+			This script was initially developed to help me (as a streamer) to manage my Multi-Streaming sessions easily. For months I
+			crossed around streamers making Multi-Streaming sessions and mostly having to add this feature as a stand-alone command to
+			their bots, "forcing" them to edit the command (or create a new one) every time they wanted to use with different friends.
+			So, thinking on those streamers (and, of course, on me) I came with this script for the StreamLabs stand-alone chatbot.<br>
+			I still don't know IF I will work on a version for the same script for the in-built StreamLabs: OBS bot, but for the moment,
+			considering the ability to develop things for this stand-alone bot, I will keep only with this version.<br>
+			It is needless to say, but I will make this note here: if you don't have the stand-alone version of the bot, you can download
+			it from their page <a href="https://streamlabs.com/chatbot" target="_blank">here</a>. It's also important to note that (so far)
+			the Multi-Streaming hosts resources available here are for Twitch only.<br><br>
 			Below I will describe some of the features this script actually provides:
 			<ul>
 				<li>Easy commands configuration</li>
-				<li>Auto-message with Multi-Stream service link, defined by a timer</li>
+				<li>Auto-message with Multi-Stream host link, defined by a timer</li>
 				<li>Game settings within the script settings or via command</li>
 				<li>Log file output with the script usage during a specifc stream session</li>
 			</ul>
 			It's now time to take a deep look at this script.
 			<div class="ui inverted segment">
 				<h4 class="ui horizontal inverted divider">IMPORTANT:</h4>
-				Any changes made to ANY of the fields in this script will just be effective after the button <code>"Save Settings"</code> (at the end of the script UI) is pressed.
+				A) Any changes made to the information provided in the script UI will take effect only after <code>"Save Settings"</code>
+				button is pressed. To ensure the changes were saved, it's advised to press it two times and always reload the script after
+				saving settings.<br>
+      			B) Keep in mind that changes made using commands in chat won't be cased on the script UI as new settings to the script.<br>
+				C) All examples given here are based on default values for fields in the script UI.<br>
+				D) It's important that caster, editors, and moderators of the channel that will use this script have the caster's bot account
+				added to their friends' list, because this script will send most of the answers of commands to their whisper, in case those
+				mentioned have their whisper set to don't receive whispers from non-friends.
 			</div>
 		</h4>
 		<div class="ui divider"></div>
-		<h1 class="ui big teal ribbon label">General Settings:</h1><br>
+		<h1 class="ui big teal ribbon label">a) General Settings:</h1><br>
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
@@ -37,22 +50,52 @@
 			</div>
 		</div>
 		<h4>
-			In this group, you manage the basic settings for the script. Things like the message you want to display in chat, the multi-stream service provider and the game you will play and stream with your friends. You can also leave the "Game" field empty. This will force the script to auto-select the game you set under directory ion your Twitch Dashboard".<br><br>
-			<code>1. Message to send on chat:</code><br>
-			This field is used to define the message the bot will display in chat whenever the command <code>!multi</code> is used or by the auto-message send by the script. some parameters are necessary here for this to work:
+			This group is responsible for the general settings from the script which will be controlled by the commands (listed and detailed
+			later in this document). Messages, Multi-Stream "host", game and casters you are Multi-Streaming with can be set here. Below,
+			there are details on each field of this group:<br><br>
+			<code>a.1) Message to send on chat:</code><br>
+			This field is used to define the message the bot will display in chat whenever the specific command to display the link is used or by the
+			auto-message send by the script. Those are the required parameters for this field:
 			<ul>
-				<li><code>{caster}</code>: manages the caster name</li>
-				<li><code>{friends}</code>: manages the friends the streamer is streaming with</li>
-				<li><code>{link}</code>: manages the multi-streaming url link created by the script</li>
-				<li><code>{game}</code>: manages the the game being played with <code>{friends}</code></li>
+				<li><code>{caster}</code>: this will be replaced by the caster name</li>
+				<li><code>{friends}</code>: this will be replaced by the friends the streamer is streaming with</li>
+				<li><code>{link}</code>: this will be replaced by the  Multi-Streaming url created by the script</li>
+				<li><code>{game}</code>: this will be replaced by the game being played with <code>{friends}</code></li>
 			</ul>
-			<code>2. Site for multi-streaming:</code><br>
-			This is a selector field to manage which multi-streaming service it's going to be used for the link created by the script. At this moment, three possible services are set up, but more may come in future updates.<br><br>
-			<code>3. Game to be played:</code><br>
-			This field will get the game the user set up. If nothing is written there, the script will get the game set in the user Twitch's dashboard. It's also possible to change the game via command, as it will be explained later.
+			<div class="ui raised segment">
+				Example of working message:<br>
+				<code>
+					{caster} is playing {game} with {friends} Go check them playing together at {link} !
+				</code>
+				<div class="ui inverted segment">
+					<div class="ui inverted horizontal divider">IMPORTANT:</div>
+					It's STRONGLY ADVISED to add a blank space after <code>{link}</code> to avoid a broken link creation.
+				</div>
+			</div>
+			<code>a.2) Friends you are streaming with:</code><br>
+			This field will hold the list of casters the script needs to process in order to create the Multi-Stream URL. It's important to note
+			a few things about this:
+			<ul>
+				<li>The script will automatically create a link (although it won't enable displaying it on chat) automatically if this field is
+					not empty.</li>
+				<li>If the this field is empty, you need to give a list of casters/friends using the specific command (to be detailed later in
+					this documentation.)</li>
+				<li>Names inside this field must be separated by a blank space as shown below:</li>
+				<code>caster1 caster2 caster3</code>
+			</ul>
+			<code>a.3) Site for Multi-Streaming:</code><br>
+			This is a dropdown field where the user can select his favorite Multi-Streaming "host". It's important to notice the <code>( id = x )</code>
+			(where x is a number) next to the name of the selected "host". This id value (number) can be used to change/update the link using a specific
+			command (which will be explained later in this document).<br><br>
+			<code>a.4) Game to play with friends:</code><br>
+			This field is used to set up the game which is going to be played during the Multi-Stream session. The field also can be left blank 
+			or be filled with
+			<code>auto</code>. By leaving it blank or filling it with <code>auto</code> will make the script to get the game played from the
+			caster's Twitch dashboard.
+			It's also possible to change the game via command, as it will be explained later.
 		</h4>
 		<div class="ui divider"></div>
-		<h1 class="ui big teal ribbon label">Command Settings:</h1><br>
+		<h1 class="ui big teal ribbon label">b) Command Settings:</h1><br>
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
@@ -61,36 +104,77 @@
 			</div>
 		</div>
 		<h4>
-			This group manages all manual entries required for the script to work. In other words, these fields are for defining the commands you should use in chat to feed parameters to the script, make adjustments, and everything else that is manageable via chat input. Following are a few examples of usage of the script with the default command settings and display of their illustrative answers:<br><br>
-			<code>1. Command to set multi-stream link:</code><br>
-			By default, this is set to <code>!setmultion</code> . This command will both set the link and start the counter for the auto-message display, in case the auto-display message feature is enabled. The user can change it to anything they like. It's important that THIS can be used just by Moderators, Editors and by the caster him/herself.
-			<div class="ui compact inverted segment">
-				<code>In: !setmultion friend1 friend2 friend3</code><br>
-				<code>Out: Multi-stream link is set correctly. Viewers can now type !multi in chat to display this link: http://provider/caster/friend1/friend2/friend3/ where you are playing game.</code>
-			</div>
-			If used correctly, the user will receive a whisper from the bot saying the link was created and show a preview of the link for "testing" purposes. If not, the whisper sends to the user will say that the command was missing the arguments necessary to create the link.<br><br>
-			<code>2. Command to reset the multi-stream link:</code><br>
-			In a similar way to the <code>!setmultion</code>, this command here does exactly the opposite of it. By using <code>!setmultioff</code>, you will disable the multi-stream URL link, reset friends list and disable the auto-message display in chat. The user will receive a whisper from the bot, saying that the friend's list is empty, so no multistream-link is set.
+			The user can customize the commands used in chat by this script in this group. This group is composed of:<br><br>
+			<code>b.1) Command to set/enable Multi-Stream link:</code><br>
+			This command will both set the Multi-Stream link defined with the settings defined on <code>a</code> and start the counter
+			for the auto-message display (in case the auto-display message feature is enabled). The user can change it to anything they
+			like and it's important to note here that THIS command can be used ONLY by the caster, editors, and moderators of the channel.<br><br>
+			<code>b.2) Command to reset the Multi-Stream link:</code><br>
+			This command works in a similar way to the previous one, but its main function is to disable the Multi-Stream link, turning off
+			the auto-display in chat (considering the auto-display feature is enabled). THIS command can be used ONLY by the caster, editors,
+			and moderators of the channel.<br><br>
+			<code>b.3) Command to set game manually:</code><br>
+			This command allows the user the possibility of updating the game to be displayed in the message sent on chat when the Multi-Stream link
+			is displayed. THIS command can be used ONLY by the caster, editors, and moderators of the channel.<br><br>
+			<code>b.4) Command to set site manually:</code><br>
+			This command is used to update the Multi-Stream link displayed, changing the Multi-Stream "host". THIS command can be used ONLY by the
+			caster, editors, and moderators of the channel.<br><br>
+			<code>b.5) Command to send Multi-Stream link on chat:</code><br>
+			This is the command used by everyone in the channel in order to display the Multi-Stream link created by this script in chat.<br><br>
+			<code>b.6) User cooldown (in minutes):</code><br>
+			This slider is to set user's cooldown of the command defined in <code>b.5</code> to avoid spamming the link in chat. The minimum cooldown
+			allowed is 1 minute while the maximum allowed by this is 15 minutes.
 			<div class="ui inverted segment">
-				<code>In: !setmultioff</code><br>
-				<code>Out: Multi-stream is disabled. All friends erased...</code>
+				NOTES:<br>
+				a. Casters, editors, and moderators won't be affected by the user cooldown defined on <code>b.6</code>.<br>
+				b. To refrain the permission levels above from "quick" spamming the link it was added a small cooldown of 10 seconds.
 			</div>
-			<code>3. Command to set game manually:</code><br>
-			This command will allow the user to change the game that will be displayed along with the URL in the stream chat.
-			<div class="ui inverted segment">
-				<code>In: !setmultigame GamePlayed</code><br>
-				<code>Out: Game was updated. Viewers can now type !multi in chat to display this link: http://provider/caster/friend1/friend2/friend3/ where you are playing GamePlayed.</code>
-			</div>
-			The user can also try using <code>auto</code> after the <code>!setmultigame</code> command. By using that, the script will get the game the caster is currently playing (or played last) on Twitch, from the caster Twitch Dashboard.<br><br>
-			<code>4. Command to send multi-stream link on chat and User coooldown (in minutes):</code><br>
-			This is the command users will need to type in chat in order to display the multi-stream link in chat. This command has a cooldown defined by the field <code>"User cooldown (in minutes):"</code>, which is by default set to 5 (five) minutes.
-			<div class="ui inverted segment">
-				<code>In: !multi</code><br>
-				<code>Out: caster is currently multi-streaming with friend1/friend2/friend3 at http://provider/caster/friend1/friend2/friend3/ ! Click the link to a multi-view of GamePlayed!</code>
+			<div class="ui raised segment">
+				<div class="ui horizontal divider">Script commands in action:</div>
+				<ul>
+					<li>Setting and/or enabling Multi-Stream link:</li>
+					<ul>
+						<li>Using values saved on script UI (item a.2):</li>
+						<code>!setmultion</code>
+						<li>Using custom values or updating a previously created link:</li>
+						<code>!setmultion &lt;casters&gt;</code><br>
+						(&lt;casters&gt; is a list of casters to be displayed, separated by a blank space)<br>
+					</ul>
+					ANSWER:<br>
+            		The answer for this command will depend on the success or fail of Multi-Stream link creation and it will be sent on the user's whisper.<br><br>
+					<li>Disabling Multi-Stream link:</li>
+					<code>!setmultioff</code><br>
+					ANSWER:<br>
+					The bot will send a whisper to the user to inform the Multi-Stream link was disabled.<br><br>
+					<li>Updating the game to be displayed in the Multi-Stream chat message:</li>
+					<ul>
+						<li>Retrieving game name from Twitch's caster dashboard:</li>
+						<code>!setmultigame</code> or <code>!setmultigame auto</code><br>
+						(<code>auto</code> MUST be written with no capital letters in order for this to work)
+						<li>Using a new/custom game name:</li>
+						<code>!setmultigame &lt;game&gt;</code><br>
+						(everything written after the command will be defined as &lt;game&gt;, so the user don't need to worry about games with "big" names)
+					</ul>
+					ANSWER:<br>
+					The answer for this command will be sent to the user whisper and it will depend on the user's input for this command.<br><br>
+					<li>Updating the Multi-Stream "host":</li>
+					<code>!setmultisite &lt;id&gt;</code><br>
+					(&lt;id&gt;, as already mentioned in <code>a.3</code>, is the number reference to the Multi-Stream site to be used, displayed in
+					the dropdown selector on the script UI)<br>
+					ANSWER:<br>
+					The answer depends on the <code>id</code> entered. A success or failure message will be sent to the command user's whisper.<br><br>
+					<li>Displaying the Multi-Stream link created in chat:</li>
+					<code>!multi</code><br>
+					ANSWER:<br>
+					The answer depends on the Multi-Stream link created. The script also has a default message to be displayed in case no link was set up,
+					due to a syntax error on using any of the commands above or because the command to disable the link was used. If the user of the command
+					is under <code>User Cooldown</code> or the command itself is under cooldown, a whisper is sent to the user informing the command is on
+					cooldown and how many minutes until it can be used again.
+				</ul>
 			</div>
 		</h4>
 		<div class="ui divider"></div>
-		<h1 class="ui big teal ribbon label">AutoMessage Settings:</h1><br>
+		<h1 class="ui big teal ribbon label">c) AutoMessage Settings:</h1><br>
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
@@ -99,16 +183,17 @@
 			</div>
 		</div>
 		<h4>
-			This group is to manage how the script will post auto-messages in chat, during the stream. Both fields are self-explanatory, so there is not much to detail for this section.<br><br>
-			<code>1. Allow to send auto multi-stream link?</code><br>
-			By default, this feature is enabled and it will post the following message on chat based on the cooldown defined by the field <code>"Cooldown for auto Multi-Stream link post in chat (in minutes):"</code>. This will post the same message which is set as indicated above, e.g.:
-			<div class="ui compact inverted segment">
-				<code>Out: caster is currently multi-streaming with friend1/friend2/friend3 at http://provider/caster/friend1/friend2/friend3/ ! Click the link to a multi-view of GamePlayed!</code>
-			</div><br>
-			<span align="center">NOTE: The cooldown for the auto-message post is set (by default) to 15 (fifteen) minutes.</span>
+			This group is to manage how the script will post auto-messages in chat, during the stream. Both fields are
+			self-explanatory, so there is not much to detail for this section.<br><br>
+			<code>c.1) Allow to send auto Multi-Stream link?</code><br>
+			This is a built-in timer function for this script. With this, the caster can allow (or not) the script to send the
+			Multi-Stream link on chat automatically, using a defined cooldown for this "timer", without having to worry in creating
+			a specific timer for displaying the created link.<br><br>
+			<code>c.2) Cooldown for auto Multi-Stream link post in chat (in minutes):</code><br>
+			This slider is to define the time delay between auto message posts by the timer. The delay goes from 0 to 60 minutes. 
 		</h4>
 		<div class="ui divider"></div>
-		<h1 class="ui big teal ribbon label">ScriptLog Settings:</h1><br>
+		<h1 class="ui big teal ribbon label">d) ScriptLog Settings:</h1><br>
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
@@ -117,29 +202,32 @@
 			</div>
 		</div>
 		<h4>
-			This is another self-explanatory group. These settings are here to manage the script usage LogFiles of when/how it was used during a stream session. For users who like to have more control over what's happening or want to report any bug on the script, these LogFile settings are here for that purpose.<br><br>
-			<code>1. Display Script log in the ChatBot?</code><br>
+			This is another self-explanatory group. These settings are here to manage the script usage LogFiles of when/how
+			it was used during a stream session. For users who like to have more control over what's happening or want to report
+			any bug on the script, these LogFile settings are here for that purpose.<br><br>
+			<code>d.1) Display Script log in the ChatBot?</code><br>
 			By default, this feature is disabled, and as it says it will display the usage log "live" within the ChatBot log section ("Scripts&gt;Logs").<br><br>
-			<code>2. AutoSave ScriptLog file?</code><br>
-			By default, this feature is enabled. This will ensure that a log file is saved under the <code>Log</code> directory created by the script when:
+			<code>d.2) AutoSave ScriptLog file?</code><br>
+			By default, this feature is enabled. This will ensure that a log file is saved under the <code>Log</code> directory
+			created by the script when:
 			<ul>
 				<li>the bot is closed</li>
 				<li>the script is reloaded within the bot or</li> 
 				<li>the script is disabled within the bot</li>
 			</ul>
-			<code>3. Save ScriptLog File</code><br>
+			<code>d.3) Save ScriptLog File</code><br>
 			This button is used to manually save the log file before you close the ChatBot.<br><br>
-			<code>4. Open ScriptLog Directory</code><br>
-			This will open the directory where all the ScriptLogs are stored.<br><br>
-			<code>4.1. ScriptLog file example</code><br>
-			You can check an example of a ScriptLog file <a href="../files/MultiStreamLog_YYYYMMDD_HHMMSS_example.log" target="_blank">here</a>.
+			<code>d.4) Open ScriptLog Directory</code><br>
+			This will open the directory where all the ScriptLogs are stored. As reference, it's possible to preview an example of a ScriptLog 
+			file <a href="../files/MultiStreamLog_YYYYMMDD_HHMMSS_example.log" target="_blank">here</a>.
 			<div class="ui inverted segment">
 				<h4 class="ui horizontal inverted divider">IMPORTANT:</h4>
-				Enable the <code>"Display Scriptlog in the chatbot?"</code> feature ONLY IF you want to perform debugging (or for development reasons). Otherwise, your ChatBot may be overloaded with debug messages.
+				Enable the <code>"Display Scriptlog in the chatbot?"</code> feature ONLY IF you want to perform debugging (or for
+				development reasons). Otherwise, your ChatBot may be overloaded with debug messages.
 			</div>
 		</h4>
 		<div class="ui divider"></div>
-		<h1 class="ui big teal ribbon label">Support:</h1><br>
+		<h1 class="ui big teal ribbon label">e) Support:</h1><br>
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
@@ -149,13 +237,13 @@
 		</div>
 		<h4>
 			This section of the script is formed only formed by buttons, as described below:<br><br>
-			<code>1. Visit my Site</code><br>
+			<code>e.1) Visit my Site</code><br>
 			This will open your default browser and send you to my website.<br><br>
-			<code>2. Open ReadMe.txt</code><br>
+			<code>e.2) Open ReadMe.txt</code><br>
 			This will open a ReadMe.txt file with a text version of the information provided on this page.<br><br>
-			<code>3. Changelog</code><br>
+			<code>e.3) Changelog</code><br>
 			This will open the ChangeLog file, where it's possible to track all the changes made to the script.<br><br>
-			<code>4. Save Settings</code><br>
+			<code>e.4) Save Settings</code><br>
 			This button, although it's outside the <code>Support</code> group, it's used to save all changes you made in the fields described above.<br><br>
 		</h4>
 		<div class="ui divider"></div>
