@@ -9,7 +9,7 @@
 </div>
 			
 <div class="ui fourteen wide center aligned container" style="padding-top: 2.0em; padding-bottom:2.0em;">
-	<h5 class="date right aligned" align="right">Atualizada em: 01/set/2019</h5>
+	<h5 class="date right aligned" align="right">Atualizada em: 19/mar/2020</h5>
 	<div class="ui raised segment left aligned">
 	<h1 class="ui big teal label left ribbon">Twitch Streamers*</h1><br><br>
 		<div class="ui three column grid">
@@ -62,7 +62,7 @@
 			</div>
 			
 			<!-- CriptoGirl -->
-			<div class="column">
+			<!--<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
 						<img id="CriptoGirl" class="left floated rounded mini ui image">
@@ -75,7 +75,7 @@
 						<div class="ui teal button" onClick="showModal('../pages/pt/criptogirl')">Assista Aqui</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		
 			<!-- FairlyOddPanda -->	
 			<div class="column">
@@ -109,6 +109,22 @@
 				</div>
 			</div>
 
+			<!-- nessx -->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="nessx" class="left floated rounded mini ui image">
+						<div class="header">NESSx</div>
+						<div class="meta">Apenas uma garota aletória? Acho que não!</div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="openTwitch('nessx');">Visitar Twitch</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="showModal('../pages/en/nessx')">Assista Aqui</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- PizzaMaid -->
 			<div class="column">
 				<div class="ui fluid card">
@@ -125,23 +141,6 @@
 				</div>
 			</div>
 
-			<!-- randomxness -->
-			<div class="column">
-				<div class="ui fluid card">
-					<div class="content">
-						<img id="Randomxness" class="left floated rounded mini ui image">
-						<div class="header">Randomxness</div>
-						<div class="meta">Apenas uma garota aletória? Acho que não!</div>
-					</div>
-					<div class="ui bottom attached two buttons">
-						<div class="ui teal button" onClick="openTwitch('randomxness');">Visitar Twitch</div>
-						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/en/randomxness')">Assista Aqui</div>
-					</div>
-				</div>
-			</div>
-
-			
 			<!-- skyewasthelimit -->
 			<div class="column">
 				<div class="ui fluid card">
@@ -224,7 +223,7 @@
 <script>
 	$(document).ready(function() {
 		var partners = ['aladar', 'Amethystkorn', 'ArieBelles', 'CriptoGirl', 'FairlyOddPanda',
-			'Karalena', 'PizzaMaid', 'Randomxness', 'skyewasthelimit', 'Wxdpl', 'xlNinjaManlx', 'von_Schappler']
+			'Karalena', 'PizzaMaid', 'nessx', 'skyewasthelimit', 'Wxdpl', 'xlNinjaManlx', 'von_Schappler']
 		for (i=0; i<partners.length; i++) {
 			getImage(partners[i])
 		}
