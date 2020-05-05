@@ -3,8 +3,9 @@
 	<div id="pageMenu" class="ui container"></div>
 	
 	<div class="ui text container">
-	  <h1 class="ui inverted header">aladar's stream</h1>
-	  <!--<h4 class="ui inverted header">You are now watching to aladar live stream</h4>-->
+	  <h1 id="streamTitle" class="ui inverted header"></h1>
+	  <!--<h4 id="streamSubtitle" class="ui inverted header"></h4>
+	  <h4 id="streamGame"></h4>-->
 	</div>
 </div>
 			
@@ -18,15 +19,3 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	var options = {
-		//width: <width>,
-		//height: 700,
-		channel: "aladar",//,
-		//video: "<video ID>",
-		//collection: "<collection ID>",
-		layout: "video-with-chat"
-	};
-	var player = new Twitch.Player("stream", options);
-	player.setVolume(0.5);
-</script>

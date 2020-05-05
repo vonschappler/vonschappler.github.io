@@ -7,34 +7,79 @@
     </div>
 </div>
 
-<div class="ui inverted container" style="padding-top: 2.0em; padding-bottom:2.0em;">
-    <table id="gameListPT" class="ui inverted display table scrolling content">
-        <thead align="center">
-            <tr>
-                <th>Platforma</th>
-                <th>Título</th>
-                <th>Ano de Lançamento</th>
-                <th>Tempo de Jogo</th>
-                <th>Status</th>
-                <th>GameTime(value)</th>
-            </tr>
-        </thead>
-        <tfoot align="center">
-            <tr>
-                <th colspan="3">
-                    Jogos em mídia física não fazem parte dessa lista
-                </th>
-                <th colspan="2" class="ui right aligned">Última Atualização em: 31/dez/2019</th>
-            </tr>
-        </tfoot>
-    </table>
-    <div class="ui raised segment">
-        <ul>
-            <li>Jogos com <code>(*)</code> ao final de seus nomes, possuem o tempo de jogo calculados de forma imprecisa.</li>
-            <li>Plataforma <code>Global</code> significa que o jogo não tem vínculo a nenhuma plataforma conhecida.</li>
-            <li>Status <code>Não jogo atualmente</code> pode significar que eu não gostei (ou não gosto mais do jogo) para continuar
-                jogando ele, ou ainda significar que os servers (em casos de jogos online) foram desativados.</li>
-        </ul>
+<div class="ui grid" style="padding-left: 2.0em; padding-right:2.0em;">
+    <div class="twelve wide column" style="padding-top: 2.0em; padding-bottom:2.0em;">
+        <div class="ui raised segment">
+            <table id="gameList" class="ui inverted display table scrolling content">
+                <thead align="center">
+                    <tr align="center">
+                        <th>Platforma</th>
+                        <th>Título</th>
+                        <th>Ano de Lançamento</th>
+                        <th>Tempo de Jogo</th>
+                        <th>Status</th>
+                        <th>GameTime(value)</th>
+                    </tr>
+                </thead>
+                <tfoot align="center">
+                    <tr>
+                        <th colspan="3">
+                            Jogos em mídia física não fazem parte dessa lista
+                        </th>
+                        <th colspan="2" class="ui right aligned">Última Atualização em: 02/mai/2020</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="four wide column" style="padding-top: 2.0em; padding-bottom:2.0em;">
+        <div class="ui raised segment">
+            <h3 align="center">Legenda:</h3>
+            <table class="ui collapsing celled inverted table" align="center">
+                <tbody>
+                    <tr>
+                        <td><i class="play icon"></i></td>
+                        <td>games atualmente jogados no dia-a-dia</td>
+                    </tr>
+                    <tr>
+                        <td><i class="green check icon"></i></td>
+                        <td>games já finalizados e faltando algumas conquistas para alcançar 100% de conclusão</td>
+                    </tr>
+                    <tr>
+                        <td><i class="yellow sync alternate icon"></i></td>
+                        <td>games jogados casualmente</td>
+                    </tr>
+                    <tr>
+                        <td><i class="circle outline icon"></i></td>
+                        <td>games nunca jogados ou apenas testados</td>
+                    </tr>
+                    <tr>
+                        <td><i class="red stop icon"></i></td>
+                        <td>games que não jogo mais</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="ui raised segment">
+            <h3 align="center">Informação Adicional:</h3>
+            <ul>
+                <li>Toda informação descrita foi obtida com o auxílio da biblioteca unificada de jogos
+                    <a href="http://https://www.gogalaxy.com/en/" target="_blank">GOG Galaxy 2.0</a> e devido algumas limitações desta
+                    alguns dados podem ser imprecisos - DLCs não estão listadas, uma vez que não possuo DLCs para diversos games. Também, games
+                    marcados com <code>(*)</code> ao final de seus nomes não mostram o tempo de jogo real/total</li>
+                <li>Plataforma <code>Global</code> significa que o jogo não é vinculado a alguma plataforma ou tem vínculo com plataforma pequenas de games</li>
+                <li>Games marcados com o status <i class="red stop icon"></i> são games que eu não gostei (ou não gosto mais), fazendo com que eu não
+                    os continue jogando, ou são games online cujos servers foram desabilitados</li>
+                <li>Apesar de acordo com a biblioteca <code>GOG Galaxy 2.0</code> Destiny 2 ainda fazer parte da <code>Battle.Net</code>, o game foi removido da
+                    Blizzard em out/2019. O tempo de jogo mostrado é apenas o tempo dedicado o game ter sido transferido para a
+                    <code>Steam</code></li>
+                <li>Games marcados com (+) ao final de seus nomes, foram "imported" de contas "secundárias"</li>
+                <li>A maioria dos games pagos nessa lista foram obtidos em promoções (usando doações recebidas em streams), presentes ou adquiridos por meio de
+                    giveaways/ofertas para criadores de conteúdo</li>
+            </ul>
+        </div>
+    </div>
+        
     </div>
 </div>
 
@@ -56,15 +101,15 @@
     }    
     
     function tabledraw() {
-        $('#gameListPT').DataTable({
+        $('#gameList').DataTable({
             ajax: {
                 url: './txt_json/games.json',
                 dataSrc:"games",
                 async: true
             },
             lengthChange: false,
-            //autoWidth: false,
-            scrollY: '40vh',
+            autoWidth: false,
+            scrollY: '51.1vh',
             scrollCollapse: true,
             paging: true,
             pageLength: 75,
@@ -74,11 +119,11 @@
                 {"data": "title"},
                 {"data": "relDate"},
                 {"data": "gameTime"},
-                {"data": "status_pt"},
+                {"data": "status"},
                 {"data": "gameTime"}
             ],
             order: [
-                [4, "asc"],
+                [3, "desc"],
                 [1, "asc"],
                 [2, "asc"]
             ],
@@ -87,10 +132,10 @@
                     width: "20%"
                 }, {
                     targets: 1,
-                    width: "30%"
+                    width: "40%"
                 },{
                     targets: 2,
-                    width: "10%",
+                    width: "15%",
                     className: "ui center aligned",
                 }, {
                     targets: 3,
@@ -103,12 +148,16 @@
                     },
                 }, {
                     targets: 4,
-                    width: "25%"
+                    width: "10%",
+                    className: "ui center aligned",
+                    sorting: false
                 }, {
                     targets: 5,
                     sType: 'numeric',
+                    width: "0%",
                     visible: false
-                }, { orderData: [5], 
+                }, {
+                    orderData: [5], 
                     targets: 3
                 }
         ]   

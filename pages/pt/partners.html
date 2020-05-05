@@ -9,7 +9,7 @@
 </div>
 			
 <div class="ui fourteen wide center aligned container" style="padding-top: 2.0em; padding-bottom:2.0em;">
-	<h5 class="date right aligned" align="right">Atualizada em: 19/mar/2020</h5>
+	<h5 class="date right aligned" align="right">Atualizada em: 05/mai/2020</h5>
 	<div class="ui raised segment left aligned">
 	<h1 class="ui big teal label left ribbon">Twitch Streamers*</h1><br><br>
 		<div class="ui three column grid">
@@ -24,7 +24,7 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('aladar');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/aladar')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'aladar')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
@@ -40,12 +40,12 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('amethystkorn');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/amethystkorn')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'Amethystkorn')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
 			
-			<!-- ariebelle -->
+			<!-- ariebelles -->
 			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
@@ -56,13 +56,13 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('ariebelles');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/en/ariebelles')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'ArieBelles')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
 			
 			<!-- CriptoGirl -->
-			<!--<div class="column">
+			<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
 						<img id="CriptoGirl" class="left floated rounded mini ui image">
@@ -72,10 +72,26 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('criptogirl');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/criptogirl')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'CriptoGirl')">Assista Aqui</div>
 					</div>
 				</div>
-			</div>-->
+			</div>
+
+			<!-- d4rkr4yn3 -->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="d4rkr4yn3" class="left floated rounded mini ui image">
+						<div class="header">d4rkr4yn3</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="openTwitch('d4rkr4yn3');">Visitar Twitch</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'd4rkr4yn3')">Assista Aqui</div>
+					</div>
+				</div>
+			</div>
 		
 			<!-- FairlyOddPanda -->	
 			<div class="column">
@@ -88,11 +104,59 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('fairlyoddpanda');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/fairlyoddpanda')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'FairlyOddPanda')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
 			
+			<!--gummypigtw-->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="gummypigtw" class="left floated rounded mini ui image">
+						<div class="header">GummypigTw</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="openTwitch('gummypigtw');">Visitar Twitch</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'GummypigTw')">Assista Aqui</div>
+					</div>
+				</div>
+			</div>
+
+			<!--hashiva-->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="hashiva" class="left floated rounded mini ui image">
+						<div class="header">Hashiva</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="openTwitch('hashiva');">Visitar Twitch</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'Hashiva')">Assista Aqui</div>
+					</div>
+				</div>
+			</div>
+
+			<!--jvpchaves-->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="jvpchaves" class="left floated rounded mini ui image">
+						<div class="header">jvpchaves</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="openTwitch('jvpchaves');">Visitar Twitch</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'jvpchaves')">Assista Aqui</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- Karalena -->
 			<div class="column">
 				<div class="ui fluid card">
@@ -104,7 +168,23 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('karalena');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/karalena')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'Karalena')">Assista Aqui</div>
+					</div>
+				</div>
+			</div>
+
+			<!--motherofgliders-->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="mother0fgliders" class="left floated rounded mini ui image">
+						<div class="header">MotherOfGliders</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="openTwitch('mother0fgliders');">Visitar Twitch</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'Mother0fGliders')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
@@ -120,7 +200,7 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('nessx');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/en/nessx')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'NESSx')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
@@ -136,7 +216,7 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('pizzamaid');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/pizzamaid')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'PizzaMaid')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
@@ -147,12 +227,28 @@
 					<div class="content">
 						<img id="skyewasthelimit" class="left floated rounded mini ui image">
 						<div class="header">skyewasthelimit</div>
-						<div class="meta">O derrubador de limites no Twitch</div>
+						<div class="meta">O quebrador de limites no Twitch</div>
 					</div>
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('skyewasthelimit');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/skyewasthelimit')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'skyewasthelimit')">Assista Aqui</div>
+					</div>
+				</div>
+			</div>
+
+			<!--tinivirg0-->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="tinyvirgO" class="left floated rounded mini ui image">
+						<div class="header">tinyvirgO</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached two buttons">
+						<div class="ui teal button" onClick="openTwitch('tinyvirgO');">Visitar Twitch</div>
+						<div class="ui inverted or"></div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'tinyvirgO')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
@@ -162,13 +258,13 @@
 				<div class="ui fluid card">
 					<div class="content">
 						<img id="Wxdpl" class="left floated rounded mini ui image">
-						<div class="header">Wxdpl</div>
-						<div class="meta">O "bear lover"</div>
+						<div class="header">WxDpl</div>
+						<div class="meta"></div>
 					</div>
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('wxdpl');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/wxdpl')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'WxDpl')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
@@ -184,7 +280,7 @@
 					<div class="ui bottom attached two buttons">
 						<div class="ui teal button" onClick="openTwitch('xlninjamanlx');">Visitar Twitch</div>
 						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/pt/xlninjamanlx')">Assista Aqui</div>
+						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'xlNinjaManlx')">Assista Aqui</div>
 					</div>
 				</div>
 			</div>
@@ -222,8 +318,8 @@
 <script src="./js/main.js"></script>
 <script>
 	$(document).ready(function() {
-		var partners = ['aladar', 'Amethystkorn', 'ArieBelles', 'CriptoGirl', 'FairlyOddPanda',
-			'Karalena', 'PizzaMaid', 'nessx', 'skyewasthelimit', 'Wxdpl', 'xlNinjaManlx', 'von_Schappler']
+		var partners = ['aladar', 'Amethystkorn', 'ArieBelles', 'CriptoGirl', 'd4rkr4yn3', 'FairlyOddPanda', 'hashiva', 'gummypigtw', 'jvpchaves',
+		'mother0fgliders', 'Karalena', 'PizzaMaid', 'nessx', 'skyewasthelimit', 'tinyvirgO', 'Wxdpl', 'xlNinjaManlx', 'von_Schappler']
 		for (i=0; i<partners.length; i++) {
 			getImage(partners[i])
 		}
@@ -253,6 +349,40 @@
 					imgField.src = data
 				}
 			}
+		});
+	}
+
+	function streamModal(a, stream) {
+		var link = a
+		var name = stream
+		var videoOpt = {
+			//width: <width>,
+			//height: 700,
+			channel: name,//,
+			//video: "<video ID>",
+			//collection: "<collection ID>",
+			layout: "video-with-chat"
+		};
+		$('#modal').load('./pages/' + link + '.html', function () {
+			$("#modal")
+				.modal({
+					onShow: function () {
+						window.scrollTo(0, 0);
+						title = document.getElementById('streamTitle')
+						title.innerHTML = "Stream de <br>" + name
+						var player = new Twitch.Player("stream", videoOpt);
+						player.setVolume(0.5);
+					},
+					blurring: true,
+					onHidden: function () {
+						$(".ui.modal").remove();
+						player.setMuted();
+						$("body").append("<div id=\"modal\" class=\"ui fullscreen long modal\"><i class=\"close icon\"></i></div>");
+					}
+				})
+				.modal('setting', 'transition', 'horizontal flip')
+				.modal('show');
+			$('.ui.embed').embed();
 		});
 	}
 </script>

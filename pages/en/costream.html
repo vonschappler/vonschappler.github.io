@@ -3,7 +3,7 @@
 	<div id="pageMenu" class="ui container"></div>
 	
 	<div class="ui text container">
-		<h1 class="ui inverted header"><span><i class="file alternate icon"></i></span>Multi-Streaming Utility</h1>
+		<h1 class="ui inverted header"><span><i class="file alternate icon"></i></span>Co-Streaming Utility</h1>
 		<h4 class="ui inverted header">Quick reference and extra info about this script</h4>
 	</div>
 </div>
@@ -11,19 +11,19 @@
 <div class="ui fourteen wide container" style="padding-bottom: 2.0em; padding-top: 2.0em;">
 	<div class="ui raised segment">
 		<h4>
-			This script was initially developed to help me (as a streamer) to manage my Multi-Streaming sessions easily. For months I
-			crossed around streamers making Multi-Streaming sessions and mostly having to add this feature as a stand-alone command to
+			This script was initially developed to help me (as a streamer) to manage my Co-Streaming sessions easily. For months I
+			crossed around streamers making Co-Streaming sessions and mostly having to add this feature as a stand-alone command to
 			their bots, "forcing" them to edit the command (or create a new one) every time they wanted to use with different friends.
 			So, thinking on those streamers (and, of course, on me) I came with this script for the StreamLabs stand-alone chatbot.<br>
 			I still don't know IF I will work on a version for the same script for the in-built StreamLabs: OBS bot, but for the moment,
 			considering the ability to develop things for this stand-alone bot, I will keep only with this version.<br>
 			It is needless to say, but I will make this note here: if you don't have the stand-alone version of the bot, you can download
 			it from their page <a href="https://streamlabs.com/chatbot" target="_blank">here</a>. It's also important to note that (so far)
-			the Multi-Streaming hosts resources available here are for Twitch only.<br><br>
+			the Co-Streaming hosts resources available here are for Twitch only.<br><br>
 			Below I will describe some of the features this script actually provides:
 			<ul>
 				<li>Easy commands configuration</li>
-				<li>Auto-message with Multi-Stream host link, defined by a timer</li>
+				<li>Auto-message with Co-Stream host url, defined by a timer</li>
 				<li>Game settings within the script settings or via command</li>
 				<li>Log file output with the script usage during a specifc stream session</li>
 			</ul>
@@ -45,129 +45,154 @@
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
-				<div class="image"><img src="./img/multistream_ui01.png"></div>
-				<a class="ui teal attached button enlarge" href="./img/multistream_ui01.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
+				<div class="image"><img src="./img/costream_ui01.png"></div>
+				<a class="ui teal attached button enlarge" href="./img/costream_ui01.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
 			</div>
 		</div>
 		<h4>
 			This group is responsible for the general settings from the script which will be controlled by the commands (listed and detailed
-			later in this document). Messages, Multi-Stream "host", game and casters you are Multi-Streaming with can be set here. Below,
+			later in this document). Messages, Co-Stream "host", game and casters you are Co-Streaming with can be set here. Below,
 			there are details on each field of this group:<br><br>
 			<code>a.1) Message to send on chat:</code><br>
-			This field is used to define the message the bot will display in chat whenever the specific command to display the link is used or by the
+			This field is used to define the message the bot will display in chat whenever the specific command to display the url is used or by the
 			auto-message send by the script. Those are the required parameters for this field:
 			<ul>
 				<li><code>{caster}</code>: this will be replaced by the caster name</li>
 				<li><code>{friends}</code>: this will be replaced by the friends the streamer is streaming with</li>
-				<li><code>{link}</code>: this will be replaced by the  Multi-Streaming url created by the script</li>
+				<li><code>{url}</code>: this will be replaced by the  Co-Streaming url created by the script</li>
 				<li><code>{game}</code>: this will be replaced by the game being played with <code>{friends}</code></li>
 			</ul>
 			<div class="ui raised segment">
 				Example of working message:<br>
 				<code>
-					{caster} is playing {game} with {friends} Go check them playing together at {link} !
+					{caster} is playing {game} with {friends} Go check them playing together at {url} !
 				</code>
-				<div class="ui inverted segment">
-					<div class="ui inverted horizontal divider">IMPORTANT:</div>
-					It's STRONGLY ADVISED to add a blank space after <code>{link}</code> to avoid a broken link creation.
-				</div>
+			</div>
+			<div class="ui inverted segment">
+				<div class="ui inverted horizontal divider">IMPORTANT:</div>
+				It's STRONGLY ADVISED to add a blank space after <code>{url}</code> to avoid a broken url creation.
 			</div>
 			<code>a.2) Friends you are streaming with:</code><br>
-			This field will hold the list of casters the script needs to process in order to create the Multi-Stream URL. It's important to note
+			This field will hold the list of casters the script needs to process in order to create the Co-Stream URL. It's important to note
 			a few things about this:
 			<ul>
-				<li>The script will automatically create a link (although it won't enable displaying it on chat) automatically if this field is
+				<li>The script will automatically create a url (although it won't enable displaying it on chat) automatically if this field is
 					not empty.</li>
 				<li>If the this field is empty, you need to give a list of casters/friends using the specific command (to be detailed later in
 					this documentation.)</li>
 				<li>Names inside this field must be separated by a blank space as shown below:</li>
 				<code>caster1 caster2 caster3</code>
 			</ul>
-			<code>a.3) Site for Multi-Streaming:</code><br>
-			This is a dropdown field where the user can select his favorite Multi-Streaming "host". It's important to notice the <code>( id = x )</code>
-			(where x is a number) next to the name of the selected "host". This id value (number) can be used to change/update the link using a specific
+			<code>a.3) Site for Co-Streaming:</code><br>
+			This is a dropdown field where the user can select his favorite Co-Streaming "host". It's important to notice the <code>( id = x )</code>
+			(where x is a number) next to the name of the selected "host". This id value (number) can be used to change/update the url using a specific
 			command (which will be explained later in this document).<br><br>
-			<code>a.4) Game to play with friends:</code><br>
-			This field is used to set up the game which is going to be played during the Multi-Stream session. The field also can be left blank 
-			or be filled with
-			<code>auto</code>. By leaving it blank or filling it with <code>auto</code> will make the script to get the game played from the
-			caster's Twitch dashboard.
-			It's also possible to change the game via command, as it will be explained later.
+			<code>a.4) Custom Co-Streaming site:</code><br>
+			This field is is part of an experimental feature. It allows the user to enter a custom/not listed Co-Streaming provider for the Co-Stream
+			url creation. The way this field has to be filled will depend on the Co-Stream provider you want to use. If this field is left with the default
+			value or it's not filled at all, the script will set a link with one of the listed providers.
+			<div class="ui inverted segment">
+				NOTE:<br>
+				Due to the huge number of Co-Streaming services out there, there is no way to predict which ones will work correctly with this
+				script. With this in mind, if you have tried any custom provider and it created a broken url, try reverting the settings to any
+				of the listed (and tested) providers. The provider url CANNOT contain the <code>http://</code> or <code>https://</code> part of it.
+			</div>
+			<code>a.5) Game to play with friends:</code><br>
+			This field is used to set up the game which is going to be played during the Co-Stream session. The field also can be left blank 
+			or be filled with <code>auto</code>. By leaving it blank or filling it with <code>auto</code> will make the script to get the game
+			played from the caster's Twitch dashboard. It's also possible to change the game via command, as it will be explained later.
 		</h4>
 		<div class="ui divider"></div>
 		<h1 class="ui big teal ribbon label">b) Command Settings:</h1><br>
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
-				<div class="image"><img src="./img/multistream_ui02.png"></div>
-				<a class="ui teal attached button enlarge" href="./img/multistream_ui02.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
+				<div class="image"><img src="./img/costream_ui02.png"></div>
+				<a class="ui teal attached button enlarge" href="./img/costream_ui02.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
 			</div>
 		</div>
 		<h4>
 			The user can customize the commands used in chat by this script in this group. This group is composed of:<br><br>
-			<code>b.1) Command to set/enable Multi-Stream link:</code><br>
-			This command will both set the Multi-Stream link defined with the settings defined on <code>a</code> and start the counter
+			<code>b.1) Command to set/enable Co-Stream url:</code><br>
+			This command will both set the Co-Stream url defined with the settings defined on <code>a</code> and start the counter
 			for the auto-message display (in case the auto-display message feature is enabled). The user can change it to anything they
 			like and it's important to note here that THIS command can be used ONLY by the caster, editors, and moderators of the channel.<br><br>
-			<code>b.2) Command to reset the Multi-Stream link:</code><br>
-			This command works in a similar way to the previous one, but its main function is to disable the Multi-Stream link, turning off
+			<code>b.2) Command to reset the Co-Stream url:</code><br>
+			This command works in a similar way to the previous one, but its main function is to disable the Co-Stream url, turning off
 			the auto-display in chat (considering the auto-display feature is enabled). THIS command can be used ONLY by the caster, editors,
 			and moderators of the channel.<br><br>
 			<code>b.3) Command to set game manually:</code><br>
-			This command allows the user the possibility of updating the game to be displayed in the message sent on chat when the Multi-Stream link
+			This command allows the user the possibility of updating the game to be displayed in the message sent on chat when the Co-Stream url
 			is displayed. THIS command can be used ONLY by the caster, editors, and moderators of the channel.<br><br>
 			<code>b.4) Command to set site manually:</code><br>
-			This command is used to update the Multi-Stream link displayed, changing the Multi-Stream "host". THIS command can be used ONLY by the
+			This command is used to update the Co-Stream url displayed, changing the Co-Stream "host". THIS command can be used ONLY by the
 			caster, editors, and moderators of the channel.<br><br>
-			<code>b.5) Command to send Multi-Stream link on chat:</code><br>
-			This is the command used by everyone in the channel in order to display the Multi-Stream link created by this script in chat.<br><br>
+			<code>b.5) Command to send Co-Stream url on chat:</code><br>
+			This is the command used by everyone in the channel in order to display the Co-Stream url created by this script in chat.<br><br>
 			<code>b.6) User cooldown (in minutes):</code><br>
-			This slider is to set user's cooldown of the command defined in <code>b.5</code> to avoid spamming the link in chat. The minimum cooldown
-			allowed is 1 minute while the maximum allowed by this is 15 minutes.
+			This slider is to set user's cooldown of the command defined in <code>b.5</code> to avoid spamming the url in chat. The minimum cooldown
+			allowed goes from 0 to is 15 minutes.
 			<div class="ui inverted segment">
 				NOTES:<br>
-				a. Casters, editors, and moderators won't be affected by the user cooldown defined on <code>b.6</code>.<br>
-				b. To refrain the permission levels above from "quick" spamming the link it was added a small cooldown of 10 seconds.
+				A) Casters, editors, and moderators won't be affected by the user cooldown defined on <code>b.6</code>.<br>
+				B) To refrain the permission levels above from "quick" spamming the url it was added a small cooldown of 10 seconds.
 			</div>
 			<div class="ui raised segment">
 				<div class="ui horizontal divider">Script commands in action:</div>
 				<ul>
-					<li>Setting and/or enabling Multi-Stream link:</li>
+					<li>Setting and/or enabling Co-Stream url:</li>
 					<ul>
 						<li>Using values saved on script UI (item a.2):</li>
-						<code>!setmultion</code>
-						<li>Using custom values or updating a previously created link:</li>
-						<code>!setmultion &lt;casters&gt;</code><br>
+						<code>!setcoon</code>
+						<li>Using custom values or updating a previously created url:</li>
+						<code>!setcoon &lt;casters&gt;</code><br>
 						(&lt;casters&gt; is a list of casters to be displayed, separated by a blank space)<br>
 					</ul>
 					ANSWER:<br>
-            		The answer for this command will depend on the success or fail of Multi-Stream link creation and it will be sent on the user's whisper.<br><br>
-					<li>Disabling Multi-Stream link:</li>
-					<code>!setmultioff</code><br>
+            		The answer for this command will depend on the success or fail of Co-Stream url creation and it will be sent on the user's whisper.<br><br>
+					<li>Disabling Co-Stream url:</li>
+					<code>!setcooff</code><br>
 					ANSWER:<br>
-					The bot will send a whisper to the user to inform the Multi-Stream link was disabled.<br><br>
-					<li>Updating the game to be displayed in the Multi-Stream chat message:</li>
+					The bot will send a whisper to the user to inform the Co-Stream url was disabled.<br><br>
+					<li>Updating the game to be displayed in the Co-Stream chat message:</li>
 					<ul>
-						<li>Retrieving game name from Twitch's caster dashboard:</li>
-						<code>!setmultigame</code> or <code>!setmultigame auto</code><br>
+						<li>Retrieving game name from Twitch's caster dashboard or saved on the UI (item a.5):</li>
+						<code>!setcogame</code> or <code>!setcogame auto</code><br>
 						(<code>auto</code> MUST be written with no capital letters in order for this to work)
 						<li>Using a new/custom game name:</li>
-						<code>!setmultigame &lt;game&gt;</code><br>
+						<code>!setcogame &lt;game&gt;</code><br>
 						(everything written after the command will be defined as &lt;game&gt;, so the user don't need to worry about games with "big" names)
 					</ul>
 					ANSWER:<br>
 					The answer for this command will be sent to the user whisper and it will depend on the user's input for this command.<br><br>
-					<li>Updating the Multi-Stream "host":</li>
-					<code>!setmultisite &lt;id&gt;</code><br>
-					(&lt;id&gt;, as already mentioned in <code>a.3</code>, is the number reference to the Multi-Stream site to be used, displayed in
+					<li>Updating the Co-Stream "host":</li>
+					<code>!setcosite &lt;id&gt;</code><br>
+					(&lt;id&gt;, as already mentioned in <code>a.3</code>, is the number reference to the Co-Stream site to be used, displayed in
 					the dropdown selector on the script UI)<br>
 					ANSWER:<br>
-					The answer depends on the <code>id</code> entered. A success or failure message will be sent to the command user's whisper.<br><br>
-					<li>Displaying the Multi-Stream link created in chat:</li>
-					<code>!multi</code><br>
+					The answer depends on the <code>id</code> entered. A success or failure message will be sent to the command user's whisper.
+				</ul>
+				<div class="ui inverted segment">
+					NOTE:<br>
+					With the addtion of the "Custom ( id = 0 )" provider, if you want to use the command
+					to set a custom url, this is how to proceed:
+					<ul>
+						<li>Using the value saved on the script UI (item a.4):</li>
+						<code>!setcosite 0</code>
+						<li>Using a custom provider from chat:</li>
+						<code>!setcosite 0 &lt;custom_provider&gt;</code>
+					</ul>
+				</div>
+				<div class="ui raised segment">
+					Example of usage of command to create custom/not listed URLs:<br>
+					<code>!setcosite 0 kadgar.net/live</code>
+				</div>
+				<ul>
+					<li>Displaying the Co-Stream url created in chat:</li>
+					<code>!costream</code><br>
 					ANSWER:<br>
-					The answer depends on the Multi-Stream link created. The script also has a default message to be displayed in case no link was set up,
-					due to a syntax error on using any of the commands above or because the command to disable the link was used. If the user of the command
+					The answer depends on the Co-Stream url created. The script also has a default message to be displayed in case no url was set up,
+					due to a syntax error on using any of the commands above or because the command to disable the url was used. If the user of the command
 					is under <code>User Cooldown</code> or the command itself is under cooldown, a whisper is sent to the user informing the command is on
 					cooldown and how many minutes until it can be used again.
 				</ul>
@@ -178,18 +203,18 @@
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
-				<div class="image"><img src="./img/multistream_ui03.png"></div>
-				<a class="ui teal attached button enlarge" href="./img/multistream_ui03.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
+				<div class="image"><img src="./img/costream_ui03.png"></div>
+				<a class="ui teal attached button enlarge" href="./img/costream_ui03.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
 			</div>
 		</div>
 		<h4>
 			This group is to manage how the script will post auto-messages in chat, during the stream. Both fields are
 			self-explanatory, so there is not much to detail for this section.<br><br>
-			<code>c.1) Allow to send auto Multi-Stream link?</code><br>
+			<code>c.1) Allow to send auto Co-Stream url?</code><br>
 			This is a built-in timer function for this script. With this, the caster can allow (or not) the script to send the
-			Multi-Stream link on chat automatically, using a defined cooldown for this "timer", without having to worry in creating
-			a specific timer for displaying the created link.<br><br>
-			<code>c.2) Cooldown for auto Multi-Stream link post in chat (in minutes):</code><br>
+			Co-Stream url on chat automatically, using a defined cooldown for this "timer", without having to worry in creating
+			a specific timer for displaying the created url.<br><br>
+			<code>c.2) Cooldown for auto Co-Stream url post in chat (in minutes):</code><br>
 			This slider is to define the time delay between auto message posts by the timer. The delay goes from 0 to 60 minutes. 
 		</h4>
 		<div class="ui divider"></div>
@@ -197,8 +222,8 @@
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
-				<div class="image"><img src="./img/multistream_ui04.png"></div>
-				<a class="ui teal attached button enlarge" href="./img/multistream_ui04.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
+				<div class="image"><img src="./img/costream_ui04.png"></div>
+				<a class="ui teal attached button enlarge" href="./img/costream_ui04.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
 			</div>
 		</div>
 		<h4>
@@ -219,7 +244,7 @@
 			This button is used to manually save the log file before you close the ChatBot.<br><br>
 			<code>d.4) Open ScriptLog Directory</code><br>
 			This will open the directory where all the ScriptLogs are stored. As reference, it's possible to preview an example of a ScriptLog 
-			file <a href="../files/MultiStreamLog_YYYYMMDD_HHMMSS_example.log" target="_blank">here</a>.
+			file <a href="../files/Co-StreamLog_YYYYMMDD_HHMMSS_example.log" target="_blank">here</a>.
 			<div class="ui inverted segment">
 				<h4 class="ui horizontal inverted divider">IMPORTANT:</h4>
 				Enable the <code>"Display Scriptlog in the chatbot?"</code> feature ONLY IF you want to perform debugging (or for
@@ -231,8 +256,8 @@
 		<div class="ui right floated segment">
 			<div class="ui card">
 				<div class="ui teal right corner label"><i class="image icon"></i></div>
-				<div class="image"><img src="./img/multistream_ui05.png"></div>
-				<a class="ui teal attached button enlarge" href="./img/multistream_ui05.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
+				<div class="image"><img src="./img/costream_ui05.png"></div>
+				<a class="ui teal attached button enlarge" href="./img/costream_ui05.png" target="_blank"><i class="zoom-in icon"></i> View image in real size (new tab)</a>
 			</div>
 		</div>
 		<h4>
@@ -249,7 +274,7 @@
 		<div class="ui divider"></div>
 		<h1 class="ui big teal ribbon label">Found a bug or have anything to add?</h1><br>
 		<h4>
-			If you found any bug or have any suggestions SPECIFICALLY to this script, contact me on my <a href="mailto:vonschappler.gaming@gmail.com?subject=MultiStreamingUtility script review...">e-mail</a>!
+			If you found any bug or have any suggestions SPECIFICALLY to this script, contact me on my <a href="mailto:vonschappler.gaming@gmail.com?subject=Co-StreamingUtility script review...">e-mail</a>!
 			Please note that if you are going to report a bug, the e-mail needs to contain:
 			<ul>
 				<li>Screenshots with the (possible) bug to be replicated and fixed</li>
