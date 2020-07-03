@@ -12,21 +12,24 @@
 			<div class="row">
 				<div class="six wide right floated column" style="padding-bottom: -5.0em; padding-top: -5.0em">
 					<img src="./img/vonSchapplerFull.png" class="ui medium circular image centered aligned" alt=""><br>
-					<span align="center">I'm a <strong>Brazilian Twitch Affiliate streamer</strong>,  looking for my place in the streaming community.<br>I enjoy playing history contents on games.</span>
+					<span align="center">I am a <strong>Brazilian autistic Twitch Affiliate streamer</strong>. I enjoy playing games, chatting and listening
+						to great tunes. Join me and get to know a bit of my world!</span>
 				</div>
 				<div class="ten wide column">
 					<div class="ui fluid two column grid">
 						<!-- video -->
 						<div class="sixteen wide column">
 							<div class="ui fluid card">
-								<div id="homeVideo" class="ui embed"></div>
+								<div class="ui embed" data-url="https://www.youtube.com/embed/videoseries?list=PLcaut-OCCxJcWltGfDT7QSbwtX0oBZajL&autoplay=true"></div>
+								<!--<div id="homeVideo" class="ui embed"></div>-->
+								<!--<div class="ui bottom attached two buttons">
+									<div class="ui teal button"onClick="openTwitch('von_schappler');" >Watch me Live</div>
+									<div class="ui inverted or"></div>
+									<div class="ui teal button" onClick="showModal('../pages/en/von_schappler')">Watch here</div>
+								</div>-->
+								<div id="homeButton" class="ui teal bottom attached button" onClick="openTwitch('von_schappler');">Visit von Schappler's Twitch</div>
 							</div>
 						</div>
-					</div>
-					<div class="ui bottom attached two buttons">
-						<div class="ui teal button"onClick="openTwitch('von_schappler');" >Watch me Live</div>
-						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="showModal('../pages/en/von_schappler')">Watch here</div>
 					</div>
 				</div>
 			</div>
@@ -104,4 +107,8 @@
 	function openTwitch(a) {
 		window.open("https://www.twitch.tv/" + a);
 	}
+
+	$(".embed").embed( {
+		autoplay: true
+	})
 </script>

@@ -26,7 +26,7 @@
                         <th colspan="3">
                             Games owned in physical media were not added to this library
                         </th>
-                        <th colspan="2" class="ui right aligned">Last updated on: May/02/2020</th>
+                        <th colspan="2" class="ui right aligned">Last updated on: Jul/03/2020</th>
                     </tr>
                 </tfoot>
             </table>
@@ -118,12 +118,13 @@
                 {"data": "relDate"},
                 {"data": "gameTime"},
                 {"data": "status"},
-                {"data": "gameTime"}
+                {"data": "gameTime"},
+                {"data": "status"}
             ],
             order: [
                 [3, "desc"],
                 [1, "asc"],
-                [2, "asc"]
+                [2, "asc"],
             ],
             columnDefs: [ {
                     targets: 0,
@@ -141,14 +142,27 @@
                     //sType: 'numeric',
                     className: "ui right aligned",
                     render: function(data, type, row, meta) {
-                        print = timeConvert(data)
-                    return print
+                        timeToPrint = timeConvert(data)
+                    return timeToPrint
                     },
                 }, {
                     targets: 4,
                     width: "10%",
                     className: "ui center aligned",
-                    sorting: false
+                    render: function(data, type, row, meta) {
+                        switch (data) {
+                            case 1:
+                                return "<i class=\"play icon\"></i>"
+                            case 2:
+                                return "<i class=\"green check icon\"></i>"
+                            case 3:
+                                return "<i class=\"yellow sync alternate icon\"></i>"
+                            case 4:
+                                return "<i class=\"circle outline icon\"></i>"
+                            case 5:
+                                return "<i class=\"red stop icon\"></i>"
+                        }
+                    }
                 }, {
                     targets: 5,
                     sType: 'numeric',
@@ -157,6 +171,15 @@
                 }, { 
                     orderData: [5], 
                     targets: 3
+                },
+                {
+                    targets: 6,
+                    sType: 'numeric',
+                    width: "0%",
+                    visible: false
+                }, {
+                    orderData: [6],
+                    targets: 4
                 }
         ]   
         });

@@ -1,22 +1,7 @@
 <!doctype html>
-<style>
-	#loading {
-		display: none;
-		position: absolute;
-		top: 10px;
-		right: 10px;
-	}
-	
-	#calendar {
-		max-width: 950px;
-		/*margin: 40px auto;
-		/*padding: 0 10px;*/
-	}
-</style>
-
 
 <div class="ui inverted vertical masthead center aligned segment">
-	<div id="pageMenu" class="ui container"></div>
+	<div id="menu"></div>
 	
 	<div class="ui text container">
 	  <h1 class="ui inverted header"><span><i class="inverted calendar outline alternate icon"></i></span>Schedule</h1>
@@ -31,49 +16,62 @@
 		<div class="ui stackable inverted divided equal height stackable grid center aligned" style="padding-bottom: 0.8em">
 
 			<script>
-				$('#calendar').fullCalendar({
-					header: {
-						left: 'title',
-						right: ''
-						
-					},
-					
-					view: 'basic',
-					showNonCurrentDates: true,
-					fixedWeekCount: false,
-					
-					
-					displayEventTime: true, // don't show the time column in list view
-					
-					// THIS KEY WON'T WORK IN PRODUCTION!!!
-					// To make your own Google API key, follow the directions here:
-					// http://fullcalendar.io/docs/google_calendar/
-					
-					googleCalendarApiKey: 'AIzaSyAfULhZEUR4ZJU2ocUS0yr0HcNM7VcRTJQ',
-					events: {
-						googleCalendarId: 'vonschappler.gaming@gmail.com',
-						//color: '#16b2ab',
-						textColor: 'white'
-					},
-					
-					eventClick: function(event) {
-						window.open(event.url, 'gcalevent', 'width=700,height=600');
-						return false;
-					},
-					
-					loading: function(bool) {
-						$('#loading').toggle(bool);
-					}
-				});
+				
 			</script>
 			
 			<div id='loading'>This calendar is loading... wait a while, please!</div>
 			<div id='calendar'></div>
 			
 		</div>
-		
-		<!--<span><br>Todos os horários são na time zone America/São Paulo</span>-->
-		
 	</div>
-	
 </div>
+<div class="ui inverted vertical footer segment" align="center"></div>
+
+<script src="./semantic/semantic.min.js"></script>
+<script src="./js/loadPage.js"></script>
+<script src="./js/main.js"></script>
+<script>
+	document.title = "[Schedule] - von Schappler Website";
+	$('#menu').load('./pages/en/menu.html', function () {
+		$('#addM').append('<a class=\"item\" onClick=loadPage(\'pt/schedule\')><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+	});
+	$('#hidMenu').load('./pages/en/menuHidden.html', function () {
+		$('#addH').append('<a class=\"item\" onClick=loadPage(\'pt/schedule\')><i class=\"br flag\"></i>Portugu&ecirc;s</a>');
+	});
+	$('.footer').load('./pages/en/footer.html');
+
+	$('#calendar').fullCalendar({
+			header: {
+				left: 'title',
+				right: ''
+
+			},
+
+			view: 'basic',
+			showNonCurrentDates: true,
+			fixedWeekCount: false,
+
+
+			displayEventTime: true, // don't show the time column in list view
+
+			// THIS KEY WON'T WORK IN PRODUCTION!!!
+			// To make your own Google API key, follow the directions here:
+			// http://fullcalendar.io/docs/google_calendar/
+
+			googleCalendarApiKey: 'AIzaSyAfULhZEUR4ZJU2ocUS0yr0HcNM7VcRTJQ',
+			events: {
+				googleCalendarId: 'vonschappler.gaming@gmail.com',
+				//color: '#16b2ab',
+				textColor: 'white'
+			},
+
+			eventClick: function (event) {
+				window.open(event.url, 'gcalevent', 'width=600,height=500');
+				return false;
+			},
+
+			loading: function (bool) {
+				$('#loading').toggle(bool);
+			}
+		});
+</script>

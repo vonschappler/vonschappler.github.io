@@ -1,26 +1,10 @@
 <!doctype html>
-<style>
-	#loading {
-		display: none;
-		position: absolute;
-		top: 10px;
-		right: 10px;
-	}
-	
-	#calendar {
-		max-width: 950px;
-		/*margin: 40px auto;
-		/*padding: 0 10px;*/
-	}
-</style>
-
-
 <div class="ui inverted vertical masthead center aligned segment">
-	<div id="pageMenu" class="ui container"></div>
+	<div id="menu" class="ui container"></div>
 	
 	<div class="ui text container">
 	  <h1 class="ui inverted header"><span><i class="inverted calendar outline alternate icon"></i></span>Agenda</h1>
-	  <h4 class="ui inverted header">Todos os hor&aacute;rios s&atilde;o mostratos no fuso America/S&atilde;o Paulo.</h4>
+	  <h4 class="ui inverted header">Horários mostrados de acordo com o Fuso Horário oficial do Brasil</h4>
 	</div>
 </div>
 			
@@ -29,52 +13,66 @@
 		
 		
 		<div class="ui stackable inverted divided equal height stackable grid center aligned" style="padding-bottom: 0.8em">
-
-			<script>
-				$('#calendar').fullCalendar({
-					header: {
-						left: 'title',
-						right: ''
-						
-					},
-					
-					view: 'basic',
-					showNonCurrentDates: true,
-					fixedWeekCount: false,
-					locale: 'pt-br',
-					
-					
-					displayEventTime: true, // don't show the time column in list view
-					
-					// THIS KEY WON'T WORK IN PRODUCTION!!!
-					// To make your own Google API key, follow the directions here:
-					// http://fullcalendar.io/docs/google_calendar/
-					
-					googleCalendarApiKey: 'AIzaSyAfULhZEUR4ZJU2ocUS0yr0HcNM7VcRTJQ',
-					events: {
-						googleCalendarId: 'vonschappler.gaming@gmail.com',
-						//color: '#16b2ab',
-						textColor: 'white'
-					},
-					
-					eventClick: function(event) {
-						window.open(event.url, 'gcalevent', 'width=700,height=600');
-						return false;
-					},
-					
-					loading: function(bool) {
-						$('#loading').toggle(bool);
-					}
-				});
-			</script>
 			
-			<div id='loading'>This calendar is loading... wait a while, please!</div>
+			<div id='loading'>Esse calendário está sendo sincronizado...<br>Por favor espere!</div>
 			<div id='calendar'></div>
+			<!--<span><br>Todos os horários são na time zone America/São Paulo</span>-->
 			
 		</div>
 		
-		<!--<span><br>Todos os horários são na time zone America/São Paulo</span>-->
+		
 		
 	</div>
 	
 </div>
+<div class="ui inverted vertical footer segment" align="center"></div>
+
+<script src="./semantic/semantic.min.js"></script>
+<script src="./js/loadPage.js"></script>
+<script src="./js/main.js"></script>
+<script>
+	document.title = "[Agenda] - von Schappler Website";
+	$('#menu').load('./pages/pt/menu.html', function () {
+		$('#addM').append('<a class=\"item\" onClick=loadPage(\'en/schedule\')><i class=\"us flag\"></i>English</a>');
+	});
+	$('#hidMenu').load('./pages/pt/menuHidden.html', function () {
+		$('#addH').append('<a class=\"item\" onClick=loadPage(\'en/schedule\')><i class=\"us flag\"></i>English</a>');
+	});
+	$('.footer').load('./pages/pt/footer.html');
+
+	$('#calendar').fullCalendar({
+			header: {
+				left: 'title',
+				right: ''
+
+			},
+			
+			view: 'basic',
+			showNonCurrentDates: true,
+			fixedWeekCount: false,
+			locale: 'pt-br',
+
+
+			displayEventTime: true, // don't show the time column in list view
+
+			// THIS KEY WON'T WORK IN PRODUCTION!!!
+			// To make your own Google API key, follow the directions here:
+			// http://fullcalendar.io/docs/google_calendar/
+
+			googleCalendarApiKey: 'AIzaSyAfULhZEUR4ZJU2ocUS0yr0HcNM7VcRTJQ',
+			events: {
+				googleCalendarId: 'vonschappler.gaming@gmail.com',
+				//color: '#16b2ab',
+				textColor: 'white'
+			},
+
+			eventClick: function (event) {
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+
+			loading: function (bool) {
+				$('#loading').toggle(bool);
+			}
+		});
+</script>
