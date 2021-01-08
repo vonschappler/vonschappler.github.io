@@ -5,19 +5,13 @@
             "title": "Call of Duty: Black Ops 4 (*)",
             "gameTime": 0,
             "relDate": 2018,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Battle.Net",
             "title": "Call of Duty: Modern Warfare (*)",
             "gameTime": 0,
             "relDate": 2019,
-            "status": 3
-        }, {
-            "plat": "Battle.Net, Steam",
-            "title": "Destiny 2 (*)",
-            "gameTime": 68022,
-            "relDate": 2017,
-            "status": 1
+            "status": 6
         }, {
             "plat": "Battle.Net",
             "title": "Diablo II (*)",
@@ -35,16 +29,16 @@
             "title": "Hearthstone (*)",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Battle.Net",
             "title": "Heroes of the Storm (*)",
             "gameTime": 0,
             "relDate": 2015,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Battle.Net",
-            "title": "Overwatch",
+            "title": "Overwatch (*)",
             "gameTime": 0,
             "relDate": 2016,
             "status": 3
@@ -53,18 +47,78 @@
             "title": "Starcraft (*)",
             "gameTime": 0,
             "relDate": 2017,
-            "status": 2
+            "status": 5
         }, {
             "plat": "Battle.Net",
             "title": "Starcraft II (*)",
             "gameTime": 0,
             "relDate": 2010,
-            "status": 3
+            "status": 4
+        }, {
+            "plat": "Battle.Net",
+            "title": "Warcraft III (*)",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Battle.Net",
+            "title": "World of Warcraft (*)",
+            "gameTime": 0,
+            "relDate": 2004,
+            "status": 6
+        }, {
+            "plat": "Battle.Net",
+            "title": "World of Warcraft Classic (*)",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 6
+        }, {
+            "plat": "Epic",
+            "title": "3 out of 10 Episode 1",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "3 out of 10 Episode 2",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "3 out of 10 Episode 3",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "3 out of 10 Episode 4",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "3 out of 10 Episode 5",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "20XX",
+            "gameTime": 44,
+            "relDate": 2017,
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "A Short Hike",
             "gameTime": 0,
             "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "A Total War Saga: TROY",
+            "gameTime": 0,
+            "relDate": 2020,
             "status": 4
         }, {
             "plat": "Epic",
@@ -81,14 +135,32 @@
         }, {
             "plat": "Epic",
             "title": "Alan Wake",
-            "gameTime": 0,
+            "gameTime": 319,
             "relDate": 2010,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Alan Wake's American Nightmare",
             "gameTime": 0,
             "relDate": 2012,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Alien: Isolation",
+            "gameTime": 87,
+            "relDate": 2014,
+            "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "The Alto Collection",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic, Steam",
+            "title": "Amnesia: A Machine for Pigs",
+            "gameTime": 0,
+            "relDate": 2013,
             "status": 4
         }, {
             "plat": "Epic, Steam",
@@ -117,9 +189,9 @@
         }, {
             "plat": "Epic, Uplay",
             "title": "Assassin's Creed Syndicate",
-            "gameTime": 2245,
+            "gameTime": 2275,
             "relDate": 2015,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Axiom Verge",
@@ -129,15 +201,21 @@
         }, {
             "plat": "Epic",
             "title": "Aztez",
-            "gameTime": 134,
+            "gameTime": 135,
             "relDate": 2015,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Bad North Jotunn Edition",
             "gameTime": 0,
             "relDate": 2018,
             "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Barony",
+            "gameTime": 136,
+            "relDate": 2015,
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Batman Arkham Asylum - GOTY Edition",
@@ -159,15 +237,21 @@
         }, {
             "plat": "Epic",
             "title": "Battle Breakers",
-            "gameTime": 2865,
+            "gameTime": 2963,
             "relDate": 2019,
             "status": 3
         }, {
             "plat": "Epic",
+            "title": "Blair Witch",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Borderlands: The Pre-Sequel",
             "relDate": 2014,
-            "gameTime": 233,
-            "status": 3
+            "gameTime": 234,
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Borderlands 2",
@@ -182,9 +266,21 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Bus Simulator 18",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Carcassonne",
             "gameTime": 0,
             "relDate": 2010,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Cave Story+",
+            "gameTime": 0,
+            "relDate": 2011,
             "status": 4
         }, {
             "plat": "Epic",
@@ -192,6 +288,12 @@
             "gameTime": 0,
             "relDate": 2018,
             "status": 4
+        }, {
+            "plat": "Epic, Steam",
+            "title": "Cities: Skylines",
+            "gameTime": 2520,
+            "relDate": 2015,
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "City of Brass",
@@ -212,16 +314,40 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Control",
+            "gameTime": 4220,
+            "relDate": 2019,
+            "status": 2
+        }, {
+            "plat": "Epic",
             "title": "Costume Quest",
             "gameTime": 0,
             "relDate": 2010,
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Costume Quest 2",
+            "gameTime": 0,
+            "relDate": 2014,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Crashlands",
             "gameTime": 265,
             "relDate": 2016,
-            "status": 3
+            "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "CRSED: F.O.A.D.",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Crying Suns",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
         }, {
             "plat": "Epic",
             "title": "The Cycle Alpha",
@@ -229,23 +355,29 @@
             "relDate": 2019,
             "status": 5
         }, {
+            "plat": "Epic",
+            "title": "Darkest Dungeon",
+            "gameTime": 103,
+            "relDate": 2016,
+            "status": 5
+        }, {
             "plat": "Epic, Steam",
             "title": "Darksiders Warmastered Edition",
-            "gameTime": 1980,
+            "gameTime": 2887,
             "relDate": 2016,
             "status": 2
         }, {
             "plat": "Epic, Steam",
             "title": "Darksiders II: Deathinitive Edition",
-            "gameTime": 7620,
+            "gameTime": 7594,
             "relDate": 2015,
             "status": 2
         }, {
             "plat": "Epic",
             "title": "Dauntless",
-            "gameTime": 371,
+            "gameTime": 372,
             "relDate": 2019,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Death Coming",
@@ -254,7 +386,19 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Defense Grid: The Awakening",
+            "gameTime": 0,
+            "relDate": 2008,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Delores: A Thimbleweed Park mini-adventure",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Diabotical",
             "gameTime": 0,
             "relDate": 2020,
             "status": 4
@@ -264,6 +408,18 @@
             "gameTime": 0,
             "relDate": 2016,
             "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Dungeons 3",
+            "relDate": 2017,
+            "gameTime": 0,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Elite Dangerous",
+            "gameTime": 113,
+            "relDate": 2014,
+            "status": 6
         }, {
             "plat": "Epic",
             "title": "Enter the Gungeon",
@@ -276,6 +432,12 @@
             "gameTime": 0,
             "relDate": 2015,
             "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "The Escapists 2",
+            "gameTime": 441,
+            "relDate": 2017,
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Everything",
@@ -305,11 +467,11 @@
             "title": "For the King",
             "gameTime": 0,
             "relDate": 2018,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Foregone",
-            "gameTime": 673,
+            "gameTime": 739,
             "relDate": 2020,
             "status": 3
         }, {
@@ -317,10 +479,22 @@
             "title": "Fortnite",
             "gameTime": 60,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Epic",
             "title": "FTL: Faster Than Light",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Ghostbusters The Video Game Remastered",
+            "gameTime": 15,
+            "relDate": 2019,
+            "status": 6
+        }, {
+            "plat": "Epic",
+            "title": "God's Trigger",
             "gameTime": 0,
             "relDate": 2019,
             "status": 4
@@ -338,16 +512,34 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Grand Theft Auto V",
+            "gameTime": 0,
+            "relDate": 2013,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Hello Neighbor",
             "gameTime": 0,
             "relDate": 2017,
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Heroes & Generals WWII",
+            "gameTime": 0,
+            "relDate": 2016,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Hitman",
+            "gameTime": 0,
+            "relDate": 2016,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Hob",
             "gameTime": 316,
             "relDate": 2017,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Horace",
@@ -398,10 +590,22 @@
             "status": 5
         }, {
             "plat": "Epic",
+            "title": "Jurassic World Evolution",
+            "gameTime": 266,
+            "relDate": 2018,
+            "status": 5
+        }, {
+            "plat": "Epic",
             "title": "Just Cause 4",
             "gameTime": 0,
             "relDate": 2018,
             "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Killing Floor 2",
+            "relDate": 2018,
+            "gameTime": 324,
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Kingdom Come: Deliverance",
@@ -428,6 +632,12 @@
             "status": 2
         }, {
             "plat": "Epic",
+            "title": "Layers of Fear 2",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "LEGO Batman The Videogame",
             "gameTime": 0,
             "relDate": 2008,
@@ -446,9 +656,21 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Lifeless Planet: Premier Edition",
+            "gameTime": 0,
+            "relDate": 2015,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Limbo",
             "gameTime": 0,
             "relDate": 2010,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "The Long Dark",
+            "gameTime": 0,
+            "relDate": 2017,
             "status": 4
         }, {
             "plat": "Epic, Global",
@@ -479,7 +701,19 @@
             "title": "Moonlighter",
             "gameTime": 187,
             "relDate": 2018,
-            "status": 3
+            "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "Mortal Shell - Beta",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Mud Runner",
+            "gameTime": 0,
+            "relDate": 2017,
+            "status": 4
         }, {
             "plat": "Epic",
             "title": "Mutant Year Zero: Road to Eden",
@@ -491,6 +725,30 @@
             "title": "Mutazione",
             "gameTime": 0,
             "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "My Time at Portia",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic, Global, Steam",
+            "title": "Neverwinter",
+            "gameTime": 9655,
+            "relDate": 2013,
+            "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "Next Up Hero",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Night in the Woods",
+            "gameTime": 0,
+            "relDate": 2017,
             "status": 4
         }, {
             "plat": "Epic",
@@ -506,16 +764,28 @@
             "status": 2
         }, {
             "plat": "Epic",
+            "title": "Oddworld: New'n'Tasty",
+            "gameTime": 0,
+            "relDate": 2014,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Offworld Trading Company",
             "gameTime": 0,
             "relDate": 2016,
-            "status": 4
+            "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "Omen of Sorrow",
+            "gameTime": 468,
+            "relDate": 2018,
+            "status": 3
         }, {
             "plat": "Epic",
             "title": "Overcooked",
             "gameTime": 0,
             "relDate": 2016,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Epic, GOG",
             "title": "Oxenfree",
@@ -525,9 +795,15 @@
         }, {
             "plat": "Epic, Steam",
             "title": "Paladins",
-            "gameTime": 808,
+            "gameTime": 809,
             "relDate": 2017,
-            "status": 3
+            "status": 5
+        }, {
+            "plat": "Epic, Steam",
+            "title": "Path of Exile",
+            "gameTime": 1569,
+            "relDate": 2013,
+            "status": 6
         }, {
             "plat": "Epic",
             "title": "Pathway",
@@ -536,16 +812,40 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Pikuniku",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Pillars of Eternity - Deafinitive Edition",
+            "gameTime": 0,
+            "relDate": 2015,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "PixArk",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Q.U.B.E. 2",
             "gameTime": 0,
             "relDate": 2018,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Railway Empire",
+            "relDate": 2018,
+            "gameTime": 0,
             "status": 4
         }, {
             "plat": "Epic, Uplay",
             "title": "Rayman Legends",
             "gameTime": 0,
             "relDate": 2013,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Rebel Galaxy",
@@ -554,9 +854,39 @@
             "status": 5
         }, {
             "plat": "Epic",
+            "title": "Remnant: From the Ashes",
+            "gameTime": 6844,
+            "relDate": 2019,
+            "status": 2
+        }, {
+            "plat": "Epic",
             "title": "RiME",
             "gameTime": 0,
             "relDate": 2017,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Rising Storm 2: Vietnam Beta",
+            "gameTime": 0,
+            "relDate": 2017,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Rocket League",
+            "gameTime": 0,
+            "relDate": 2015,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Rogue Company",
+            "gameTime": 11,
+            "relDate": 2020,
+            "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "RollerCoaster Tycoon 3: Complete Edition",
+            "gameTime": 0,
+            "relDate": 2020,
             "status": 4
         }, {
             "plat": "Epic",
@@ -569,7 +899,7 @@
             "title": "Samurai Shodown NeoGeo Collection",
             "gameTime": 0,
             "relDate": 2020,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Epic",
             "title": "Shadow Tactics: Blades of the Shogun",
@@ -577,14 +907,32 @@
             "relDate": 2019,
             "status": 5
         }, {
+            "plat": "Epic, Steam",
+            "title": "Shadowrun: Dragonfall - Director's Cut",
+            "gameTime": 0,
+            "relDate": 2014,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Shadowrun: Hong Kong",
+            "gameTime": 0,
+            "relDate": 2015,
+            "status": 4
+        }, {
+            "plat": "Epic, Steam",
+            "title": "Shadowrun Returns",
+            "gameTime": 1285,
+            "relDate": 2013,
+            "status": 5
+        }, {
             "plat": "Epic",
             "title": "Sherlock Holmes Crimes and Punishments",
             "gameTime": 236,
             "relDate": 2014,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Epic",
-            "title": "Sid Meier's Civilization VI: Complete",
+            "title": "Sid Meier's Civilization VI",
             "gameTime": 0,
             "relDate": 2016,
             "status": 4
@@ -596,7 +944,7 @@
             "status": 4
         }, {
             "plat": "Epic",
-            "title": "Sludge Live",
+            "title": "Sludge Life",
             "gameTime": 0,
             "relDate": 2020,
             "status": 4
@@ -606,6 +954,12 @@
             "gameTime": 105,
             "relDate": 2014,
             "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "Solitairica",
+            "gameTime": 0,
+            "relDate": 2016,
+            "status": 4
         }, {
             "plat": "Epic, GOG",
             "title": "SOMA",
@@ -620,10 +974,22 @@
             "status": 5
         }, {
             "plat": "Epic",
+            "title": "Spellforce 3: Versus",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "The Stanley Parable",
             "gameTime": 0,
             "relDate": 2013,
             "status": 4
+        }, {
+            "plat": "Epic, Global, Steam",
+            "title": "Star Trek Online",
+            "gameTime": 13259,
+            "relDate": 2010,
+            "status": 5
         }, {
             "plat": "Epic, Uplay",
             "title": "Steep",
@@ -632,10 +998,22 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Stick it to the Man",
+            "gameTime": 0,
+            "relDate": 2013,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "Stories Untold",
-            "gameTime": 253,
+            "gameTime": 254,
             "relDate": 2017,
             "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "Stranded Deep",
+            "gameTime": 0,
+            "relDate": 2015,
+            "status": 4
         }, {
             "plat": "Epic",
             "title": "Stranger Things 3: The Game",
@@ -651,18 +1029,36 @@
         }, {
             "plat": "Epic",
             "title": "Sundered Eldritch Edition",
-            "gameTime": 5942,
+            "gameTime": 5943,
             "relDate": 2017,
-            "status": 3
+            "status": 2
+        }, {
+            "plat": "Epic",
+            "title": "Superbrothers: Sword & Sorcery EP",
+            "gameTime": 0,
+            "relDate": 2011,
+            "status": 4
         }, {
             "plat": "Epic",
             "title": "Surviving Mars",
-            "gameTime": 255,
+            "gameTime": 256,
             "relDate": 2018,
             "status": 5
         }, {
             "plat": "Epic",
+            "title": "Tacoma",
+            "gameTime": 0,
+            "relDate": 2017,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "The Talos Principle",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "The Textorcist",
             "gameTime": 0,
             "relDate": 2019,
             "status": 4
@@ -692,6 +1088,12 @@
             "status": 5
         }, {
             "plat": "Epic",
+            "title": "Torchlight II",
+            "gameTime": 52,
+            "relDate": 2012,
+            "status": 5
+        }, {
+            "plat": "Epic",
             "title": "Tormentor X Punisher",
             "gameTime": 0,
             "relDate": 2017,
@@ -715,7 +1117,7 @@
             "relDate": 2013,
             "status": 4
         }, {
-            "plat": "Epic",
+            "plat": "Epic, Uplay",
             "title": "Trackmania",
             "gameTime": 0,
             "relDate": 2020,
@@ -723,21 +1125,45 @@
         }, {
             "plat": "Epic",
             "title": "Transistor",
-            "gameTime": 1070,
+            "gameTime": 1072,
             "relDate": 2014,
             "status": 2
+        }, {
+            "plat": "Epic",
+            "title": "Tropico 5",
+            "gameTime": 0,
+            "relDate": 2014,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Tyranny - Gold Edition",
+            "gameTime": 0,
+            "relDate": 2016,
+            "status": 4
         }, {
             "plat": "Epic",
             "title": "Unreal Tournament",
             "gameTime": 255,
             "relDate": 2016,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Epic, Steam",
+            "title": "Warframe",
+            "gameTime": 15247,
+            "relDate": 2014,
+            "status": 3
         }, {
             "plat": "Epic, Uplay",
             "title": "Watch Dogs (*)",
             "gameTime": 0,
             "relDate": 2014,
             "status": 5
+        }, {
+            "plat": "Epic, Uplay",
+            "title": "Watch Dogs 2",
+            "gameTime": 0,
+            "relDate": 2016,
+            "status": 4
         }, {
             "plat": "Epic",
             "title": "What Remains of Edith Finch",
@@ -752,6 +1178,18 @@
             "status": 4
         }, {
             "plat": "Epic",
+            "title": "Where the Water Tastes Like Wine",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
+        }, {
+            "plat": "Epic",
+            "title": "Wilmot's Warehouse",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "Epic",
             "title": "The Witness",
             "gameTime": 0,
             "relDate": 2016,
@@ -759,13 +1197,19 @@
         }, {
             "plat": "Epic",
             "title": "The Wolf Among Us",
-            "gameTime": 25,
+            "gameTime": 26,
             "relDate": 2013,
             "status": 5
+        }, {
+            "plat": "Epic",
+            "title": "The World Next Door",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
         }, { 
             "plat": "Epic",
             "title": "World War Z",
-            "gameTime": 31,
+            "gameTime": 32,
             "relDate": 2019,
             "status": 5
         }, {
@@ -773,6 +1217,12 @@
             "title": "Yooka-Laylee and the Impossible Lair",
             "gameTime": 0,
             "relDate": 2019,
+            "status": 4
+        }, {
+            "plat": "GOG",
+            "title": "Ascendant",
+            "gameTime": 0,
+            "relDate": 2014,
             "status": 4
         }, {
             "plat": "GOG",
@@ -785,6 +1235,12 @@
             "title": "Bio Menace",
             "gameTime": 0,
             "relDate": 1993,
+            "status": 4
+        }, {
+            "plat": "GOG",
+            "title": "Brigador: Up-Armored Edition",
+            "gameTime": 0,
+            "relDate": 2017,
             "status": 4
         }, {
             "plat": "GOG",
@@ -849,7 +1305,7 @@
         }, {
             "plat": "GOG",
             "title": "The King of Fighters 2002",
-            "gameTime": 51,
+            "gameTime": 58,
             "relDate": 2001,
             "status": 5
         }, {
@@ -866,6 +1322,12 @@
             "status": 4
         }, {
             "plat": "GOG",
+            "title": "Metro: Last Night Redux",
+            "gameTime": 0,
+            "relDate": 2014,
+            "status": 4
+        }, {
+            "plat": "GOG",
             "title": "Obduction",
             "gameTime": 0,
             "relDate": 2016,
@@ -878,22 +1340,34 @@
             "status": 4
         }, {
             "plat": "GOG",
+            "title": "Saint Kotar: The Yellow Mask",
+            "gameTime": 0,
+            "relDate": 2020,
+            "status": 4
+        }, {
+            "plat": "GOG",
             "title": "Sang-Froid: Tales of Werevolves",
             "gameTime": 0,
             "relDate": 2013,
             "status": 4
         }, {
-            "plat": "GOG, Steam",
+            "plat": "GOG",
+            "title": "Seven: Enhanced Edition",
+            "gameTime": 0,
+            "relDate": 2017,
+            "status": 4
+        }, {
+            "plat": "GOG",
             "title": "Shadow Warrrior Classic Complete",
-            "gameTime": 36,
+            "gameTime": 0,
             "relDate": 1997,
-            "status": 5
+            "status": 4
         }, {
             "plat": "GOG",
             "title": "Shadow Warrior 2 (*)",
             "gameTime": 31,
             "relDate": 2016,
-            "status": 2
+            "status": 5
         }, {
             "plat": "GOG",
             "title": "Sin Slayers: The First Sin",
@@ -969,7 +1443,7 @@
         }, {
             "plat": "Origin",
             "title": "Anthem Legion of Dawn Edition",
-            "gameTime": 7366,
+            "gameTime": 7656,
             "relDate": 2019,
             "status": 3
         }, {
@@ -1029,7 +1503,7 @@
         }, {
             "plat": "Origin",
             "title": "Mass Effect: Andromeda Deluxe Edition",
-            "gameTime": 2937,
+            "gameTime": 4318,
             "relDate": 2017,
             "status": 3
         }, { 
@@ -1038,6 +1512,12 @@
             "gameTime": 0,
             "relDate": 2004,
             "status": 4
+        }, {
+            "plat": "Origin, Steam",
+            "title": "Mirror's Edge Catalyst",
+            "gameTime": 924,
+            "relDate": 2016,
+            "status": 1
         }, {
             "plat": "Origin",
             "title": "Need for Speed Most Wanted",
@@ -1079,7 +1559,7 @@
             "title": "Aegis Defenders",
             "gameTime": 167,
             "relDate": 2018,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Age of Wonders III",
@@ -1097,7 +1577,7 @@
             "title": "Aion (*)",
             "gameTime": 0,
             "relDate": 2009,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Alien Swarm: Reactive Drop",
@@ -1106,22 +1586,22 @@
             "status": 5
         }, {
             "plat": "Steam",
-            "title": "Amnesia: A Machine for Pigs",
-            "gameTime": 0,
-            "relDate": 2013,
-            "status": 4
-        }, {
-            "plat": "Steam",
             "title": "Anima: Gate of Memories",
-            "gameTime": 2168,
+            "gameTime": 2729,
             "relDate": 2016,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Anima: Gate of Memories - The Nameless Chronicles",
-            "gameTime": 0,
+            "gameTime": 12,
             "relDate": 2018,
-            "status": 4
+            "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "Aragami",
+            "gameTime": 24,
+            "relDate": 2016,
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "ArcheBlade",
@@ -1133,13 +1613,19 @@
             "title": "Art of War: Red Tides",
             "gameTime": 108,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Ashes of Creation Apocalypse",
             "gameTime": 30,
             "relDate": 2018,
             "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "Ashes of Singularity: Escalation",
+            "gameTime": 0,
+            "relDate": 2016,
+            "status": 4
         }, {
             "plat": "Steam",
             "title": "Battleritte",
@@ -1149,7 +1635,7 @@
         }, {
             "plat": "Steam",
             "title": "Bayonetta",
-            "gameTime": 270,
+            "gameTime": 271,
             "relDate": 2017,
             "status": 5
         }, {
@@ -1157,73 +1643,91 @@
             "title": "Bioshock",
             "gameTime": 0,
             "relDate": 2007,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Bioshock Remastered",
-            "gameTime": 139,
+            "gameTime": 1243,
             "relDate": 2016,
-            "status": 3
+            "status": 2
         }, {
             "plat": "Steam",
             "title": "Bioshock 2",
             "gameTime": 0,
             "relDate": 2010,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Bioshock 2 Remastered",
-            "gameTime": 0,
+            "gameTime": 9390,
             "relDate": 2016,
-            "status": 4
+            "status": 2
         }, {
             "plat": "Steam",
             "title": "Bioshock Infinite",
-            "gameTime": 0,
+            "gameTime": 860,
             "relDate": 2013,
-            "status": 4
+            "status": 2
         }, {
             "plat": "Steam",
             "title": "Black Desert Online SA",
-            "gameTime": 8206,
+            "gameTime": 27185,
             "relDate": 2017,
-            "status": 3
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Black Squad",
-            "gameTime": 24,
+            "gameTime": 26,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Black Survival: Eternal Return",
             "gameTime": 7,
-            "relDate": "N/A",
-            "status": 5
+            "relDate": 2020,
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Blade Symphony",
             "gameTime": 12,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "BlazBlue: Calamity Trigger",
-            "gameTime": 816,
+            "gameTime": 1238,
             "relDate": 2010,
-            "status": 2
+            "status": 3
+        }, {
+            "plat": "Steam",
+            "title": "Blazblue: Central Fiction",
+            "gameTime": 12,
+            "relDate": 2017,
+            "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "BlazBlue: Chronophantasma Extend",
+            "gameTime": 62,
+            "relDate": 2016,
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "BlazBlue: Continuum Shit Extend",
-            "gameTime": 228,
+            "gameTime": 239,
             "relDate": 2014,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Bless Online",
-            "gameTime": 996,
+            "gameTime": 997,
             "relDate": 2018,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Bloodstained: Ritual of the Night",
+            "gameTime": 1025,
+            "relDate": 2019,
+            "status": 1
         }, {
             "plat": "Steam",
             "title": "Bombergrounds: Battle Royale",
@@ -1235,7 +1739,7 @@
             "title": "Brawlhalla",
             "gameTime": 53,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Bright Memory: Infinite",
@@ -1257,27 +1761,27 @@
         }, {
             "plat": "Global, Steam",
             "title": "Champions Online",
-            "gameTime": 240,
+            "gameTime": 239,
             "relDate": 2009,
             "status": 5
         }, {
             "plat": "Steam",
-            "title": "Cities: Skylines",
-            "gameTime": 2520,
-            "relDate": 2015,
-            "status": 5
-        }, {
-            "plat": "Steam",
             "title": "CityBattle: Virtual Earth",
-            "gameTime": 30,
+            "gameTime": 27,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "Global, Steam",
             "title": "Closers",
-            "gameTime": 2280,
+            "gameTime": 2274,
             "relDate": 2018,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Code Vein",
+            "gameTime": 4620,
+            "relDate": 2019,
+            "status": 2
         }, {
             "plat": "Steam",
             "title": "Company of Heroes 2",
@@ -1295,13 +1799,19 @@
             "title": "CroNix",
             "gameTime": 24,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
-            "title": "The Crucible",
+            "title": "Crucible",
             "gameTime": 36,
             "relDate": 2020,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Cyberpunk 2077",
+            "gameTime": 7105,
+            "relDate": 2020,
+            "status": 1
         }, {
             "plat": "Steam",
             "title": "The Darkness II",
@@ -1310,40 +1820,64 @@
             "status": 4
         }, {
             "plat": "Steam",
-            "title": "The Day Online",
+            "title": "Darksiders",
+            "relDate": 2010,
             "gameTime": 0,
-            "relDate": "N/A",
             "status": 4
         }, {
             "plat": "Steam",
-            "title": "Dead Cells",
-            "gameTime": 180,
+            "title": "Darksiders Genesis",
+            "relDate": 2019,
+            "gameTime": 2660,
+            "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "Darksiders III",
+            "gameTime": 4758,
             "relDate": 2018,
-            "status": 3
+            "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "The Day Online",
+            "gameTime": 40,
+            "relDate": "N/A",
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Dead Cells",
+            "gameTime": 200,
+            "relDate": 2018,
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Dead Frontier 2",
             "gameTime": 117,
             "relDate": "N/A",
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Deadside",
+            "gameTime": 20,
+            "relDate": 2020,
             "status": 5
         }, {
             "plat": "Steam",
-            "title": "DEATHGARDEN",
+            "title": "Deathgarden",
             "gameTime": 72,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Global, Steam",
             "title": "Deceit",
-            "gameTime": 408,
-            "relDate": 2016,
-            "status": 5
+            "gameTime": 406,
+            "relDate": 2017,
+            "status": 6
         }, {
             "plat": "Global, Steam",
-            "title": "Defiance",
-            "gameTime": 768,
+            "title": "Defiance (*)",
+            "gameTime": 770,
             "relDate": 2013,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Deponia: The Complete Journey",
@@ -1352,10 +1886,16 @@
             "status": 5
         }, {
             "plat": "Steam",
+            "title": "Destiny 2 (*)",
+            "gameTime": 97645,
+            "relDate": 2017,
+            "status": 1
+        }, {
+            "plat": "Steam",
             "title": "Digimon Masters Online",
-            "gameTime": 102,
+            "gameTime": 103,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "DiRT Rally",
@@ -1371,15 +1911,15 @@
         }, {
             "plat": "Steam",
             "title": "Dissidia Final Fantasy NT - Free Edition",
-            "gameTime": 366,
+            "gameTime": 363,
             "relDate": 2019,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Dissolution",
-            "gameTime": 12,
+            "gameTime": 10,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Divine Divinity",
@@ -1389,19 +1929,19 @@
         }, {
             "plat": "Steam",
             "title": "Divine Souls",
-            "gameTime": 162,
+            "gameTime": 161,
             "relDate": 2011,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Divinity II: Ego Draconis",
-            "gameTime": 216,
+            "gameTime": 218,
             "relDate": 2010,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "DOOM",
-            "gameTime": 2100,
+            "gameTime": 2119,
             "relDate": 2016,
             "status": 2
         }, {
@@ -1409,11 +1949,17 @@
             "title": "Dota Underlords",
             "gameTime": 48,
             "relDate": 2019,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Dragon Ball FighterZ",
+            "gameTime": 489,
+            "relDate": 2018,
+            "status": 1
         }, {
             "plat": "Steam",
             "title": "Dragon Sin",
-            "gameTime": 18,
+            "gameTime": 20,
             "relDate": 2017,
             "status": 5
         }, {
@@ -1421,7 +1967,7 @@
             "title": "DRAKERZ: Confrontation",
             "gameTime": 36,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Draw Slasher",
@@ -1431,133 +1977,151 @@
         }, {
             "plat": "Steam",
             "title": "Dreadnought",
-            "gameTime": 102,
+            "gameTime": 103,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam, XLive",
             "title": "Dungeon Hunter 5 (*)",
-            "gameTime": 30,
+            "gameTime": 29,
             "relDate": 2015,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Dungeon Siege",
-            "gameTime": 1560,
+            "gameTime": 1552,
             "relDate": 2002,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Dungeon Siege II",
-            "gameTime": 1724,
+            "title": "Dungeon Siege II (*)",
+            "gameTime": 81,
             "relDate": 2005,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "Dungeon Siege III",
-            "gameTime": 1260,
+            "gameTime": 1268,
             "relDate": 2011,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "Dungeons & Dragons Online",
-            "gameTime": 2640,
+            "gameTime": 2631,
             "relDate": 2006,
             "status": 5
         }, {
             "plat": "Global, Steam",
             "title": "Elsword (*)",
-            "gameTime": 0,
+            "gameTime": 1,
             "relDate": 2010,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Endless Space",
-            "gameTime": 48,
+            "gameTime": 49,
             "relDate": 2012,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "EVE Aether Wars - Tech Demo",
+            "gameTime": 4,
+            "relDate": "N/A",
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "EVE Online",
-            "gameTime": 23580,
+            "gameTime": 23572,
             "relDate": 2003,
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Everreach: Project Eden",
+            "gameTime": 55,
+            "relDate": 2019,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Evolve Stage 2",
-            "gameTime": 180,
+            "gameTime": 178,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
-            "title": "Fallout",
-            "gameTime": 918,
+            "title": "F1 2018",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
+        }, {
+            "plat": "Steam",
+            "title": "Fallout (*)",
+            "gameTime": 916,
             "relDate": 1997,
-            "status": 5
-        }, {
-            "plat": "Steam",
-            "title": "Fallout: New Vegas",
-            "gameTime": 0,
-            "relDate": 2010,
-            "status": 4
-        }, {
-            "plat": "Steam, XLive",
-            "title": "Fallout Shelter",
-            "gameTime": 7998,
-            "relDate": 2016,
-            "status": 5
-        }, {
-            "plat": "Steam",
-            "title": "Fallout Tactics: Brotherhood Of Steel",
-            "gameTime": 0,
-            "relDate": 2001,
-            "status": 4
-        }, {
-            "plat": "Steam",
-            "title": "Fallout 2",
-            "gameTime": 1003,
-            "relDate": 1998,
-            "status": 5
-        }, {
-            "plat": "Steam",
-            "title": "Fallout 3 - GOTY Edition",
-            "gameTime": 1110,
-            "relDate": 2009,
             "status": 2
         }, {
             "plat": "Steam",
+            "title": "Fallout: New Vegas",
+            "gameTime": 43,
+            "relDate": 2010,
+            "status": 5
+        }, {
+            "plat": "Steam, XLive",
+            "title": "Fallout Shelter (*)",
+            "gameTime": 7977,
+            "relDate": 2016,
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Fallout Tactics: Brotherhood Of Steel",
+            "gameTime": 1,
+            "relDate": 2001,
+            "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "Fallout 2 (*)",
+            "gameTime": 1,
+            "relDate": 1998,
+            "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "Fallout 3 - GOTY Edition",
+            "gameTime": 1108,
+            "relDate": 2009,
+            "status": 5
+        }, {
+            "plat": "Steam",
             "title": "Fallout 4",
-            "gameTime": 23100,
+            "gameTime": 2381,
             "relDate": 2015,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "F.E.A.R.",
-            "gameTime": 1800,
+            "gameTime": 1808,
             "relDate": 2005,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "F.E.A.R. Extraction Point",
-            "gameTime": 702,
+            "gameTime": 696,
             "relDate": 2006,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "F.E.A.R. Perseus Mandate",
-            "gameTime": 792,
+            "gameTime": 793,
             "relDate": 2007,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "F.E.A.R. 2: Project Origin",
-            "gameTime": 1560,
+            "gameTime": 1581,
             "relDate": 2009,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "F.E.A.R. 3",
-            "gameTime": 1146,
+            "gameTime": 1148,
             "relDate": 2011,
             "status": 2
         }, {
@@ -1565,29 +2129,29 @@
             "title": "Fear Effect Sedna",
             "gameTime": 574,
             "relDate": 2018,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
-            "title": "Final Fantasy XIII",
-            "gameTime": 6900,
+            "title": "Final Fantasy XIII-2",
+            "gameTime": 6244,
             "relDate": 2014,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Final Fantasy XIII-2",
-            "gameTime": 6240,
+            "title": "Final Fantasy XIII",
+            "gameTime": 6870,
             "relDate": 2014,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "Firefall",
-            "gameTime": 624,
+            "gameTime": 623,
             "relDate": 2013,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "The Flame in the Flood",
-            "gameTime": 78,
+            "gameTime": 80,
             "relDate": 2016,
             "status": 5
         }, {
@@ -1601,37 +2165,43 @@
             "title": "Galaxy in Turmoil",
             "gameTime": 263,
             "relDate": 2020,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Game of Thrones Winter is Coming",
             "gameTime": 146,
             "relDate": 2019,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Gems of War",
             "gameTime": 107,
             "relDate": 2014,
-            "status": 3
+            "status": 6
         }, {
             "plat": "Global, Steam",
-            "title": "Ghost in the Shell: Stand Alone Complex - First Assault Online",
-            "gameTime": 150,
+            "title": "Ghost in the Shell: Stand Alone Complex - First Assault Online (*)",
+            "gameTime": 148,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Gigantic",
             "gameTime": 102,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Grid 2",
             "gameTime": 0,
             "relDate": 2013,
             "status": 4
+        }, {
+            "plat": "Steam",
+            "title": "Grim Dawn",
+            "gameTime": 4442,
+            "relDate": 2016,
+            "status": 3
         }, {
             "plat": "Steam",
             "title": "Guacamelee! Super Turbo Champiomship Edition",
@@ -1641,51 +2211,63 @@
         }, {
             "plat": "Steam",
             "title": "Guilty Gear Xrd: Revelator",
-            "gameTime": 1320,
+            "gameTime": 1530,
             "relDate": 2016,
-            "status": 5
+            "status": 3
         }, {
             "plat": "Steam",
-            "title": "Guns of Icarus (Alliance) Online",
-            "gameTime": 36,
+            "title": "Guns of Icarus Alliance",
+            "gameTime": 38,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
-            "title": "Half Life 2 (+) (*)",
+            "title": "Guns of Icarus Online",
+            "gameTime": 38,
+            "relDate": 2012,
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": ".hack//G.U. Last Recode",
+            "gameTime": 182,
+            "relDate": 2017,
+            "status": 3
+        }, {
+            "plat": "Steam",
+            "title": "Half Life 2 (+, *)",
             "gameTime": 0,
             "relDate": 2004,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Half Life 2: Episode One (+) (*)",
+            "title": "Half Life 2: Episode One (+, *)",
             "gameTime": 0,
             "relDate": 2006,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Half Life 2: Episode Two (+) (*)",
+            "title": "Half Life 2: Episode Two (+, *)",
             "gameTime": 0,
             "relDate": 2007,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Half Life 2: Lost Coast (+) (*)",
+            "title": "Half Life 2: Lost Coast (+, *)",
             "gameTime": 0,
             "relDate": 2005,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Half Life: Source (+) (*)",
+            "title": "Half Life: Source (+, *)",
             "gameTime": 0,
             "relDate": 1998,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "Hawken",
-            "gameTime": 42,
+            "gameTime": 40,
             "relDate": 2012,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Headsnatchers",
@@ -1695,15 +2277,33 @@
         }, {
             "plat": "Steam",
             "title": "Heavenstrike Rivals",
-            "gameTime": 36,
+            "gameTime": 34,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Heavy Metal Machines",
-            "gameTime": 6,
+            "gameTime": 7,
             "relDate": 2017,
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Helheim",
+            "gameTime": 35,
+            "relDate": 2019,
             "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "Hellblade: Senua's Sacrifice",
+            "gameTime": 658,
+            "relDate": 2017,
+            "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "Hellblade: Senua's Sacrifice VR Edition",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
         }, {
             "plat": "Steam",
             "title": "Hellpoint: The Thespian Feast",
@@ -1715,6 +2315,12 @@
             "title": "Hide and Shriek",
             "gameTime": 66,
             "relDate": 2016,
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Hollow Knight",
+            "gameTime": 399,
+            "relDate": 2017,
             "status": 5
         }, {
             "plat": "Steam",
@@ -1727,31 +2333,55 @@
             "title": "Hyper Universe",
             "gameTime": 66,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Idle Champions of the Forgotten Realms",
-            "gameTime": 1440,
+            "gameTime": 1434,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Idle Hero World",
             "gameTime": 80,
             "relDate": 2020,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "The Incredible Adventures of Van Helsing",
+            "gameTime": 1075,
+            "relDate": 2013,
+            "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "The Incredible Adventures of Van Helsing II",
+            "gameTime": 1869,
+            "relDate": 2014,
+            "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "The Incredible Adventures of Van Helsing III",
+            "gameTime": 334,
+            "relDate": 2015,
+            "status": 1
         }, {
             "plat": "Steam",
             "title": "Influent",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Injustice: Gods Among Us Ultimate Edition",
-            "gameTime": 3240,
+            "gameTime": 3270,
             "relDate": 2013,
-            "status": 2
+            "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "Injusttice 2",
+            "gameTime": 1589,
+            "relDate": 2017,
+            "status": 3
         }, {
             "plat": "Steam",
             "title": "Insidia",
@@ -1761,15 +2391,15 @@
         }, {
             "plat": "Steam",
             "title": "Invisible Apartment",
-            "gameTime": 0,
+            "gameTime": 5,
             "relDate": 2015,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "IRONSIGHT",
             "gameTime": 43,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Kao the Kangaroo: Round 2",
@@ -1779,45 +2409,51 @@
         }, {
             "plat": "Steam, XLive",
             "title": "Killer Instinct",
-            "gameTime": 42629,
+            "gameTime": 42920,
             "relDate": 2013,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Killsquad",
-            "gameTime": 1847,
+            "gameTime": 2385,
             "relDate": 2019,
             "status": 3
         }, {
             "plat": "Steam",
+            "title": "Kingdom: Classic",
+            "gameTime": 0,
+            "relDate": 2015,
+            "status": 4
+        }, {
+            "plat": "Steam",
             "title": "Kritika: Reboot",
-            "gameTime": 1200,
+            "gameTime": 1206,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "KurtzPel",
             "gameTime": 228,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Lara Croft and the Guardian of Light",
             "gameTime": 228,
             "relDate": 2010,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Lara Croft and the Temple of Osiris",
             "gameTime": 173,
             "relDate": 2014,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Lawbreakers",
             "gameTime": 43,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "LEGO The Hobbit",
@@ -1827,15 +2463,15 @@
         }, {
             "plat": "Steam",
             "title": "LEGO The Lord of the Rings",
-            "gameTime": 78,
+            "gameTime": 75,
             "relDate": 2012,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Let It Die",
-            "gameTime": 300,
+            "gameTime": 298,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Life is Strange - Ep.1",
@@ -1844,8 +2480,14 @@
             "status": 2
         }, {
             "plat": "Steam",
+            "title": "Life is Strange 2 - Ep.1",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
+        }, {
+            "plat": "Steam",
             "title": "Lightning Returns: Final Fantasy XIII",
-            "gameTime": 4140,
+            "gameTime": 4155,
             "relDate": 2015,
             "status": 5
         }, {
@@ -1857,15 +2499,15 @@
         }, {
             "plat": "Steam",
             "title": "The Lost Mythologies",
-            "gameTime": 24,
+            "gameTime": 21,
             "relDate": 2016,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Magic Duels",
-            "gameTime": 1620,
+            "gameTime": 1637,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Manual Samuel",
@@ -1877,25 +2519,25 @@
             "title": "Marvel Heroes 2016",
             "gameTime": 654,
             "relDate": 2013,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Metal Reaper Online",
-            "gameTime": 78,
+            "gameTime": 77,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Metro 2033",
             "gameTime": 12,
             "relDate": 2010,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Metro Conflict: The Origin",
-            "gameTime": 0,
+            "gameTime": 2,
             "relDate": 2017,
-            "status": 4
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Middle-earth: Shadow of Mordor",
@@ -1913,7 +2555,7 @@
             "title": "Might & Magic: Heroes Online",
             "gameTime": 54,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Mini Ninjas",
@@ -1929,9 +2571,9 @@
         }, {
             "plat": "Steam",
             "title": "Mirror's Edge",
-            "gameTime": 0,
+            "gameTime": 650,
             "relDate": 2008,
-            "status": 4
+            "status": 2
         },{
             "plat": "Steam",
             "title": "missed messages.",
@@ -1943,61 +2585,79 @@
             "title": "Mitsurugi Kamui Hikae",
             "gameTime": 84,
             "relDate": 2013,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Mobius Final Fantasy",
-            "gameTime": 732,
+            "gameTime": 734,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Modern Combat Versus",
-            "gameTime": 30,
+            "gameTime": 31,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Modern Combat 5",
-            "gameTime": 24,
+            "gameTime": 26,
             "relDate": 2014,
-            "status": 5
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Monstrum 2",
+            "gameTime": 0,
+            "relDate": "N/A",
+            "status": 4
         }, {
             "plat": "Steam",
             "title": "Mortal Kombat: Komplete Edition",
-            "gameTime": 8940,
+            "gameTime": 8946,
             "relDate": 2013,
-            "status": 2
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Mortal Kombat X",
-            "gameTime": 20100,
+            "gameTime": 20254,
             "relDate": 2015,
-            "status": 2
+            "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "Mortal Kombat 11",
+            "gameTime": 11968,
+            "relDate": 2019,
+            "status": 1
         }, {
             "plat": "Steam",
             "title": "Murdered: Soul Suspect",
-            "gameTime": 1260,
+            "gameTime": 1235,
             "relDate": 2014,
             "status": 2
         }, {
-            "plat": "Global, Steam",
-            "title": "Neverwinter",
-            "gameTime": 9655,
-            "relDate": 2013,
+            "plat": "Steam",
+            "title": "Neverinth",
+            "gameTime": 41,
+            "relDate": 2019,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Nex Machina",
-            "gameTime": 174,
+            "gameTime": 172,
             "relDate": 2017,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "NieR: Automata",
-            "gameTime": 11820,
+            "gameTime": 12101,
             "relDate": 2017,
             "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "Occupy White Walls",
+            "gameTime": 573,
+            "relDate": 2018,
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Ori and the Blind Forest",
@@ -2007,75 +2667,81 @@
         }, {
             "plat": "Steam",
             "title": "Ori and the Blind Forest: Definitive Edition",
-            "gameTime": 0,
-            "relDate": 2016,
-            "status": 4
-        }, {
-            "plat": "Steam",
-            "title": "Orwell",
-            "gameTime": 894,
+            "gameTime": 1210,
             "relDate": 2016,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Path of Exile",
-            "gameTime": 1560,
-            "relDate": 2013,
+            "title": "Orwell",
+            "gameTime": 895,
+            "relDate": 2016,
+            "status": 2
+        }, {
+            "plat": "Steam",
+            "title": "Phantasy Star Online 2",
+            "gameTime": 385,
+            "relDate": 2012,
             "status": 5
+        }, {
+            "plat": "Steam",
+            "title": "Phasmophobia",
+            "gameTime": 441,
+            "relDate": "N/A",
+            "status": 3
         }, {
             "plat": "Steam",
             "title": "PlanetSide Arena",
             "gameTime": 18,
             "relDate": 2019,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Pool Nation FX",
             "gameTime": 54,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Prismata",
-            "gameTime": 156,
+            "gameTime": 158,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Quake Champions",
-            "gameTime": 288,
+            "gameTime": 285,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Rage Quest: The Worst Game",
-            "gameTime": 12,
+            "gameTime": 9,
             "relDate": "N/A",
-            "status": 5 
-        }, {
-            "plat": "Steam",
-            "title": "Raiders of the Broken Planet (Spacelords)",
-            "gameTime": 1050,
-            "relDate": 2017,
             "status": 5
         }, {
             "plat": "Steam",
+            "title": "Raiders of the Broken Planet (Spacelords)",
+            "gameTime": 1107,
+            "relDate": 2017,
+            "status": 6
+        }, {
+            "plat": "Steam",
             "title": "The Red Solstice",
-            "gameTime": 120,
+            "gameTime": 117,
             "relDate": 2015,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Requiem",
-            "gameTime": 60,
+            "gameTime": 62,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Riders of Icarus",
-            "gameTime": 13500,
+            "gameTime": 13522,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Ring of Elysium",
@@ -2085,9 +2751,9 @@
         }, {
             "plat": "Steam",
             "title": "Rise of the Tomb Raider",
-            "gameTime": 2460,
+            "gameTime": 4160,
             "relDate": 2016,
-            "status": 5
+            "status": 2
         }, {
             "plat": "Steam",
             "title": "Robocraft",
@@ -2097,28 +2763,34 @@
         }, {
             "plat": "Steam",
             "title": "RWBY: Grimm Eclipse",
-            "gameTime": 1500,
+            "gameTime": 1489,
             "relDate": 2016,
             "status": 2
         }, {
             "plat": "Steam",
             "title": "Sanctum 2",
-            "gameTime": 30,
+            "gameTime": 27,
             "relDate": 2013,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Satellite Reign",
-            "gameTime": 1800,
+            "gameTime": 1782,
             "relDate": 2015,
             "status": 5
         }, {
             "plat": "Global, Steam",
             "title": "The Secret World / Secret World Legends",
-            "gameTime": 17820,
+            "gameTime": 17802,
             "relDate": 2012,
             "status": 5
         }, {
+            "plat": "Steam",
+            "title": "SEGA Mega Drive & Genesis Classics",
+            "gameTime": 6,
+            "relDate": 2019,
+            "status": 5
+        },{
             "plat": "Steam",
             "title": "Serial Cleaner",
             "gameTime": 0,
@@ -2126,28 +2798,28 @@
             "status": 4
         }, {
             "plat": "Steam",
+            "title": "Shadow of Tomb Raider",
+            "gameTime": 3081,
+            "relDate": 2018,
+            "status": 2
+        }, {
+            "plat": "Steam",
             "title": "Shadow Warrior",
-            "gameTime": 1200,
+            "gameTime": 1201,
             "relDate": 2013,
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Shadowrun: Dragonfall - Director's Cut",
-            "gameTime": 0,
-            "relDate": 2014,
-            "status": 4
-        }, {
-            "plat": "Steam",
-            "title": "Shadowrun Returns",
-            "gameTime": 1283,
-            "relDate": 2013,
+            "title": "Shadow Warrrior Classic",
+            "gameTime": 35,
+            "relDate": 1997,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Shadowverse",
-            "gameTime": 54,
+            "gameTime": 56,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Shardbound",
@@ -2157,33 +2829,39 @@
         }, {
             "plat": "Steam",
             "title": "Sid Meier's Civilization III: Complete",
-            "gameTime": 90,
+            "gameTime": 88,
             "relDate": 2004,
             "status": 5
         }, {
             "plat": "Steam",
-            "title": "Sigma Theory",
+            "title": "Sigma Theory: Global Cold War",
             "gameTime": 171,
             "relDate": 2019,
             "status": 5
         }, {
             "plat": "Steam",
+            "title": "SINNER: Sacrifice for Redemption",
+            "gameTime": 29,
+            "relDate": 2018,
+            "status": 5
+        }, {
+            "plat": "Steam",
             "title": "Sins of a Solar Empire: Rebellion",
-            "gameTime": 0,
+            "gameTime": 2,
             "relDate": 2012,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Skullgirls",
-            "gameTime": 514,
+            "gameTime": 958,
             "relDate": 2012,
             "status": 3
         }, {
             "plat": "Global, Steam",
-            "title": "Skyforge",
-            "gameTime": 4200,
+            "title": "Skyforge (*)",
+            "gameTime": 4188,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Snake Pass",
@@ -2193,39 +2871,33 @@
         }, {
             "plat": "Steam",
             "title": "Soulworker",
-            "gameTime": 570,
+            "gameTime": 571,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Spec Ops: The Line",
-            "gameTime": 504,
+            "gameTime": 501,
             "relDate": 2012,
             "status": 2
         }, {
-            "plat": "Global, Steam",
-            "title": "Star Trek Online",
-            "gameTime": 13259,
-            "relDate": 2010,
-            "status": 5
-        }, {
             "plat": "Steam",
             "title": "Star Trek: Timelines",
-            "gameTime": 66,
+            "gameTime": 64,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "State of Mind",
-            "gameTime": 0,
+            "gameTime": 431,
             "relDate": 2018,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Stay Out",
-            "gameTime": 102,
+            "gameTime": 101,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Stories: The Path of Destinies (*)",
@@ -2234,44 +2906,56 @@
             "status": 2
         }, {
             "plat": "Steam",
-            "title": "Stree Fighter V",
-            "gameTime": 2763,
+            "title": "Street Fighter V",
+            "gameTime": 3094,
             "relDate": 2016,
             "status": 3
         }, {
             "plat": "Steam",
             "title": "Super Captain 3D",
-            "gameTime": 12,
+            "gameTime": 9,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Synthesis: Mind, Body and Soul",
             "gameTime": 11,
-            "relDate": "N/A",
-            "status": 5
+            "relDate": 2020,
+            "status": 6
         }, {
             "plat": "Global, Steam",
             "title": "TERA",
-            "gameTime": 14160,
+            "gameTime": 14136,
             "relDate": 2011,
+            "status": 6
+        }, {
+            "plat":"Steam",
+            "title": "The Incredible Adventures of Van Helsing: Final Cut",
+            "gameTime": 357,
+            "relDate": 2015,
             "status": 5
         }, {
             "plat": "Steam",
+            "title": "TheDawn",
+            "gameTime": 67,
+            "relDate": 2020,
+            "status": 3
+        }, {
+            "plat": "Steam",
             "title": "To the Core",
-            "gameTime": 12,
+            "gameTime": 11,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam, Uplay",
             "title": "Tom Clancy's The Division",
-            "gameTime": 24830,
+            "gameTime": 24885,
             "relDate": 2016,
             "status": 3
         }, {
             "plat": "Steam",
             "title": "Tomb Raider",
-            "gameTime": 3240,
+            "gameTime": 3245,
             "relDate": 2013,
             "status": 2
         }, {
@@ -2279,7 +2963,7 @@
             "title": "Tomb Raider: Underworld",
             "gameTime": 66,
             "relDate": 2008,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Steam",
             "title": "Total War: SHOGUN 2",
@@ -2288,27 +2972,45 @@
             "status": 4
         }, {
             "plat": "Steam",
+            "title": "Trine 4: The Nightmare Prince",
+            "gameTime": 1294,
+            "relDate": 2019,
+            "status": 2
+        }, {
+            "plat": "Steam",
             "title": "Tunche: Arena",
             "gameTime": 36,
             "relDate": "N/A",
             "status": 5
         }, {
             "plat": "Steam",
+            "title": "Ultimate Marvel vs. Capcom 3",
+            "gameTime": 198,
+            "relDate": 2017,
+            "status": 3
+        }, {
+            "plat": "Steam",
             "title": "Ultra Street Fighter IV",
-            "gameTime": 330,
+            "gameTime": 328,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "The Uncertain: The last Quet Day - Ep. 1",
             "gameTime": 0,
-            "relDate": "N/A",
-            "status":4
+            "relDate": 2016,
+            "status": 4
         }, {
             "plat": "Steam",
             "title": "Vainglory",
-            "gameTime": 108,
+            "gameTime": 109,
             "relDate": 2019,
+            "status": 6
+        }, {
+            "plat": "Steam",
+            "title": "Vanquish",
+            "gameTime": 50,
+            "relDate": 2017,
             "status": 5
         }, {
             "plat": "Steam",
@@ -2321,37 +3023,31 @@
             "title": "Walking Zombie 2",
             "gameTime": 212,
             "relDate": 2019,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Global, Steam",
-            "title": "Warface",
+            "title": "Warface (*)",
             "gameTime": 137,
             "relDate": 2013,
-            "status": 5
-        }, {
-            "plat": "Steam",
-            "title": "Warframe",
-            "gameTime": 13611,
-            "relDate": 2013,
-            "status": 3
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Warhammer 40,000: Eternal Crusade",
-            "gameTime": 12,
+            "gameTime": 10,
             "relDate": 2016,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Warhammer 40,000: Space Marine",
-            "gameTime": 90,
+            "gameTime": 87,
             "relDate": 2011,
             "status": 5
         }, {
             "plat": "Steam",
             "title": "Wildstar",
-            "gameTime": 24,
+            "gameTime": 22,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "Zombie Driver HD",
@@ -2363,13 +3059,13 @@
             "title": "Zombie Wars: invasion",
             "gameTime": 420,
             "relDate": 2016,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Steam",
             "title": "罪業狂襲 Frenzy Retribution",
-            "gameTime": 66,
+            "gameTime": 102,
             "relDate": 2019,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Anno 1602",
@@ -2378,64 +3074,76 @@
             "status": 4
         }, {
             "plat": "Uplay",
+            "title": "Anno 1701 - History Edition",
+            "gameTime": 0,
+            "relDate": 2006,
+            "status": 4
+        }, {
+            "plat": "Uplay",
             "title": "Assassin's Creed Chronicles China (*)",
             "gameTime": 0,
             "relDate": 2015,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Assassin's Creed II",
             "gameTime": 0,
             "relDate": 2009,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Assassin's Creed III (*)",
             "gameTime": 0,
             "relDate": 2012,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Assassin's Creed IV Black Flag (*)",
             "gameTime": 0,
             "relDate": 2013,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Assassin's Creed Unity (*)",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Beyond Good and Evil",
             "gameTime": 0,
             "relDate": 2003,
-            "status": 4
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Child of Light (*)",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "The Crew (*)",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Uplay",
             "title": "Far Cry 3 Blood Dragon",
             "gameTime": 0,
             "relDate": 2013,
+            "status": 5
+        }, {
+            "plat": "Uplay",
+            "title": "Hyper Space",
+            "gameTime": 0,
+            "relDate": "N/A",
             "status": 4
         }, {
             "plat": "Uplay",
             "title": "Might & Magic - Chess Royale",
             "gameTime": 30,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "Uplay",
             "title": "Prince of Persia: The Sands of Time",
@@ -2453,13 +3161,19 @@
             "title": "Rainbow Six Siege",
             "gameTime": 430,
             "relDate": 2015,
-            "status": 3
+            "status": 5
         }, {
             "plat": "Uplay",
             "title": "Rayman Origins (*)",
             "gameTime": 0,
             "relDate": 2011,
-            "status": 3
+            "status": 5
+        },  {
+            "plat": "Uplay",
+            "title": "Starlink: Battle for Atlas",
+            "gameTime": 0,
+            "relDate": 2018,
+            "status": 4
         }, {
             "plat": "Uplay",
             "title": "Tom Clancy's Splinter Cell",
@@ -2469,145 +3183,151 @@
         }, {
             "plat": "Uplay",
             "title": "Tom Clancy's The Division 2",
-            "gameTime": 11361,
+            "gameTime": 16333,
             "relDate": 2019,
             "status": 3
+        }, {
+            "plat": "Uplay",
+            "title": "Trials Rising",
+            "gameTime": 0,
+            "relDate": 2019,
+            "status": 4
         }, {
             "plat": "Uplay",
             "title": "World in Conflict (*)",
             "gameTime": 0,
             "relDate": 2007,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Age of Empires: Castle Siege",
             "gameTime": 2809,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Asphalt 8: Airbone (*)",
             "gameTime": 0,
             "relDate": 2013,
-            "status": 4
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Bubble Witch 3 Saga (*)",
             "gameTime": 0,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Candy Crush Saga (*)",
             "gameTime": 0,
             "relDate": 2012,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Candy Crush Soda Saga (*)",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Dungeon Hunter 4 (*)",
             "gameTime": 0,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "FarmVille 2: Country Escape (*)",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Final Fantasy XV Pocket Edition (*)",
             "gameTime": 0,
             "relDate": 2018,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Heroes of Order & Chaos - Multiplayer Online Battle",
             "gameTime": 0,
             "relDate": "N/A",
-            "status": 4
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Instant War (*)",
             "gameTime": 0,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "LEGO Juniors: Create and Cruise (*)",
             "gameTime": 0,
             "relDate": "N/A",
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Microsoft Mahjong (*)",
             "gameTime": 0,
             "relDate": 2012,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Microsoft Solitaire Collection (*)",
             "gameTime": 0,
             "relDate": 2012,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Microsoft Sudoku (*)",
             "gameTime": 0,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
-            "title": "Minecraft: Windows 10 Edition",
+            "title": "Minecraft: Windows 10 Edition (*)",
             "gameTime": 10,
             "relDate": 2012,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Phantom Dust",
             "gameTime": 54,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Pinball FX2",
             "gameTime": 332,
             "relDate": 2014,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Pinball FX3",
             "gameTime": 76,
             "relDate": 2017,
-            "status": 5
+            "status": 6
         }, {
             "plat": "XLive",
             "title": "Star Wars Rebels: Recon Missions (*)",
             "gameTime": 0,
             "relDate": 2015,
-            "status": 5
+            "status": 6
         }, {
             "plat": "Global",
             "title": "Blade and Soul (*)",
             "gameTime": 0,
-            "relDate": "N/A",
-            "status": 5
+            "relDate": 2012,
+            "status": 6
         }, {
             "plat": "Global",
-            "title": "Guild Wars (*)",
+            "title": "Guild Wars: Trilogy (*)",
             "gameTime": 0,
-            "relDate": 2005,
+            "relDate": 2008,
             "status": 3
         }, {
             "plat": "Global",
             "title": "Guild Wars 2",
-            "gameTime": 158580,
+            "gameTime": 158687,
             "relDate": 2012,
             "status": 3
         }

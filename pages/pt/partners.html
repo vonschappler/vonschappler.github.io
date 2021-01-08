@@ -9,7 +9,7 @@
 </div>
 			
 <div class="ui fourteen wide center aligned container" style="padding-top: 2.0em; padding-bottom:2.0em;">
-	<h5 class="date right aligned" align="right">Atualizada em: jul/01/2020</h5>
+	<h5 class="date right aligned" align="right">Atualizada em: 08/jan/2021</h5>
 	<div class="ui raised segment left aligned">
 	<h1 class="ui big teal label left ribbon">Twitch Streamers*</h1><br><br>
 		<div class="ui three column grid">
@@ -97,6 +97,24 @@
 					</div> -->
 				</div>
 			</div>
+
+			<!-- dosseiro -->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="dosseiro" class="left floated rounded mini ui image">
+						<div class="header">dosseiro</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached teal button" onClick="openTwitch('dosseiro');">Visitar a Twitch de dosseiro
+					</div>
+					<!-- <div class="ui bottom attached two buttons">
+									<div class="ui teal button" onClick="openTwitch('d4rkr4yn3');">Visitar Twitch</div>
+									<div class="ui inverted or"></div>
+									<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'd4rkr4yn3')">Assista Aqui</div>
+								</div> -->
+				</div>
+			</div>
 		
 			<!-- FairlyOddPanda -->	
 			<div class="column">
@@ -116,7 +134,7 @@
 			</div>
 			
 			<!--gummypigtv-->
-			<div class="column">
+			<!--<div class="column">
 				<div class="ui fluid card">
 					<div class="content">
 						<img id="gummypigtv" class="left floated rounded mini ui image">
@@ -129,7 +147,7 @@
 						<div class="ui inverted or"></div>
 						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'GummypigTv')">Assista Aqui</div>
 					</div> -->
-				</div>
+				<!--</div>
 			</div>
 
 			<!--hashiva-->
@@ -183,6 +201,23 @@
 				</div>
 			</div>
 
+			<!-- lulageddon -->
+			<div class="column">
+				<div class="ui fluid card">
+					<div class="content">
+						<img id="lulageddon" class="left floated rounded mini ui image">
+						<div class="header">lulageddon</div>
+						<div class="meta"></div>
+					</div>
+					<div class="ui bottom attached teal button" onClick="openTwitch('lulageddon');">Visitar a Twitch de lulageddon</div>
+					<!-- <div class="ui bottom attached two buttons">
+									<div class="ui teal button" onClick="openTwitch('wxdpl');">Visitar Twitch</div>
+									<div class="ui inverted or"></div>
+									<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'WxDpl')">Assista Aqui</div>
+								</div> -->
+				</div>
+			</div>
+			
 			<!--Mother0fGliders-->
 			<div class="column">
 				<div class="ui fluid card">
@@ -286,23 +321,6 @@
 				</div>
 			</div>
 			
-			<!-- Wxpdl -->
-			<div class="column">
-				<div class="ui fluid card">
-					<div class="content">
-						<img id="wxDpl" class="left floated rounded mini ui image">
-						<div class="header">WxDpl</div>
-						<div class="meta"></div>
-					</div>
-					<div class="ui bottom attached teal button" onClick="openTwitch('wxdpl');">Visitar a Twitch de WxDpl</div>
-					<!-- <div class="ui bottom attached two buttons">
-						<div class="ui teal button" onClick="openTwitch('wxdpl');">Visitar Twitch</div>
-						<div class="ui inverted or"></div>
-						<div class="ui teal button" onClick="streamModal('../pages/pt/streamview', 'WxDpl')">Assista Aqui</div>
-					</div> -->
-				</div>
-			</div>
-
 			<!-- xLivicc -->
 			<div class="column">
 				<div class="ui fluid card">
@@ -371,8 +389,8 @@
 <script src="./js/main.js"></script>
 <script>
 	$(document).ready(function() {
-		var partners = ['aladar', 'Amethystkorn', 'ArieBelles', 'CriptoGirl', 'd4rkr4yn3', 'FairlyOddPanda', 'hashiva', 'gummypigtv', 'jvpchaves',
-		'Mother0fGliders', 'Karalena', 'PizzaMaid', 'nessx', 'skyewasthelimit', 'tinyvirgO', 'wxDpl', 'xlNinjaManlx', 'von_Schappler', 'xLivicc',
+		var partners = ['aladar', 'Amethystkorn', 'ArieBelles', 'CriptoGirl', 'd4rkr4yn3', 'dosseiro','FairlyOddPanda', 'hashiva', 'gummypigtv', 'jvpchaves',
+		'Mother0fGliders', 'Karalena', 'PizzaMaid', 'nessx', 'skyewasthelimit', 'tinyvirgO', 'lulageddon', 'xlNinjaManlx', 'von_Schappler', 'xLivicc',
 		'oficialdank2k']
 		for (i=0; i<partners.length; i++) {
 			getImage(partners[i])

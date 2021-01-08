@@ -26,7 +26,7 @@
                         <th colspan="3">
                             Games owned in physical media were not added to this library
                         </th>
-                        <th colspan="2" class="ui right aligned">Last updated on: Jul/03/2020</th>
+                        <th colspan="2" class="ui right aligned">Last updated on: Jan/07/2021</th>
                     </tr>
                 </tfoot>
             </table>
@@ -34,24 +34,28 @@
     </div>
     <div class="four wide column" style="padding-top: 2.0em; padding-bottom:2.0em;">
         <div class="ui raised segment">
-            <h3 align="center">Legend:</h3>
+            <h4 align="center">Legend:</h4>
             <table class="ui collapsing celled inverted table" align="center">
                 <tbody>
                     <tr>
                         <td><i class="play icon"></i></td>
-                        <td>games currently being played on daily basis</td>
+                        <td>games currently being played</td>
                     </tr>
                     <tr>
-                        <td><i class="green check icon"></i></td>
-                        <td>games already finished and missing a few achievements to reach 100% conclusion</td>
+                        <td><i class="green circle icon"></i></td>
+                        <td>games already finished and/or missing a few achievements to reach 100% conclusion</td>
                     </tr>
                     <tr>
                         <td><i class="yellow sync alternate icon"></i></td>
-                        <td>games played casually</td>
+                        <td>games played casually or during specific events</td>
                     </tr>
                     <tr>
                         <td><i class="circle outline icon"></i></td>
-                        <td>games never played before or just tested</td>
+                        <td>games not yet played</td>
+                    </tr>
+                    <tr>
+                        <td><i class="archive icon"></i></td>
+                        <td>games playing during tests, played to see what it looks like or stopped playing and plan to play again later</td>
                     </tr>
                     <tr>
                         <td><i class="red stop icon"></i></td>
@@ -61,18 +65,16 @@
             </table>
         </div>
         <div class="ui raised segment">
-            <h3 align="center">Aditional Information:</h3>
+            <h4 align="center">Aditional Information:</h4>
             <ul>
                 <li>All the info provided here was obtained with the help of the unified gaming library
-                    <a href="http://https://www.gogalaxy.com/en/" target="_blank">GOG Galaxy 2.0</a> and because of some limitations
-                    the info displayed may be innacurate - DLCs are not listed here since I don't own some games DLCs. Also, games marked
-                    with <code>(*)</code> in the end of their names do not display their real/total game time</li>
+                    <a href="https://www.gogalaxy.com/en/" target="_blank">GOG Galaxy 2.0</a> and because of some limitations
+                    the info displayed may be innacurate</li>
+                <li>DLCs are not listed here since I don't own some games DLCs.</li>
+                <li>Games marked with <code>(*)</code> in the end of their names do not display their real/total game time</li>
                 <li><code>Global</code> platform means that the game is not linked to any specific platform or linked to any small gaming platform</li>
-                <li>Games marked with the status <i class="red stop icon"></i> are games I didn't like (or don't like the game anymore) to
-                    continue playing it, or online games which servers have been disabled/turned offline</li>
-                <li>Although by <code>GOG Galaxy 2.0</code> library Destiny 2 is still part of <code>Battle.Net</code>, the game was retired from
-                    Blizzard on Oct/2019. The tracked game time there is only the hours dedicated to playing it after Destiny 2 was moved to
-                    <code>Steam</code></li>
+                <li>Games marked with the status <i class="red stop icon"></i> are games I don't play anymore because I didn't like it (or don't like the
+                    game anymore) to continue playing or online games which servers have been disabled/turned offline</li>
                 <li>Games with (+) at the end of their names are games "imported" from secondary gaming platform accounts</li>
                 <li>Most of the paid games listed in this list were either bought on sales (using donations from streams), gifted or acquired in
                     giveaways/game offers for content creators</li>
@@ -154,13 +156,16 @@
                             case 1:
                                 return "<i class=\"play icon\"></i>"
                             case 2:
-                                return "<i class=\"green check icon\"></i>"
+                                return "<i class=\"green circle icon\"></i>"
                             case 3:
                                 return "<i class=\"yellow sync alternate icon\"></i>"
                             case 4:
                                 return "<i class=\"circle outline icon\"></i>"
                             case 5:
+                                return "<i class=\"archive icon\"></i>"
+                            case 6:
                                 return "<i class=\"red stop icon\"></i>"
+                            
                         }
                     }
                 }, {
