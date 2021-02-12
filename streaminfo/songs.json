@@ -1,0 +1,639 @@
+{
+    "songs": [
+        {
+            "title": "Donuts [NCS Release]",
+            "command": "!sr Donuts - 2SCOOPS",
+            "duration": "2m55s",
+            "artist": "2SCOOPS"
+        }, {
+            "title": "Steeper [NCS Release]",
+            "command": "!sr Steeper - Ash O'",
+            "duration": "3m56s",
+            "artist": "Ash O'Connor & Curby"
+        }, {
+            "title": "Promise Me (feat. Jessie Chambers) [NCS Release]",
+            "artist": "Nurko & Last Heroes",
+            "duration": "3m50s",
+            "command": "!sr Promisse Me - Nurko"
+        }, {
+            "title": "Dimensions [NCS Release]",
+            "artist": "Last Heroes",
+            "command": "!sr Dimensions - Last Heroes",
+            "duration": "3m52s"
+        }, {
+            "title": "Phototropic [NCS Release]",
+            "artist": "Chime",
+            "command": "!sr Phototropic - Chime",
+            "duration": "4m05s"
+        }, {
+            "title": "Closer (feat. Danyka Nadeau) [NCS Release]",
+            "artist": "Au5",
+            "command": "!sr Closer - Au5",
+            "duration": "4m13s"
+        }, {
+            "title": "Everything [NCS Release]",
+            "artist": "Diamond Eyes",
+            "command": "!sr Everything - Diamond",
+            "duration": "4m58s"
+        }, {
+            "title": "Lush (feat. Holly Drummond) [ NCS Release]",
+            "artist": "Au5 & Last Heroes",
+            "command": "!sr Lush - Au5",
+            "duration": "4m01s"
+        }, {
+            "title": "Watch the World Burn (feat. Chris Linton) [NCS Release]",
+            "artist": "Paul Flint",
+            "command": "!sr Watch Burn - Paul",
+            "duration": "3m56s"
+        }, {
+            "title": "Heavens Gate (feat. Oriental Cravings) [NCS Release]",
+            "artist": "Anikdote x Absent Faith",
+            "command": "!sr Heavens - Anikdote",
+            "duration": "4m03s"
+        }, {
+            "artist": "Sekai",
+            "title": "Somebody [NCS Release]",
+            "command": "!sr Somebody - Sekai",
+            "duration": "4m06s"
+        }, {
+            "artist": "Unknown Brain",
+            "command": "!sr Perseus - Unknown",
+            "duration": "3m01s",
+            "title": "Perseus (feat. Chris Linton) [NCS Release]"
+        }, {
+            "artist": "Paul Flint",
+            "command": "!sr Sock It - Paul",
+            "duration": "3m08s",
+            "title": "Sock it to Them [NCS Release]"
+        }, {
+            "artist": "Anna Yvette & AFK",
+            "command": "!sr Clouds - Anna",
+            "duration": "4m44s",
+            "title": "Clouds [NCS Release]"
+        }, {
+            "artist": "floatinurboat",
+            "command": "!sr Spirit - floatinurboat",
+            "duration": "4m12s",
+            "title": "Spirit of Things [NCS Release]"
+        }, {
+            "artist": "Light Years Away",
+            "command": "!sr Melrose - Light",
+            "duration": "3m20s",
+            "title": "Melrose at Midnight [NCS Release]"
+        }, {
+            "artist": "SKYL1NK",
+            "command": "!sr Wizard - Skyl1nk",
+            "duration": "3m02s",
+            "title": "The Wizard [NCS Release]"
+        }, {
+            "artist": "Phantom Sage",
+            "command": "!sr Away - Phanthom",
+            "title": "Away (feat. Byndy) [NCS Release]",
+            "duration": "4m31s"
+        }, {
+            "command": "!sr Savage - Paul",
+            "artist": "Paul Flint",
+            "duration": "3m32s",
+            "title": "Savage [NCS Release]"
+        }, {
+            "command": "!sr Myself - Ulpink",
+            "artist": "Uplink",
+            "duration": "3m27s",
+            "title": "To Myself (feat. NK) [NCS Release]"
+        }, {
+            "command": "!sr Hands - Mendum",
+            "artist": "Mendum",
+            "duration": "4m20s",
+            "title": "Red Hands (feat. Omri) [NCS Release]"
+        }, {
+            "command": "!sr Spoil - Brig",
+            "artist": "Brig",
+            "duration": "3m35s",
+            "title": "Spoil"
+        }, {
+            "command": "!sr Invicible - Deaf",
+            "artist": "DEAF KEV",
+            "duration": "4m34s",
+            "title": "Invicible [NCS Release]"
+        }, {
+            "command": "!sr VIP - Disfigure",
+            "artist": "Disfigure",
+            "duration": "4m46s",
+            "title": "Blank VIP (feat. Tara Louise) [NCS Release]"
+        }, {
+            "command": "!sr Where Was - Whales",
+            "artist": "Sex Whales & Roee Yeger",
+            "duration": "5m05s",
+            "title": "Where Was I (feat. Ashley Apollodor) [NCS Release]"
+        }, {
+            "command": "!sr Blinded - Fytch",
+            "artist": "Fytch",
+            "duration": "3m28s",
+            "title": "Blinded (feat. Kosta & Theo Hoarau) [NCS Release]"
+        }, {
+            "command": "!sr Elysium - Mendum",
+            "artist": "Mendum",
+            "duration": "4m46s",
+            "title": "Elysium [NCS Release]"
+        }, {
+            "command": "!sr Stand - Speo",
+            "artist": "Speo",
+            "duration": "3m14s",
+            "title": "Make a Stand (feat. Budobo) [NCS Release]"
+        }, {
+            "command": "!sr Rescue - Venemy",
+            "artist": "Venemy",
+            "duration": "3m33s",
+            "title": "Rescue Me (feat. Car) [NCS Release]"
+        }, {
+            "command": "!sr Fly - Krys",
+            "artist": "Krys Talk",
+            "duration": "4m46s",
+            "title": "Fly Away [NCS Release]"
+        }, {
+            "command": "!sr Pentakill - Heaven",
+            "artist": "Different Heaven feat. ReesaLunn",
+            "duration": "3m17s",
+            "title": "Pentakill [NCS Release]"
+        }, {
+            "command": "!sr Stay - Mendum",
+            "artist": "Mendum",
+            "duration": "4m09s",
+            "title": "Stay With Me (Krys Talk Remix) [NCS Release]"
+        }, {
+            "command": "!sr That Day - Desmeon",
+            "artist": "Desmeon",
+            "duration": "3m41s",
+            "title": "On that Day (feat. Eldiablo, Flint & Zadik) [NCS Release]"
+        }, {
+            "command": "!sr Adventure - Predators",
+            "artist": "Music Predators",
+            "duration": "3m47s",
+            "title": "Adventure Time [NCS Release]"
+        }, {
+            "command": "!sr Motives - Galaxy",
+            "artist": "DM Galaxy",
+            "duration": "3m02s",
+            "title": "Bad Motives (feat. Aloma Steele) [NCS Release]"
+        }, {
+            "command": "!sr Chasing - Eden Project",
+            "artist": "The Eden Project",
+            "duration": "4m29s",
+            "title": "Chasing Ghosts [NCS Release]"
+        }, {
+            "command": "!sr Nameless - Elliot",
+            "artist": "Elliot Berger",
+            "duration": "3m02s",
+            "title": "The Nameless [NCS Release]"
+        }, {
+            "command": "!sr Clearly - Electro",
+            "artist": "Electro Light feat. Iain Mannix",
+            "duration": "3m34s",
+            "title": "Clearly (Venemy Remix) [NCS Release]"
+        }, {
+            "command": "!sr Redshift - Robert",
+            "artist": "Robert Chacon",
+            "duration": "4m21s",
+            "title": "Redshift (feat. Robertha Sepulveda) [NCS Release]"
+        }, {
+            "command": "!sr Paralyzed - Galaxy",
+            "artist": "DM Galaxy",
+            "duration": "3m49s",
+            "title": "Paralyzed (feat. Tyler Flore) [NCS Release]"
+        }, {
+            "command": "!sr Coming - SirensCeol",
+            "artist": "SirensCeol",
+            "duration": "4m44s",
+            "title": "Coming Home [NCS Release]"
+        }, {
+            "command": "!sr Light - Tetrix",
+            "artist": "Tetrix Bass feat. Veela",
+            "duration": "3m07s",
+            "title": "The Light [NCS Release]"
+        }, {
+            "command": "!sr Reign - Venemy",
+            "artist": "Venemy & Aznar feat. Doubletake",
+            "duration": "4m04s",
+            "title": "Reign [NCS Release]"
+        }, {
+            "command": "!sr Stay - Beatcore",
+            "artist": "Beatcore & Ashley Apollodor",
+            "duration": "3m35s",
+            "title": "Just Stay [NCS Release]"
+        }, {
+            "command": "!sr Ricochet - Gasser",
+            "artist": "Rob Gasser",
+            "duration": "3m42s",
+            "title": "Ricochet [NCS Release]"
+        }, {
+            "command": "!sr Escape - Halcyon",
+            "artist": "Halcyon & Starlyte",
+            "duration": "3m37s",
+            "title": "Escape With Me (feat. Charlotte Haining) [NCS Release]"
+        }, {
+            "command": "!sr Break - Foria",
+            "artist": "Foria",
+            "duration": "4m38s",
+            "title": "Break Away [NCS Release]"
+        }, {
+            "command": "!sr Miko - Phanthom",
+            "artist": "Phantom Sage",
+            "duration": "5m05s",
+            "title": "MIKO [NCS Release]"
+        }, {
+            "command": "!sr Gravity - Umpire",
+            "artist": "Umpire",
+            "duration": "3m48s",
+            "title": "Gravity (feat. Liz Kretschmer) [NCS Release]"
+        }, {
+            "command": "!sr Hollah - Disfigure",
+            "artist": "Disfigure",
+            "duration": "2m42s",
+            "title": "Hollah! [NCS Release]"
+        }, {
+            "command": "!sr Heartbeat - Venemy",
+            "title": "Heartbeat [NCS Release]",
+            "artist": "Venemy Ft. Emily Jane",
+            "duration": "4m09s"
+        }, {
+            "command": "!sr Edge - Electro",
+            "title": "The Edge [NCS Release]",
+            "duration": "2m38s",
+            "artist": "Electro Light ft. Kathryn MacLean"
+        }, {
+            "command": "!sr Away - Laszlo",
+            "title": "One Step Away [NCS Release]",
+            "duration": "5m21s",
+            "artist": "Laszlo" 
+        }, {
+            "command": "!sr Blank - Disfigure",
+            "title": "Blank [NCS Release]",
+            "duration": "3m30s",
+            "artist": "Disfigure"
+        }, {
+            "command": "!sr Perfect 10 - Unknown",
+            "title": "Perfect 10 (feat. Heather Sommer) [NCS Release]",
+            "duration": "3m25s",
+            "artist": "Unknown Brain"
+        }, {
+            "command": "!sr Doubt - Rogers",
+            "title": "No Doubt (Rival x Cadmium Remix) [NCS Release]",
+            "duration": "3m26s",
+            "artist": "Rogers & Dean"
+            
+        }, {
+            "command": "!sr Dreamers - Glude",
+            "title": "Dreamers [NCS Release]",
+            "duration": "2m48s",
+            "artist": "Glude"
+        }, {
+            "command": "!sr Universe - Egzod",
+            "title": "Universe [NCS Release]",
+            "duration": "3m27s",
+            "artist": "Egzod & Tanjent"
+        }, {
+            "command": "!sr Dino - Mountkid",
+            "title": "Dino [NCS Release]",
+            "duration": "3m09s",
+            "artist": "Mountkid"
+        }, {
+            "command": "!sr Ignoring - T-Mass",
+            "title": "Ignoring My Heart [NCS Release]",
+            "duration": "3m05s",
+            "artist": "T-Mass"
+        }, {
+            "command": "!sr Haha - Kozah",
+            "title": "Haha [NCS Release]",
+            "duration": "3m19s",
+            "artist": "Kozah"
+        }, {
+            "command": "!sr Streetlight - Sinner's",
+            "title": "Streetlight People (feat. Harley Bird) [NCS Release]",
+            "duration": "3m22s",
+            "artist": "Sinner's Heist"
+        }, {
+            "command": "!sr Why - Unknown",
+            "title": "Why Do I? (feat. Bri Tolani) [NCS Release]",
+            "duration": "3m44s",
+            "artist": "Unknown Brain"
+            
+        }, {
+            "command": "!sr Lullaby - Mountkid",
+            "title": "No Lullaby [NCS Release]",
+            "duration": "3m21s",
+            "artist": "Mountkid"
+        }, {
+            "command": "!sr Under - Fareoh",
+            "title": "Under Water [NCS Release]",
+            "duration": "2m46s",
+            "artist": "Fareoh"
+        }, {
+            "command": "!sr Fools - Ship Wrek",
+            "title": "Fools Gold [NCS Release]",
+            "duration": "3m25s",
+            "artist": "Ship Wrek & Essy"
+            
+        }, {
+            "command": "!sr Lonewolf - Emdi",
+            "title": "Lonewolf (feat. Kristi-Leah) [NCS Release]",
+            "duration": "2m55s",
+            "artist": "Emdi x Coorby"
+        }, {
+            "command": "!sr Dream - Moji",
+            "title": "Dream Forever [NCS Release]",
+            "duration": "3m13s",
+            "artist": "Raven & Kreyn x Moji x Illusion"
+        }, {
+            "command": "!sr Paradise - Hylo",
+            "title": "Paradise ft. Akacia [NCS Release]",
+            "duration": "3m33s",
+            "artist": "HYLO"
+        }, {
+            "command": "!sr City - Egzod", 
+            "title": "My City [NCS Release]",
+            "duration": "2m47s",
+            "artist": "Egzod & Anna Yvette"
+        }, {
+            "command": "!sr Get - JPB",
+            "title": "Get Over You (feat. Valentina Franco) [NCS Release]",
+            "duration": "3m30s",
+            "artist": "JPB"
+            
+        },  {
+            "command": "!sr Chains - Far Out",
+            "title": "Chains (feat. Alina Renae) [NCS Release]",
+            "duration": "3m15s",
+            "artist": "Far Out"
+        }, {
+            "command": "!sr Mirage - Egzod",
+            "title": "Mirage (feat. Leo The Kind) [NCS Release]",
+            "duration": "3m28s",
+            "artist": "Egzod"
+        }, {
+            "command": "!sr Holding - Unknown",
+            "title": "Holding You (feat. Max Landry) [NCS Release]",
+            "duration": "2m44s",
+            "artist": "Unknown Brain & Spce CadeX"
+        }, {
+            "command": "!sr Stronger - Prismo",
+            "title": "Stronger [NCS Release]",
+            "duration": "3m33s",
+            "artist": "Prismo"
+        }, {
+            "command": "!sr Away - Jo Cohen",
+            "title": "Run Away (feat. Lusil) [NCS Release]",
+            "duration": "2m56s",
+            "artist": "Jo Cohen & Sex Whales"
+        }, {
+            "command": "!sr Mercury - Zookeepers",
+            "title": "Mercury [NCS Release]",
+            "duration": "2m21s",
+            "artist": "Zookeepers & Heuse"
+        },  {
+            "command": "!sr Twisted - Unknown",
+            "title": "Twisted Reality [NCS Release]",
+            "duration": "3m07s",
+            "artist": "Unknown Brain & Anna Yvette"
+        }, {
+            "command": "!sr Cosmic - Jordan",
+            "title": "Cosmic (feat. Nathan Brumley) [NCS Release]",
+            "duration": "3m58s",
+            "artist": "Jordan Schor"
+        }, {
+            "command": "!sr Roots - Unknown",
+            "title": "Roots (feat. Attxla) [NCS Release]",
+            "duration": "3m03s",
+            "artist": "Unknown Brain"
+        }, {
+            "command": "!sr Kuyenda - Lennart",
+            "title": "Kuyenda (feat. Sru) [NCS Release]",
+            "duration": "3m00s",
+            "artist": "Lennart Schroot & Unknown Brain"
+        }, {
+            "command": "!sr Wake - Egzod",
+            "title": "Wake Up (feat. Chris Linton) [NCS Release]",
+            "duration": "3m03s",
+            "artist": "Egzod"
+        }, {
+            "command": "!sr Inspiration - Unknown",
+            "title": "Inspiration (feat. Aviella) [NCS Release]",
+            "duration": "3m03s",
+            "artist": "Unknown Brain"
+        }, {
+            "command": "!sr Take - Bvrnout",
+            "title": "Take It Easy (feat. Mia Vaile) [NCS Release]",
+            "duration": "3m19s",
+            "artist": "BVRNOUT"
+        }, {
+            "command": "!sr Bow - T-Mass",
+            "title": "Bow and Arrow [NCS Release]",
+            "duration": "2m48s",
+            "artist": "T-Mass"
+        }, {
+            "command": "!sr Elysium - Lostboy",
+            "title": "Elysium [NCS Release]",
+            "duration": "2m52s",
+            "artist": "Lostboy & Slashtaq"
+        }, {
+            "command": "!sr Gave - T-Mass",
+            "title": "Gave To Me [NCS Release]",
+            "duration": "3m33s",
+            "artist": "T-Mass & Jaxxtone"
+        }, {
+            "command": "!sr Matafaka - Unknown",
+            "title": "MATAFAKA (feat. Marvin Divine) [NCS Release]",
+            "duration": "4m08s",
+            "artist": "Unknown Brain"
+        }, {
+            "command": "!sr Don't Let - Anikdote",
+            "title": "Don't Let It Go (feat. Brado Sanz) [NCS Release]",
+            "duration": "3m06s",
+            "artist": "Anikdote & Culture Code"
+        }, {
+            "command": "!sr Bleed - Axol",
+            "title": "Bleed [NCS Release]",
+            "duration": "4m12s",
+            "artist": "Axol & The Tech Thieves"
+        }, {
+            "command": "!sr Vessel - Ship",
+            "title": "Vessel [NCS Release]",
+            "duration": "3m25s",
+            "artist": "Ship Wrek, Zookeepers & Trauzers"
+        }, {
+            "command": "!sr Together - 3rd",
+            "title": "Together [NCS Release]",
+            "duration": "3m11s",
+            "artist": "3rd Prototype"
+        }, {
+            "command": "!sr Wicked - John",
+            "title": "Wicked [NCS Release]",
+            "duration": "2m53s",
+            "artist": "John Kenza"
+        }, {
+            "command": "!sr Til - Holly",
+            "title": "Til The End [NCS Release]",
+            "duration": "3m30s",
+            "artist": "Holly x Drivvin"
+        }, {
+            "command": "!sr Can You - T-Mass",
+            "title": "Can You Feel It [NCS Release]",
+            "duration": "3m32s",
+            "artist": "T-Mass & Enthic"
+        }, {
+            "command": "!sr Pyro - Dread",
+            "title": "Pyro [NCS Release]",
+            "duration": "3m36s",
+            "artist": "Dread Pitt"
+        }, {
+            "command": "!sr Stones - Heuse",
+            "title": "Stones (feat. Chris Linton & Emma Sameth) [NCS Release]",
+            "duration": "2m56s",
+            "artist": "Heuse"
+        }, {
+            "command": "!sr Shadows - Different",
+            "title": "Shadows (feat. Miss Mary) [NCS Release]",
+            "duration": "3m14s",
+            "artist": "It's Different"
+        }, {
+            "command": "!sr Mortals - Warriyo",
+            "title": "Mortals (feat. Laura Brehm) [NCS Release]",
+            "duration": "3m50s",
+            "artist": "Warriyo"
+        }, {
+            "command": "!sr Pill - Heuse",
+            "title": "Pill (feat. Emma Sameth) [NCS Release]",
+            "duration": "2m16s",
+            "artist": "Heuse & Zeus x Crona"
+        }, {
+            "command": "!sr Glowing - Cohen",
+            "title": "Glowing At Night [NCS Release]",
+            "duration": "3m03s",
+            "artist": "Jo Cohen & BQ"
+        }, {
+            "command": "!sr Imma - Anikdote",
+            "title": "Imma Killa [NCS Release]",
+            "duration": "3m57s",
+            "artist": "Anikdote"
+        }, {
+            "command": "!sr Feels - ÉWN",
+            "title": "Feels [NCS Release]",
+            "duration": "3m04s",
+            "artist": "ÉWN"
+        }, {
+            "command": "!sr Pain - Ship",
+            "title": "Pain (feat. Mia Vaile) [NCS Release]",
+            "duration": "3m31s",
+            "artist": "Ship Wrek"
+        }, {
+            "command": "!sr Remember - Levianth",
+            "title": "Remember (feat. The Tech Thieves) [NCS Release]",
+            "duration": "3m08s",
+            "artist": "Levianth & Axol"
+        }, {
+            "command": "!sr Start - ÉWN",
+            "title": "Start That Fire [NCS Release]",
+            "duration": "2m54s",
+            "artist": "ÉWN & Whogaux"
+        }, {
+            "command": "!sr Fly - Fransis",
+            "title": "Fly (feat. Parker Pohill) [NCS Release]",
+            "duration": "3m23s",
+            "artist": "Fransis Derelle"
+        }, {
+            "command": "!sr Feels - JBP",
+            "title": "Feels Right (ft. Yung Fusion) [NCS Release]",
+            "duration": "3m20s",
+            "artist": "JPB & MYRNE"
+        }, {
+            "command": "!sr Turn - Anikdote",
+            "title": "Turn It Up [NCS Release]",
+            "duration": "4m08s",
+            "artist": "Anikdote"
+        }, {
+            "command": "!sr We are - Cohen",
+            "title": "We Are [NCS Release]",
+            "duration": "3m57s",
+            "artist": "Jo Cohen & Sex Whales"
+        }, {
+            "command": "!sr Ark - Zookeepers",
+            "title": "Ark [NCS Release]",
+            "duration": "2m59s",
+            "artist": "Ship Wrek & Zookeepers"
+        }, {
+            "command": "!sr Direction - Anikdote",
+            "title": "Which Direction? [NCS Release]",
+            "duration": "3m22s",
+            "artist": "Anikdote"
+        }, {
+            "command": "!sr Defeat - JPB",
+            "title": "Defeat The Night (feat. Ashley Apollodor) [NCS Release]",
+            "duration": "4m14s",
+            "artist": "JPB"
+        }, {
+            "command": "!sr All - Vanze",
+            "title": "All I Need (feat. Brenton Mattheus) [NCS Release]",
+            "duration": "3m37s",
+            "artist": "Vanze x Balco x Fransis Derelle"
+        }, {
+            "command": "!sr Let me - Naima",
+            "title": "Let Me See You [NCS Release]",
+            "duration": "2m40s",
+            "artist": "NAIMA"
+        }, {
+            "command": "!sr Vibe - Ash",
+            "title": "Vibe [NCS Release]",
+            "duration": "2m49s",
+            "artist": "Ash O'Connor"
+        }, {
+            "command": "!sr One - Hoverboots",
+            "title": "One [NCS Release]",
+            "duration": "3m46s",
+            "artist": "HOVERBOOTS"
+        }, {
+            "command": "!sr Away - Subtract",
+            "title": "Away [NCS Release]",
+            "duration": "3m55s",
+            "artist": "Subtact"
+        }, {
+            "command": "!sr High - JPB",
+            "title": "High [NCS Release]",
+            "duration": "3m13s",
+            "artist": "JPB"
+        }, {
+            "command": "!sr You. - Zest",
+            "title": "You. & Me? [NCS Release]",
+            "duration": "4m02s",
+            "artist": "ZEST"
+        }, {
+            "command": "!sr Symbolism - Electro",
+            "title": "Symbolism [NCS Release]",
+            "duration": "4m52s",
+            "artist": "Electro-Light"
+        }, {
+            "command": "!sr Home - Krys",
+            "title": "Way Back Home [NCS Release]",
+            "duration": "3m48s",
+            "artist": "Krys Talk & Cole Sipe"
+        }, {
+            "command": "!sr Shootin - Aero",
+            "title": "Shootin Stars [NCS Release]",
+            "duration": "4m03s",
+            "artist": "Aero Chord feat. DDARK"
+        }, {
+            "command": "!sr Apocalypse - Niviro",
+            "title": "NIVIRO - The Apocalypse [NCS Release]",
+            "duration": "3m16s",
+            "artist": "NIVIRO"
+        }, {
+            "command": "!sr Ghost - Niviro",
+            "title": "The Ghost [NCS Official Video]",
+            "duration": "3m25s",
+            "artist": "NIVIRO"
+        }, {
+            "command": "!sr Return - Niviro",
+            "title": "The Return [NCS Official Video]",
+            "duration": "3m43s",
+            "artist": "NIVIRO"
+        }
+    ]
+}

@@ -243,6 +243,14 @@
 	document.title = "[Gaming] - von Schappler Website";
 	$('#menu').load('./pages/pt/menu.html', function() {
 		$('#addM').append('<a class=\"item\" onClick=loadPage(\"en/gaming\")><i class=\"us flag\"></i>English</a>');
+		var mainMenu = document.getElementById("addM")
+		console.log(mainMenu)
+		var menuItems = mainMenu.getElementsByClassName("item")
+		for (i = 0; i < (menuItems.length - 1); i++) {
+			console.log(menuItems[i])
+			menuItems[i].classList.remove("active")
+		}
+		menuItems[1].classList.add("active")
 	});
 	$('#hidMenu').load('./pages/pt/menuHidden.html', function() {
 		$('#addH').append('<a class=\"item\" onClick=loadPage(\"en/gaming\")><i class=\"us flag\"></i>English</a>');

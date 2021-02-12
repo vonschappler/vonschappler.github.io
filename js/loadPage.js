@@ -23,14 +23,38 @@ function showModal(a) {
 }
 
 function loadPage(a) {
-	var newUrl = './pages/' + a + '.html';
+	var newUrl = '/pages/' + a + '.html';
 	window.scrollTo(0, 0);
-	$('.pusher').fadeOut(500, function() {
+	$('.pusher').fadeOut(1000, function() {
 		$('.pusher').hide().load(newUrl, function() {
-			$('.pusher').fadeIn(500);
+			$('.pusher').fadeIn(1000);
 		});
 		
 		$('.ui.embed').embed();
-		return false;
+		return true;
 	});
+}
+
+function streamInfo(a) {
+	var newUrl = a + '.html';
+	window.scrollTo(0, 0);
+	$('.pusher').fadeOut(500, function () {
+		$('.pusher').hide().load(newUrl, function () {
+			$('.pusher').fadeIn(500);
+		});
+		if (document.getElementById("tableList")) {
+			table = $("#tableList").DataTable()
+			table.destroy()
+		}
+
+		$('.ui.embed').embed();
+		window.history.pushState(null, null, newUrl)
+		return true;
+	});
+}
+
+function goHome() {
+	var url = 'http://rebrand.ly/vonWebsite';
+	var win = window.open(url, '_blank');
+	win.focus();
 }
