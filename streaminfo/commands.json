@@ -403,7 +403,7 @@
         }, {
             "command": "!sr (title - artist)",
             "response": "Requests a song from a defined playlist, if songrequest is available. NOTE: replace (title - artist) by the name of the song and the artist, eg. !sr Apocalypse - Niviro",
-            "cost": "0",
+            "cost": "50",
             "cd": "User: 0m<br>Global: 0m",
             "group": "Group: Viewer Interaction<br>Type: Script Controlled Command",
             "user": "Everyone",
@@ -487,6 +487,46 @@
             "cd": "User: 1m<br>Global: 1m",
             "group": "Group: Visual Quotes a.0.0.1<br>Type: Script Controlled Command",
             "user": "Moderator",
+            "affected": false
+        }, {
+            "command": "!boss",
+            "response": "Starts a boss fight. The results of the boss fight are displayed 2 minutes after the first call of the command. It's possible to join the boss fight, using <code>!boss</code> before the results are displayed",
+            "cost": "100",
+            "cd": "Unique: 30m",
+            "group": "Group: Mini-games<br>Type: Internal Bot functions",
+            "user": "Everyone",
+            "affected": false
+        }, {
+            "command": "!ffa",
+            "response": "Starts an arena fight with other viewers. The fight starts after 2 minutes after the first call of the command and the minimum of 5 viewers are required for the fight to happen. Only ONE survirivor will be rewarded",
+            "cost": "50",
+            "cd": "Unique: 30m",
+            "user": "Everyone",
+            "group": "Group: Mini-games<br>Type: Internal Bot functions",
+            "affected": false
+        }, {
+            "command": "!duel (viewer)",
+            "response": "Starts a PvP fight against (viewer). (viewer) has 2 minutes to answer the call to the fight. The winner gets the reward from the fight. NOTE: replace (viewer) by the name of another viewer active in stream chat",
+            "cost": "100",
+            "cd": "Unique: 15m",
+            "user": "Everyone",
+            "group":"Group: Mini-games<br>Type: Internal Bot functions",
+            "affected": false
+        }, {
+            "command": "!heist (val)",
+            "response": "Starts a bank heist. A single viewer can attempt to heist the bank, which will give start 2 minutes after the first use of the command and other viewers have this time to join the attempt. NOTE: replace (val) by a number from 1 to 1000",
+            "cost": "Varies",
+            "cd": "Unique: 60m",
+            "user": "Everyone",
+            "group": "Group: Mini-games<br>Type: Internal Bot functions",
+            "affected": false
+        }, {
+            "command": "!gamble (val)",
+            "response": "Allows the viewer to glambe (val). NOTE: replace (val) by a number from 1 to 9999. It's possible to use the word <code>all</code> instead of a number to gamble all your coins",
+            "cost": "Varies",
+            "cd": "User: 5m<br>Global: 1m",
+            "user": "Everyone",
+            "group": "Group: Mini-games<br>Type: Command Controled by Script",
             "affected": false
         }
     ], 
@@ -827,7 +867,7 @@
         {
             "command": "!sfx (effects)",
             "response": "Reproduz até três efeitos sonoros por uso. O custo de uso depende de quantos efeitos são reproduzidos e do custo indifidual de cada um. NOTA: ao usar <code>!sfx (effects)</code>, troque (effects) pelo(s) nome(s) do(s) trigger(s) , separados por espaço. Para uma listagem dos efeitos disponíveis e seus custos, use <code>!sfxlist</code>",
-            "cost": "Varies",
+            "cost": "Variável",
             "cd": "Usuário: 5m<br>Geral: 1m",
             "group": "Grupo: MultiSFX Script<br>Tipo: Comando controlado por script",
             "user": "Todos",
@@ -944,7 +984,7 @@
         {
             "command": "!sr (title - artist)",
             "response": "Adiciona a música definida por (title - artist) à playlist de músicas, se o songrequest estiver ativo. NOTA: troque (title - artist) pelo nome da música e o artista, por exemplo: <code>!sr Apocalypse - Niviro</code> ",
-            "cost": "0",
+            "cost": "50",
             "cd": "Usuário: 0m<br>Geral: 0m",
             "group": "Grupo: Viewer Interaction<br>Tipo: Comando controlado por script",
             "user": "Todos",
@@ -1039,6 +1079,47 @@
             "group": "Grupo: Visual Quotes a.0.0.1<br>Tipo: Comando controlado por script",
             "user": "Moderador",
             "affected": false
+        }, {
+            "command": "!boss",
+            "response": "Inicia uma luta contra um boss. Os resultados da luta são mostrados 2 minutos após o primeiro uso do comando. É possível se juntar à luta, usando <code>!boss</code> antes que os resultados sejam mostrados",
+            "cost": "100",
+            "cd": "Único: 30m",
+            "group": "Grupo: Mini-games<br>Tipo: Funções Internas do Bot",
+            "user": "Todos",
+            "affected": false
+        }, {
+            "command": "!ffa",
+            "response": "Inicia uma luta entre viewers. A luta terá início 2 minutos após o primeiro uso do comando e o mínimo de 5 viewers é necessário para que a batalha aconteça. Apenas UM sobrevivente recebe a recompensa",
+            "cost": "50",
+            "cd": "Único: 30m",
+            "user": "Todos",
+            "group": "Grupo: Mini-games<br>Tipo: Funções Internas do Bot",
+            "affected": false
+        }, {
+            "command": "!duel (viewer)",
+            "response": "Comaça uma luta  PvP contra (viewer). (viewer) tem 2 minutes responder ao chamado de luta. O vencedor recebe a recompensa a luta. NOTA: troque (viewer) pelo nome de um viewer atifo no chat de stream",
+            "cost": "100",
+            "cd": "Único: 15m",
+            "user": "Todos",
+            "group": "Grupo: Mini-games<br>Tipo: Funções Internas do Bot",
+            "affected": false
+        }, {
+            "command": "!heist (val)",
+            "response": "Começa um roubo a um banco. Um único participante pode tentar roubar o banco, cuja tentativa ocorrerá dois minutos após o comando ser usado pela primeira vez no chat. Outros viewers podem se juntar a essa tentativa de roubo durante esse tempo. NOTA: troque (val) por um número entre 1 e 1000",
+            "cost": "Variável",
+            "cd": "Unique: 60m",
+            "user": "Todos",
+            "group": "Grupo: Mini-games<br>Tipo: Funções Internas do Bot",
+            "affected": false
+        }, {
+            "command": "!gamble (val)",
+            "response": "Permite ao viewer apostar (val). NOTA: troque (val) por número entre 1 e 9999. É possível apostar todas as suas vsCoins usando <code>all</code> ao invés de um número ao usar o comando",
+            "cost": "Variável",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "user": "Todos",
+            "group": "Grupo: Mini-games<br>Tipp: Comando controlado por Script",
+            "affected": false
         }
+        
     ]
 }
