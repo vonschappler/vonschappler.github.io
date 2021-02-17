@@ -55,184 +55,161 @@
             <div class="ui inverted vertical masthead center aligned segment">
                 <div id="menu" class="ui centered align container">
                     <div class="ui centered align container">
-                        <div class="ui inverted pointing secondary compact menu">
+                        <div id="mainMenu" class="ui inverted pointing secondary compact menu">
                             <a class="item" onclick="goHome()"><i class="globe icon"></i> Visit Full Site</a>
-                            <a class="item" data-tab="commands" onclick="setActive('commands')"><i class="comment icon"></i> Commands List</a>
-                            <a class="item" data-tab="quotes" onclick="setActive('quotes')"><i class="small quote left icon"></i><i class="small quote right icon"></i> Quotes List</a>
-                            <a class="item" data-tab="songs" onclick="setActive('songs')"><i class="music icon"></i> Song Request List</a>
+                            <a class="item" data-tab="commands" onclick="setActive('commands','')"><i class="comment icon"></i> Commands List</a>
+                            <a class="item" data-tab="quotes" onclick="setActive('quotes','')"><i class="small quote left icon"></i><i class="small quote right icon"></i> Quotes List</a>
+                            <a class="item" data-tab="songs" onclick="setActive('songs','')"><i class="music icon"></i> Song Request List</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="ui text container">
-                    <h1 class="ui inverted header">von's Chatbot Stuff</h1>
+                    <h1 id='title' class="ui inverted header">Chatbot User's Guide</h1>
                 </div>
             </div>
-
-            <div id="tableZone" class="ui grid" style="padding-left: 2.0em; padding-right:2.0em;">
-                <div class="two wide column" style="padding-top: 2.0em; padding-bottom:2.0em;"></div>
-                    <div class="twelve wide column" style="padding-top: 2.0em; padding-bottom:2.0em;">
-                        <p></p>
-                        <div class="ui tab raised segment" data-tab="commands">
-                            <table id="commandsList" class="ui inverted display table scrolling content">
-                                <thead class="ui center aligned" aling="center">
-                                    <tr>
-                                        <th>Command</th>
-                                        <th>Details</th>
-                                        <th>Group / Type</th>
-                                        <th>Cost</th>
-                                        <th>Cooldown</th>
-                                        <th>Used by</th>
-                                        <th>Affected</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th colspan="7" class="ui left aligned">
-                                            <h3>Legend</h3>
-                                            <ul>
-                                                <li>Cost makes reference to how many vsCoins are spend for using the command</li>
-                                                <li>Cooldown makes reference to how frequently the command can be used</li>
-                                                <li>Affected tells if the command is affected by localization settings</li>
-                                                <i class="green check icon"></i> The command response is affected by localization settings<br>
-                                                <i class="red close icon"></i> The command response is not affected by localization settings and its
-                                                response will be returned only in <code>EN-US</code> or in both <code>EN-US</code> and <code>PT-BR</code>, depending on the command
-                                                <li>Using <code>-w</code> (as displayed in some commands) will return the command response on the viewer
-                                                    whisper, IF their account settings allow recieving whispers from non-friend accounts</li>
-                                                <li>All commands in this list can be used directly in <code>vonschappler_bot</code> whisper. Just type <code>/w vonschappler_bot (command)</code>, replacing (command) for the command you want to send</li>
-                                                <li>The previous versions of this can be still accessed in <a href="https://rebrand.ly/vonBotCommEN" target="_blank">English</a> or <a href="https://rebrand.ly/vonBotCommPT" target="_blank">Português</a> as PDF files</li>
-                                            </ul>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="4" class="ui left aligned">This list is updated once per month</th>
-                                        <th colspan="2" class="ui right aligned">Last updated on: Feb/02/2021</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                        <div class="ui tab raised segment" data-tab="quotes">
-                            <table id="quotesList" class="ui inverted display table scrolling content">
-                                <thead class="ui center aligned"aling="center">
-                                    <tr>
-                                        <th>ID Number</th>
-                                        <th>Text</th>
-                                        <th>Command</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th colspan="3">
-                                            <h3>Legend</h3>
-                                            <ul>
-                                                <li>ID Number makes reference to the programetic position of the quote</li>
-                                                <li>Text makes reference to the text displayed when the quote is called</li>
-                                                <li>Command makes reference on how to call the quote</li>
-                                            </ul>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th aling="center" colspan="2">This list is updates once per month</th>
-                                        <th colspan="1" class="ui right aligned">Last updated on: Feb/02/2021</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                        <div class="ui tab raised segment" data-tab="songs">
-                            <table id="songsList" class="ui inverted display table scrolling content">
-                                <thead class="ui center aligned" aling="center">
-                                    <tr>
-                                        <th>Artist</th>
-                                        <th>Title</th>
-                                        <th>Duration</th>
-                                        <th>Command</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th colspan="4">
-                                            <h3>Legend</h3>
-                                            <ul>
-                                                <li>Command makes reference on how to add the song to the queued songs - just copy and paste it in stream chat!</li>
-                                                <li>Want a song not in this list? Try visting <a href="https://www.youtube.com/watch?v=hkas1m6m9AQ&list=PLRBp0Fe2GpgnIh0AiYKh7o7HnYAej-5ph" target="_blank">this link</a>!</li>
-                                            </ul>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2" >Every single command in this list was tested to ensure they work properly</th>
-                                        <th colspan="2" class="ui right aligned">Last updated on: Feb/02/2021</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="tablezone"></div>
+        </div>
+        
 	</body>
 
 
 
     <script>
-        document.title = "[von's Chatbot Stuff] - von Schappler Website";
+        document.title = "[Chatbot User's Guide] - von Schappler Website";
+        str = window.location.href;
+        check = str.split("display=")
+        displayReady = check[0]
+        check = str.split("lang=");
+        displayReadyLang = check[1].split("&")
+        displayReadyLang = displayReadyLang[0]
+        console.log("Before load:", displayReadyLang)
+        $("#tablezone").load('tables_' + displayReadyLang + '.html')
         $('.menu .item').tab( {
+            context: function() {
+                if (displayReadyLang == "en")
+                    return "#tableZoneEN"
+                if (displayReadyLang == "pt")
+                    return "#tableZonePt"
+            }, 
             onLoad: function() {
                 window.scrollTo(1000, 0);
                 $('.pusher').fadeOut(0, function () {
-                    tabledraw("quotes")
-                    $('.pusher').fadeIn(1500);
+                    tabledraw("commands")
+                    $('.pusher').fadeIn(2000);
                 return true;
-            });
+                });
             }
         });
 
         function setStart() {
-            var str = window.location.href;
+            str = window.location.href;
+            check = str.split("display=");
+            console.log(check[1])
+            check = check[1].split("&")
+            console.log(check)
+            displaying = check[0]
+            console.log("setStart() Active:", displaying)
+            check = check[1].split("lang=")
+            console.log("New check:", check)
+            lang = check[1]
+            console.log("setStart() Lang:", lang)
+            menuItems = document.getElementsByClassName('item')
+            tabs = document.getElementsByClassName('tab')
+            if (lang == "en") {
+                menuItems[0].innerHTML = '<i class="globe icon"></i> Visit Full Site'
+                menuItems[1].innerHTML = '<i class="comment icon"></i> Commands List'
+                menuItems[2].innerHTML = '<i class="small quote left icon"></i><i class="small quote right icon"></i> Quotes List'
+                menuItems[3].innerHTML = '<i class="music icon"></i> Song Request Playlist'
+                document.getElementById('title').innerHTML = "Chatbot User's Guide"
+                $('#mainMenu').append("<a id='trad' class='item' onclick=\"goSite('pt')\"><i class='br flag'></i>Portugu&ecirc;s</a>");
+                document.title = "[Chatbot User's Guide] - von Schappler Website";
+            } else if (lang == "pt") {
+                menuItems[0].innerHTML = '<i class="globe icon"></i> Visite o Site'
+                menuItems[1].innerHTML = '<i class="comment icon"></i> Lista de Comandos'
+                menuItems[2].innerHTML = '<i class="small quote left icon"></i><i class="small quote right icon"></i> Lista de Quotes'
+                menuItems[3].innerHTML = '<i class="music icon"></i> Playlist do Song Request'
+                document.getElementById('title').innerHTML = 'Guia de Uso Chatbot'
+                $('#mainMenu').append("<a id='trad' class='item' onclick=\"goSite('en')\"><i class='us flag'></i>English</a>");
+                document.title = "[Guia de uso do Chatbot] - von Schappler Website";
+            }
+            setActive(displaying, lang)
+        }
 
-            var check = str.split("starting=");
-            var active = check[1]
-            var menuItems = document.getElementsByClassName('item')
-            var tabs = document.getElementsByClassName('tab')
-            console.log(menuItems)
-            console.log(tabs)
-            window.scrollTo(0, 0);
-            $('.pusher').fadeOut(0, function () {
-                    $('.pusher').fadeIn(1000);
-                return true;
-            });
-                
-            setActive(active)
+        function goSite(lang) {
+            const url = new URL(window.location)
+            url.searchParams.set('lang', lang)
+            console.log(url)
+            window.history.pushState({}, '', url);
+            location.assign(url.href);
+            window.location.reload(true);
         }
         
 
-        function setActive(tab) {
+        function setActive(tab, lang) {
+            var dispLang = ""
+            const url = new URL(window.location);
+            url.searchParams.set('display', tab)
+            if (lang == "") {
+                str = window.location.href;
+                console.log(str)
+                check = str.split("display=");
+                check = check[1].split("&")
+                displaying = check[0]
+                check = check[1].split("lang=")
+                dispLang = check[1]
+            } else {
+                dispLang = lang
+            }
+            if (tab == "") {
+                str = window.location.href;
+                console.log(str)
+                check = str.split("display=");
+                check = check[1].split("&")
+                displaying = check[0]
+                check = check[1].split("lang=")
+                dispLang = check[1]
+            } else {
+                displaying = tab
+            }
+
+            url.searchParams.set('lang', dispLang);
+            console.log("Display:", tab + " in " + dispLang)
+            console.log("New URL:", url)
+            window.history.pushState({}, '', url);
+
             var menuItems = document.getElementsByClassName('item')
             var tabs = document.getElementsByClassName('tab')
-            if (tab == "commands") {
+            if (displaying == "commands") {
                 menuItems[1].classList.add("active")
                 menuItems[2].classList.remove("active")
                 menuItems[3].classList.remove("active")
                 tabs[0].classList.add("active")
                 tabs[1].classList.remove("active")
                 tabs[2].classList.remove("active")
-                tabledraw(tab)
-            } else if (tab == "quotes") {
+                tabledraw(displaying)
+            } else if (displaying == "quotes") {
                 menuItems[1].classList.remove("active")
                 menuItems[2].classList.add("active")
                 menuItems[3].classList.remove("active")
                 tabs[0].classList.remove("active")
                 tabs[1].classList.add("active")
                 tabs[2].classList.remove("active")
-                tabledraw(tab)
-            } else if (tab == "songs") {
+                tabledraw(displaying)
+            } else if (displaying == "songs") {
                 menuItems[1].classList.remove("active")
                 menuItems[2].classList.remove("active")
                 menuItems[3].classList.add("active")
                 tabs[0].classList.remove("active")
                 tabs[1].classList.remove("active")
                 tabs[2].classList.add("active")
-                tabledraw(tab)
+                tabledraw(displaying)
             }
+            $('.pusher').fadeOut(0, function () {
+                $('.pusher').fadeIn(2000);
+            })
         }
+
     </script>
     <script src="/js/loadPage.js"></script>
 	<script src="/js/main.js"></script>

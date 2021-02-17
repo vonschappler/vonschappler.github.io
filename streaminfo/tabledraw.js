@@ -1,14 +1,23 @@
 function tabledraw(toDraw) {
+    var str = window.location.href;
+    var check = str.split("display=");
+    var displaying = check[1].split("&")
+    if (check[1].includes("&lang="))
+        var lang = displaying[1].split("lang=")
     var tableName = toDraw+"List"
+    if (tableName.includes(",")) {
+        tableName = tableName.replace(",", "")
+    }
     var table = $("#"+ tableName).DataTable();
     table.destroy()
-    console.log(table)
     if (toDraw == "quotes"){
-        table = $("#" + toDraw + "List");
+        tableId = "#" + tableName
+        table = $(tableId);
+        console.log(tableId)
         table.DataTable({
             ajax: {
                 url: 'quotes.json',
-                dataSrc: "quotes",
+                dataSrc: 'quotes',
                 async: true
             },
             lengthChange: false,
@@ -22,25 +31,40 @@ function tabledraw(toDraw) {
                 { "data": "id" },
                 { "data": "text" },
                 { "data": "command" },
+                { "data": "id" }
             ],
             order: [
                 [0, "asc"]
             ],
             columnDefs: [{
                 targets: 0,
-                width: "20%"
+                width: "10%",
+                render: function (data, type, row, meta) {
+                    return '<div class="ui right aligned">#' + data + '</div>'
+                }
             }, {
                 targets: 1,
-                width: "60%"
+                width: "70%"
             }, {
                 targets: 2,
                 width: "20%",
-                //className: "ui center aligned",
+            }, {
+                targets: 3,
+                sType: 'numeric',
+                width: "0%",
+                visible: false
+            }, {
+                orderData: [3],
+                targets: 0
+            }, {
+                orderData: [3],
+                targets: 2
             }]
         });
-        //table.draw()
     } else if (toDraw == "songs") {
-        table = $("#" + toDraw + "List");
+        tableId = "#" + tableName
+        table = $(tableId);
+        console.log(tableId)
         table.DataTable({
             ajax: {
                 url: 'songs.json',
@@ -72,20 +96,25 @@ function tabledraw(toDraw) {
             }, {
                 targets: 2,
                 width: "10%",
-                //className: "ui center aligned",
             }, {
                 targets: 3,
                 width: "15%",
-                //className: "ui center aligned",
             }]
         });
-        //table.draw()
     } else if (toDraw == "commands") {
-        table = $("#" + toDraw + "List");
+        var src = ""
+        if (lang[1] == "en") {
+            src = 'commands_en'
+        } else if (lang[1] == "pt") {
+            src = 'commands_pt'
+        }
+        tableId = "#" + tableName
+        table = $(tableId);
+        console.log(tableId)
         table.DataTable({
             ajax: {
                 url: 'commands.json',
-                dataSrc: "commands",
+                dataSrc: src,
                 async: true
             },
             lengthChange: false,
@@ -105,34 +134,26 @@ function tabledraw(toDraw) {
                 { "data": "affected"}
             ],
             order: [
-                [2, "asc"]
+                [0, "asc"]
             ],
             columnDefs: [{
                 targets: 0,
                 width: "15%",
-                //searchable: false
             }, {
                 targets: 1,
                 width: "30%"
             }, {
                 targets: 2,
                 width: "20%",
-                //className: "ui center aligned",
             }, {
                 targets: 3,
-                //className: "ui center aligned",
                 width: "5%",
-                //className: "ui center aligned",
             }, {
                 targets: 4,
-                //className: "ui center aligned",
                 width: "5%",
-                //className: "ui center aligned",
             }, {
                 targets: 5,
                 width: "8%",
-                
-                //className: "ui center aligned",
             }, {
                 targets: 6,
                 width: "5%",
@@ -149,7 +170,6 @@ function tabledraw(toDraw) {
                 }
             }]
         });
-        //table.draw()
     }
     
 }
