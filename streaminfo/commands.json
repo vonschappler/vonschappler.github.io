@@ -177,13 +177,13 @@
             "user": "Moderator",
             "affected": true
         }, {
-            "command": "!song<br>!song -w",
+            "command": "!song",
             "response": "Displays a chat message with some info about the current played song",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
-            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "group": "Group: NowPlaying a0.0.1<br>Type: Script Controlled Command",
             "user": "Everyone",
-            "affected": true
+            "affected": false
         }, {
             "command": "!support<br>!support -w",
             "response": "Displays a chat message with a link to a PDF file with some information on how to support von Schappler",
@@ -730,13 +730,13 @@
             "affected": true
         },
         {
-            "command": "!song<br>!song -w",
+            "command": "!song",
             "response": "Mostra uma mensagem de chat com informações sobre a música tocada atualmente",
             "cost": "0",
             "cd": "Usuário: 5m<br>Geral: 1m",
-            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "group": "Grupo: NowPlaying a0.0.1<br>Tipo: Commando controlado por script",
             "user": "Todos",
-            "affected": true
+            "affected": false
         },
         {
             "command": "!support<br>!support -w",
