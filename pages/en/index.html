@@ -42,14 +42,28 @@
 	<div class="ui top aligned stackable grid container">
 		<div class="row ">
 			<div class="eight wide column">
-				<h3 class="ui header" align="right">I am here to uncover lore,<br>because... I am a loremaniac</h3>
-				<p align="right">Our website/channel is here to provide the n00biest gameplays we could find around as uncover the lore for the games we play!<br><br>
-				Just as I said, I do not stand out for an excellent gameplay or tips for other players. My channel is a place for all newbies to have fun and chat as we do our best to uncover everything possible during our gameplays and keep track on the main lore of each game I play.</p>
+				<h3 class="ui header" align="right">"Recently" diagnosed with<br>Asperger's Syndrome</h3>
+				<p align="right">
+					Unlike most streamers out there, I am an Autistic Streamer, from Brasil. I got the last and final diagnosis about my mental health status not long ago and it
+					was discovered I have Asperger's Syndrome, the mildest type of Autism.<br><br>
+					I have my own way to think, behave and react to things, so please be patient with me, respecting me and you will get the same from me. Mutual respect is all
+					I ask from you, since you are here.
+				</p>
 			</div>
 			<div class="eight wide right floated column">
 				
-				<h3 class="ui header" align="left">Watch me playing "old" games,<br>unknown or outside the trends</h3>
-				<p align="left">Yeah! Most of the games I play on my stream sessions are "old" (by old, I mean, games with at least 5 or more years from launch)!<br><br>With that in mind, I am working slowly to expand my game library and most of the games I play fits that main condition - they are at least 5 years old. Keep in mind that some of them I have <strong>NEVER</strong> played before!</p>
+				<h3 class="ui header" align="left">I Stream as a way to deal with<br>my mental health sickness</h3>
+				<p align="left">
+					Although I can change my mood suddenly during my streams or trigger any other possible disdorder as consequence of the autistic behavior, streaming for me is
+					more like a therapy, I can say. It's not easy to deal with such things, but here I am trying to do my best.<br><br>
+					During my streams you will probably experience things you haven't saw yet - but one thing remains: <b>IF I AM TOO QUIET</b>, it's part of my behavoir, so please
+					try to pull me out of my "own" world.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="sixteen wide column" align="center">
+				<span>To get more information about Asperger's Syndrome, check <a href="https://rebrand.ly/AspergerEN" target="_blank">this</a> Wikipedia article</span>
 			</div>
 		</div>
 	</div>
@@ -59,13 +73,25 @@
 	<div class="ui equal width stackable internally celled grid">
 		<div class="center aligned row">
 			<div class="column">
-				<h3><i class="chat icon"></i>"I don't follow the 'standards'..."</h3>
-				<p>With my gameplays, aside the little rompants when dealing with "unexpected situations", what I want to achieve is to show it's possible to have fun and enjoy any game without getting into that "standard" most players want - maximum level, TOP gear and other things like! As a unique person, I enjoy pretty much playing on my UNIQUE way and I am here to show that <strong>YOU CAN DO THAT TOO</strong>!</p>
+				<h3><i class="chat icon"></i> I usually don't follow the "standards"...</h3>
+				<p>
+					I really don't excel by my gameplay abilities or such things. I also don't like<br>doing what other people do. I do what I want, when I want.<br>
+					Well, it's my stream, my space, so it's fair for me to take such decisions.<br><br>My stream are mostly formed by three "main acts":<br>
+					1. <b>Welcome Act</b>: that moment when I talk with my viewers<br>
+					2. <b>Gameplay Act</b>: that moment when I get to play something<br>
+					3. <b>Goodbye Act</b>: that moment when I finish the stream
+				</p>
 			</div>
 
 			<div class="column">
-				<h3>"Wake up the n00b within!"<i class="chat icon"></i></h3>
-				<p>Ooooops! Yeah, I am pretty sure this might be a cliché, but that's the truth! We have to embrace ourselves as we are, no matter if we are just starter players or professional ones! So, let's make sure we embrace our n00bselves and have lots of fun just being ourselves, by saying a "huge-big-fat NO" to all those standards which are being imposed to newcomers to the gaming community!</p>
+				<h3>So what to expect then? <i class="chat icon"></i></h3>
+				<p>
+					Well, this is not a hard question to answer. You can expect someone playing a game, mostly focused on the game (but always eager to chat and answer
+					questions when possible).<br>Let's not forget that <b>I AM A HUMAN BEING</b>, meaning I act and react as one.<br>So, things that are offensive to me or my
+					community will be punished properly.<br><br>
+					Let's not forget the main reason for me to do this is to have it as therapy myself, so <b>let's keep it this way</b>. You are always welcome, free to chat, free to
+					ask and interact, sometimes even play - who knows?<br><b>JUST RESPECT THE LIMITS</b> and we are good!
+				</p>
 			</div>
 		</div>
 	</div>
@@ -118,7 +144,11 @@
 		window.open("https://www.twitch.tv/" + a);
 	}
 
-	$(".embed").embed( {
-		autoplay: true
-	})
+	$(".embed").embed()
+
+	//str = window.location.href;
+	link = new URL(window.location);
+	console.log(link)
+	link.searchParams.set('display', "index", 'lang', 'en')
+
 </script>

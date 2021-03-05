@@ -31,12 +31,12 @@ html {
   margin-bottom: 0em;
   font-size: 4em;
   font-weight: normal;
-  font-family: SansationBold;
+  font-family: "SansationBold";
 }
-.masthead h2 {
+.h2.ui.header {
   font-size: 1.7em;
   font-weight: normal;
-  font-family: SansationBold;
+  font-family: "SansationBold";
 }
 
 .ui.vertical.stripe {
@@ -97,7 +97,7 @@ html {
     font-size: 2em;
     margin-top: 1.5em;
   }
-  .masthead h2 {
+  .masthead h2.ui.header {
     margin-top: 0.5em;
     font-size: 1.5em;
   }

@@ -21,7 +21,7 @@
         <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 	</head>
 	
-	<body>
+	<body onload="setAddress()">
 
 		<!-- Following Menu -->
         <div id="hidMenu"></div>
@@ -41,10 +41,13 @@
 			window.onbeforeunload = function () {
 				window.scrollTo(0, 0);
 			};
-			$('.pusher').load('./pages/en/index.html');
-			$('.ui.embed').embed();
+			$('.pusher').load("./pages/en/index.html");
 			return false;
 		});
+		$('.ui.embed').embed({
+			autoplay: 'true'
+		});
+
 	</script>
 
 </html>

@@ -48,6 +48,14 @@
             "text": "\"Arrrgghh ugghah aagggrhrhh gahh hagghghaaa\" - Chewbacca",
             "id": 11,
             "command": "!quote 11"
+        }, {
+            "text": "Pro-streamers always open the game before starting playing it!",
+            "id": 12,
+            "command": "!quote 12"
+        }, {
+            "text": "It's not a god. It's the thing that even gods fear.",
+            "id": 13,
+            "command": "!quote 13"
         }
     ]
 }
