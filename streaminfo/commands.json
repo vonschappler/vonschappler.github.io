@@ -113,7 +113,7 @@
             "user": "Everyone",
             "affected": true
         }, {
-            "command": "!half-blind<br>!hal-blind -w",
+            "command": "!half-blind<br>!half-blind -w",
             "response": "Displays a chat message whether or not the streamer has little knowledge about game and STILL DOES NOT want spoilers about it",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
             "cost": "0",
@@ -128,6 +128,14 @@
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
             "user": "Caster",
             "affected": false
+        }, {
+            "command": "!lastvideo<br>!lastvideo -w",
+            "response": "Displays a chat message with a link to von Schappler's last video on his YouTube channel.",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "user": "Everyone",
+            "affected": true
         }, {
             "command": "!live<br>!live -w",
             "response": "Displays a chat message whether or not a stream is currently live. If a stream is running, it displays the current live session duration",
@@ -168,6 +176,14 @@
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
             "user": "Everyone",
             "affected": false
+        }, {
+            "command": "!schedule<br>!schedule -w",
+            "response": "Displays a chat message with a link to von Schappler's stream schedule.",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "user": "Everyone",
+            "affected": true
         }, {
             "command": "!socials",
             "response": "Displays a set of chat messages with all existent social media links of von Schappler",
@@ -658,7 +674,7 @@
             "affected": true
         },
         {
-            "command": "!half-blind<br>!hal-blind -w",
+            "command": "!half-blind<br>!half-blind -w",
             "response": "Mostra uma mensagem de chat informando se o streamer tem algum conhecimento sobre o jogo atual e prefere NÃO RECEBER spoilers sobre ele",
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
             "cost": "0",
@@ -674,6 +690,15 @@
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
             "user": "Caster",
             "affected": false
+        },
+        {
+            "command": "!lastvideo<br>!lastvideo -w",
+            "response": "Mostra uma mensagem de chat com o link para o último vídeo de von Schappler no YouTube.",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "user": "Todos",
+            "affected": true
         },
         {
             "command": "!live<br>!live -w",
@@ -720,6 +745,15 @@
             "user": "Todos",
             "affected": false
         },
+        {
+            "command": "!schedule<br>!schedule -w",
+            "response": "Mostra uma mensagem de chat com o link para a agenda de streams de von Schappler.",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "user": "Todos",
+            "affected": true
+        }, 
         {
             "command": "!socials",
             "response": "Mostra um conjunto de mensagens com os links para os canais de mídia social de von Schappler",

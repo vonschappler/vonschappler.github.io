@@ -92,10 +92,69 @@
                     </tr>
                     <tr>
                         <th colspan="2">Cada um dos comandos listados foram testados para garantir seu funcionamento</th>
-                        <th colspan="2" class="ui right aligned">Última atualização: 02/fev/2021</th>
+                        <th colspan="2" class="ui right aligned">Última atualização: 23/mar/2021</th>
                     </tr>
                 </tfoot>
             </table>
         </div>
+        <div class="ui tab raised segment" data-tab="schedule">
+            <div class="ui inverted container" style="padding-top: 2.0em; padding-bottom:2.0em;">
+                <div class="raised segment">
+            
+            
+                    <div class="ui stackable inverted divided equal height stackable grid center aligned"
+                        style="padding-bottom: 0.8em">
+            
+                        <div id='loading'>Esse calendário está sendo sincronizado... Por favor espere!</div>
+                        <div id='calendar'></div>
+                        <!--<span><br>Todos os horários são na time zone America/São Paulo</span>-->
+            
+                    </div>
+            
+            
+            
+                </div>
+            
+            </div>
+        </div>
     </div>
 </div>
+
+<script>
+    $('#calendar').fullCalendar({
+            header: {
+                left: 'title',
+                right: ''
+
+            },
+
+            view: 'basic',
+            showNonCurrentDates: true,
+            fixedWeekCount: false,
+            locale: "pt-br",
+            height: 670,
+
+
+            displayEventTime: true, // don't show the time column in list view
+
+            // THIS KEY WON'T WORK IN PRODUCTION!!!
+            // To make your own Google API key, follow the directions here:
+            // http://fullcalendar.io/docs/google_calendar/
+
+            googleCalendarApiKey: 'AIzaSyAfULhZEUR4ZJU2ocUS0yr0HcNM7VcRTJQ',
+            events: {
+                googleCalendarId: 'vonschappler.gaming@gmail.com',
+                //color: '#16b2ab',
+                textColor: 'white'
+            },
+
+            eventClick: function (event) {
+                window.open(event.url, 'gcalevent', 'width=600,height=500');
+                return false;
+            },
+
+            loading: function (bool) {
+                $('#loading').toggle(bool);
+            }
+        });
+</script>
