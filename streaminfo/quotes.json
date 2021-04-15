@@ -56,6 +56,14 @@
             "text": "It's not a god. It's the thing that even gods fear.",
             "id": 13,
             "command": "!quote 13"
+        }, {
+            "text": "Não existe pulo... Existe você contra a sorte.",
+            "id": 14,
+            "command": "!quote 14"
+        }, {
+            "text": "\"I'm up! I'm going down. I'm down :(\" - von Schappler",
+            "id": 15,
+            "command": "!quote 15"
         }
     ]
 }

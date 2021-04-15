@@ -108,12 +108,161 @@
             <div class="ui inverted container" style="padding-top: 2.0em; padding-bottom:2.0em;">
 	            <div class="raised segment">
 		            <div class="ui stackable inverted divided equal height stackable grid center aligned" style="padding-bottom: 0.8em">
-            			<div id='loading'>This calendar is loading... wait a while, please!</div></div>
+            			<div id='loading'>This calendar is loading... wait a while, please!</div>
 			            <div id='calendar'></div>
 			            <!--<span><br>Todos os horários são na time zone America/São Paulo</span>-->
-            		</div>
-            	</div>
-	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui tab raised segment" data-tab="socials">
+            <div class="ui inverted container" style="padding-top: 2.0em; padding-bottom:2.0em;">
+                <h1 style="font-family: 'Sansation';">Social media and support:</h1>
+                <div class="ui two column grid">
+                    <!-- paypal -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/paypal.png" class="left floated rounded mini ui image">
+                                <div class="header">PayPal</div>
+                                <div class="meta">If possible, help me with a small donation</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('paypal');">Donate here
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- website -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/website.png" class="left floated rounded mini ui image">
+                                <div class="header">Website</div>
+                                <div class="meta">Check my website for exclusive content</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('website');">Visit the site</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui three column grid">
+                    <!-- discord -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/discord.png" class="left floated rounded mini ui image">
+                                <div class="header">Discord</div>
+                                <div class="meta">Become a member of this community</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('discord');">Join the server</div>
+                        </div>
+                    </div>
+        
+                    <!-- facebook -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/facebook.png" class="left floated rounded mini ui image">
+                                <div class="header">Facebook</div>
+                                <div class="meta">Let's be friends</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('facebook');">Check my Facebook profile</div>
+                        </div>
+                    </div>
+        
+                    <!-- instagram -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/instagram.png" class="left floated rounded mini ui image">
+                                <div class="header">Instagram</div>
+                                <div class="meta">Check my posts and photos</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('instagram');">Become a follower
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- podcast -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/podcast.png" class="left floated rounded mini ui image">
+                                <div class="header">Podcast</div>
+                                <div class="meta">Podcast will be up soon</div>
+                            </div>
+                            <div class="ui bottom attached teal button disabled" onclick="openSocial('podcast');">Listen to the Podcast</div>
+                        </div>
+                    </div>
+        
+                    <!-- twitter -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/twitter.png" class="left floated rounded mini ui image">
+                                <div class="header">Twitter</div>
+                                <div class="meta">Check my posts on Twitter</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('twitter');">Become a follower</div>
+                        </div>
+                    </div>
+        
+                    <!-- youtube -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/youtube.png" class="left floated rounded mini ui image">
+                                <div class="header">YouTube</div>
+                                <div class="meta">Check my YouTube channel</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('youtube');">Subscribe to my channel
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+        
+                <div class="ui divider"></div>
+        
+                <h1 style="font-family: 'Sansation';">Main Gamer Tags:</h1>
+                <div class="ui three column grid">
+                    <!-- origin -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/origin.png" class="left floated rounded mini ui image">
+                                <div class="header">Origin</div>
+                                <div class="meta">Check my Origin profile</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('origin');">Inspect my Origin stuff
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- steam -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/steam.png" class="left floated rounded mini ui image">
+                                <div class="header">Steam</div>
+                                <div class="meta">Check my Steam profile</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('steam');">Inspect my Steam stuff</div>
+                        </div>
+                    </div>
+        
+                    <!-- uplay -->
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <img src="img/uplay.png" class="left floated rounded mini ui image">
+                                <div class="header">Uplay</div>
+                                <div class="meta">Check my Ubisoft Connect profile</div>
+                            </div>
+                            <div class="ui bottom attached teal button" onclick="openSocial('uplay');">Inspect my Ubisoft Connect profile
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

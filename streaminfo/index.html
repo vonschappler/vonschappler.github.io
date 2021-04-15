@@ -67,6 +67,7 @@
                             <a class="item" data-tab="quotes" onclick="setActive('quotes','')"><i class="small quote left icon"></i><i class="small quote right icon"></i> Quotes List</a>
                             <a class="item" data-tab="songs" onclick="setActive('songs','')"><i class="music icon"></i> Song Request List</a>
                             <a class="item" data-tab="schedule" onclick="setActive('schedule','')"><i class="calendar alternate outline icon"></i> Schedule</a>
+                            <a class="item" data-tab="socials" onclick="setActive('socials','')"><i class="rss icon"></i> Socials</a>
                         </div>
                     </div>
                 </div>
@@ -123,12 +124,14 @@
             console.log("setStart() Lang:", lang)
             menuItems = document.getElementsByClassName('item')
             tabs = document.getElementsByClassName('tab')
+            console.log(tabs)
             if (lang == "en") {
                 menuItems[0].innerHTML = '<i class="globe icon"></i> Visit Full Site'
                 menuItems[1].innerHTML = '<i class="comment icon"></i> Commands List'
                 menuItems[2].innerHTML = '<i class="small quote left icon"></i><i class="small quote right icon"></i> Quotes List'
                 menuItems[3].innerHTML = '<i class="music icon"></i> Song Request Playlist'
                 menuItems[4].innerHTML = '<i class="calendar alternate outline icon"></i> Schedule'
+                menuItems[5].innerHTML = '<i class="rss icon"></i> Socials'
                 document.getElementById('title').innerHTML = "Stream Information"
                 $('#mainMenu').append("<a id='trad' class='item' onclick=\"goSite('pt')\"><i class='br flag'></i>Portugu&ecirc;s</a>");
                 document.title = "[von Schappler's Stream Information] - von Schappler Website";
@@ -138,6 +141,7 @@
                 menuItems[2].innerHTML = '<i class="small quote left icon"></i><i class="small quote right icon"></i> Lista de Quotes'
                 menuItems[3].innerHTML = '<i class="music icon"></i> Playlist do Song Request'
                 menuItems[4].innerHTML = '<i class="calendar alternate outline icon"></i> Agenda'
+                menuItems[5].innerHTML = '<i class="rss icon"></i> Sociais'
                 document.getElementById('title').innerHTML = 'Informações de Stream'
                 $('#mainMenu').append("<a id='trad' class='item' onclick=\"goSite('en')\"><i class='us flag'></i>English</a>");
                 document.title = "[Informações da stream de von Schappler] - von Schappler Website";
@@ -194,40 +198,60 @@
                 menuItems[2].classList.remove("active")
                 menuItems[3].classList.remove("active")
                 menuItems[4].classList.remove("active")
+                menuItems[5].classList.remove("active")
                 tabs[0].classList.add("active")
                 tabs[1].classList.remove("active")
                 tabs[2].classList.remove("active")
                 tabs[3].classList.remove("active")
+                tabs[4].classList.remove("active")
                 tabledraw(displaying)
             } else if (displaying == "quotes") {
                 menuItems[1].classList.remove("active")
                 menuItems[2].classList.add("active")
                 menuItems[3].classList.remove("active")
                 menuItems[4].classList.remove("active")
+                menuItems[5].classList.remove("active")
                 tabs[0].classList.remove("active")
                 tabs[1].classList.add("active")
                 tabs[2].classList.remove("active")
                 tabs[3].classList.remove("active")
+                tabs[4].classList.remove("active")
                 tabledraw(displaying)
             } else if (displaying == "songs") {
                 menuItems[1].classList.remove("active")
                 menuItems[2].classList.remove("active")
                 menuItems[3].classList.add("active")
                 menuItems[4].classList.remove("active")
+                menuItems[5].classList.remove("active")
                 tabs[0].classList.remove("active")
                 tabs[1].classList.remove("active")
                 tabs[2].classList.add("active")
                 tabs[3].classList.remove("active")
+                tabs[4].classList.remove("active")
                 tabledraw(displaying)
             } else if (displaying == "schedule") {
                 menuItems[1].classList.remove("active")
                 menuItems[2].classList.remove("active")
                 menuItems[3].classList.remove("active")
                 menuItems[4].classList.add("active")
+                menuItems[5].classList.remove("active")
                 tabs[0].classList.remove("active")
                 tabs[1].classList.remove("active")
                 tabs[2].classList.remove("active")
                 tabs[3].classList.add("active")
+                tabs[4].classList.remove("active")
+                tabledraw(displaying)
+            } else if (displaying == "socials") {
+                menuItems[1].classList.remove("active")
+                menuItems[2].classList.remove("active")
+                menuItems[3].classList.remove("active")
+                menuItems[4].classList.remove("active")
+                menuItems[5].classList.add("active")
+                tabs[0].classList.remove("active")
+                tabs[1].classList.remove("active")
+                tabs[2].classList.remove("active")
+                tabs[3].classList.remove("active")
+                tabs[4].classList.add("active")
                 tabledraw(displaying)
             }
             $('.pusher').fadeOut(0, function () {
@@ -235,6 +259,11 @@
             })
         }
 
+        function openSocial(link) {
+            window.open('http://rebrand.ly/von' + link)
+        }
+
+                
         
     </script>
     <script src="/js/loadPage.js"></script>

@@ -57,8 +57,16 @@
             "user": "Everyone",
             "affected": true
         }, {
+            "command": "!cutscene<br>!cutscene -w",
+            "response": "Displays a chat message regarding about von Schappler's behavior during cutscenes. NOTE: The messsage is sent in bot EN-US and PT-BR.",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "cost": "0",
+            "cd": "User: 1m<br>Global: 0m",
+            "user": "Moderator",
+            "affected": false
+        }, {
             "command": "!dmca<br>!dmca -w",
-            "response": "Displays chat message with a link to a PDF file with informations about DMCA policies and stream on the channel",
+            "response": "Displays a chat message with a link to a PDF file with informations about DMCA policies and stream on the channel",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
@@ -66,7 +74,7 @@
             "affected": true
         }, {
             "command": "!finished<br>!finished -w",
-            "response": "Displays chat message with a link to a PDF file with a list of games beaten during stream sessions",
+            "response": "Displays a chat message with a link to a PDF file with a list of games beaten during stream sessions",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
@@ -196,7 +204,7 @@
             "command": "!song",
             "response": "Displays a chat message with some info about the current played song",
             "cost": "0",
-            "cd": "User: 5m<br>Global: 1m",
+            "cd": "User: 1m<br>Global: 0m",
             "group": "Group: NowPlaying a0.0.1<br>Type: Script Controlled Command",
             "user": "Everyone",
             "affected": false
@@ -210,7 +218,7 @@
             "affected": true
         }, {
             "command": "!test",
-            "response": "Displays a message announcing this is a test only stream. NOTE: the message is sent in both EN-US and PT-BR",
+            "response": "Displays a chat message announcing this is a test only stream. NOTE: the message is sent in both EN-US and PT-BR",
             "cost": "0",
             "cd": "User: 0m<br>Global: 0m",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
@@ -218,7 +226,7 @@
             "affected": false
         }, {
             "command": "!costream",
-            "response": "Displays chat message with a script generated url to access a co-stream view when enabled",
+            "response": "Displays a chat message with a script generated url to access a co-stream view when enabled",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
             "group": "Group: Co-streaming Utility v.2.0.1<br>Type: Script Controlled Command",
@@ -410,7 +418,7 @@
             "affected": true
         }, {
             "command": "!loveval (viewer)",
-            "response": "Calculates how much the user loves (viewer) and displays a message in stream chat with the result of the calculation. NOTE: replace (viewer) by the name of any active viewer in stream chat",
+            "response": "Calculates how much the user loves (viewer) and displays a chat message in stream chat with the result of the calculation. NOTE: replace (viewer) by the name of any active viewer in stream chat",
             "cost": "0",
             "cd": "User: 1m<br>Global: 0m",
             "group": "Group: Viewer Interaction<br>Type: Script Controlled Command",
@@ -602,6 +610,15 @@
             "affected": true
         },
         {
+            "command": "!cutscene<br>!cutscene -w",
+            "response": "Mostra uma mensagem de chat relacionada ao comportamento de von Schappler durante cutscenes de jogos. NOTA: A mensagem é envidada em EN-US e PT-BR.",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 1m<br>Geral: 0m",
+            "user": "Moderador",
+            "affected": false
+        },
+        {
             "command": "!commands<br>!commands -w",
             "response": "Mostra uma mensagem de chat com um link para essa página",
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
@@ -684,7 +701,7 @@
         },
         {
             "command": "!l4mods",
-            "response": "Mostra uma mensagem de chat com um link para aplição ao cargo de modderação de stream. NOTA: a mensagem é enviada em EN-US e PT-BR",
+            "response": "Mostra uma mensagem de chat com um link para aplição ao cargo de moderação de stream. NOTA: a mensagem é enviada em EN-US e PT-BR",
             "cost": "0",
             "cd": "Usuário: 0m<br>Geral: 0m",
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
@@ -767,7 +784,7 @@
             "command": "!song",
             "response": "Mostra uma mensagem de chat com informações sobre a música tocada atualmente",
             "cost": "0",
-            "cd": "Usuário: 5m<br>Geral: 1m",
+            "cd": "Usuário: 1m<br>Geral: 0m",
             "group": "Grupo: NowPlaying a0.0.1<br>Tipo: Commando controlado por script",
             "user": "Todos",
             "affected": false
