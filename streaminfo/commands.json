@@ -49,6 +49,14 @@
             "user": "Everyone",
             "affected": true
         }, {
+            "command": "!check (val)<br>!check (val) -w",
+            "response": "Displays an Twitch account information. NOTE: replace (val) by the name of the account to be inspected, eg. <code>!check von_schappler</code>. This command must be used only in the vonschappler_bot whisper",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "cost": "0",
+            "cd": "User: 0m<br>Global: 0m",
+            "user": "Moderator",
+            "affected": true
+        }, {
             "command": "!commands<br>!commands -w",
             "response": "Displays a chat message with a link for this page",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
@@ -57,8 +65,17 @@
             "user": "Everyone",
             "affected": true
         }, {
+            "command": "!commnight<br>!commnight -w",
+            "response": "Displays information about the Community Night streams. NOTE: The message is sent in both EN-US and PT-BR",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "user": "Everyone",
+            "affected": false
+        },
+        {
             "command": "!cutscene<br>!cutscene -w",
-            "response": "Displays a chat message regarding about von Schappler's behavior during cutscenes. NOTE: The messsage is sent in bot EN-US and PT-BR.",
+            "response": "Displays a chat message regarding about von Schappler's behavior during cutscenes. NOTE: The messsage is sent in bot EN-US and PT-BR",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
             "cost": "0",
             "cd": "User: 1m<br>Global: 0m",
@@ -75,6 +92,14 @@
         }, {
             "command": "!finished<br>!finished -w",
             "response": "Displays a chat message with a link to a PDF file with a list of games beaten during stream sessions",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "user": "Everyone",
+            "affected": true
+        }, {
+            "command": "!followed (val)<br>!followed (val) -w",
+            "response": "Displays for how long an user follows von_Schappler. NOTE: replace (val) by the name of the account to be inspected, eg. <code>!followed vonschappler_bot</code>. If no value is given as (val), the user's account information will be returned",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
@@ -121,6 +146,14 @@
             "user": "Everyone",
             "affected": true
         }, {
+            "command": "!giveaway<br>!giveaway -w",
+            "response": "Displays a chat message with the current information about the current giveaway, if any is being hosted during the session",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "user": "Everyone",
+            "affected": true
+        },{
             "command": "!half-blind<br>!half-blind -w",
             "response": "Displays a chat message whether or not the streamer has little knowledge about game and STILL DOES NOT want spoilers about it",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
@@ -138,7 +171,7 @@
             "affected": false
         }, {
             "command": "!lastvideo<br>!lastvideo -w",
-            "response": "Displays a chat message with a link to von Schappler's last video on his YouTube channel.",
+            "response": "Displays a chat message with a link to von Schappler's last video on his YouTube channel",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
@@ -169,6 +202,22 @@
             "user": "Everyone",
             "affected": false
         }, {
+            "command": "!newgear<br>!newgear -w",
+            "response": "Displays a chat message asking for support to acquire new gear, when a focused session with this purpose is being hosted",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "user": "Everyone",
+            "affected": true
+        }, {
+            "command": "!puppet<br>!puppet -w",
+            "response": "Displays a chat message some information about von Schappler's puppet",
+            "group": "Group: Channel Information<br>Type: Script Controlled Command",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "user": "Everyone",
+            "affected": true
+        }, {
             "command": "!refresh",
             "response": "Displays a chat message asking viewers to refresh their browsers/players in case of stream disconection. NOTE: The message is sent in both EN-US and PT-BR",
             "cost": "0",
@@ -186,7 +235,7 @@
             "affected": false
         }, {
             "command": "!schedule<br>!schedule -w",
-            "response": "Displays a chat message with a link to von Schappler's stream schedule.",
+            "response": "Displays a chat message with a link to von Schappler's stream schedule",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
             "group": "Group: Channel Information<br>Type: Script Controlled Command",
@@ -321,20 +370,53 @@
             "user": "Everyone",
             "affected": false
         }, {
+            "command": "!cafe",
+            "response": "Plays the brazilian meme \"I want coffee!\"  (on PT-BR) on stream",
+            "cost": "0",
+            "cd": "User: 5m<br>Global: 1m",
+            "group": "Group: Multi Sound Effects v2.0.0<br>Type: Script Controlled Command",
+            "user": "Everyone",
+            "affected": false
+        }, {
+            "command": "!f",
+            "response": "Plays Overwatch D.Va's voice line \"Nerf this!\" and the brazilian meme \"And died...\" (on PT-BR) on stream",
+            "cost": "0",
+            "cd": "User: 1m<br>Global: 0m",
+            "group": "Group: Multi Sound Effects v2.0.0<br>Type: Script Controlled Command",
+            "user": "Everyone",
+            "affected": false
+        },
+        {
             "command": "!sfx (effects)",
             "response": "Plays up to three sound effects in a single command call. The cost to use this command depends on how many sfx are played and how much is charged for each SFX. NOTE: when using <code>!sfx (effects)</code>, always replace (effects) for the sound(s) trigger(s), separated by space. For a list of available sfx triggers and costs, use <code>!sfxlist</code>",
             "cost": "Varies",
             "cd": "User: 5m<br>Global: 1m",
-            "group": "Group: MultiSFX Script<br>Type: Script Controlled Command",
+            "group": "Group: Multi Sound Effects v2.0.0<br>Type: Script Controlled Command",
             "user": "Everyone",
             "affected": false
         }, {
+            "command": "!sfxgui",
+            "response": "Opens the GUI for the Streamlabs Chatbot Script \"Multi Sound Effects v2.0.0\"",
+            "cost": "0",
+            "cd": "User: 0m<br>Global: 0m",
+            "group": "Group: Multi Sound Effects v2.0.0<br>Type: Script Controlled Command",
+            "user": "Caster",
+            "affected": false
+        },{
             "command": "!sfxlist",
-            "response": "Displays a chat message with a list of sfx triggers (and its cost) to be used with <code>!sfx (effects)</code> command",
+            "response": "Displays a chat message with a list of sfx triggers (and its cost) to be used with <code>!sfx (effects)</code> command; NOTE: The message will be sent on the command user's whisper, as a way to prevent spam in chat, when possible",
             "cost": "0",
             "cd": "User: 5m<br>Global: 1m",
-            "group": "Group: MultiSFX Script<br>Type: Script Controlled Command",
+            "group": "Group: Multi Sound Effects v2.0.0<br>Type: Script Controlled Command",
             "user": "Everyone",
+            "affected": false
+        }, {
+            "command": "!sfxrestart",
+            "response": "Restarts the Streamlabs Chatbot Script \"Multi Sound Effects v2.0.0\"",
+            "cost": "0",
+            "cd": "User: 0m<br>Global: 0m",
+            "group": "Group: Multi Sound Effects v2.0.0<br>Type: Script Controlled Command",
+            "user": "Caster",
             "affected": false
         }, {
             "command": "!lang (val)<br>!lang (val) -w",
@@ -610,8 +692,26 @@
             "affected": true
         },
         {
+            "command": "!check (val)<br>!check (val) -w",
+            "response": "Mostra as informações referentes a uma conta de usuário da Twitch. NOTA: troque (val) pelo nome da conta a ser inspecionada, por exemplo, <code>!check von_schappler</code>. Esse comando de ver usado somente como mensagem direta para vonschappler_bot",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 0m<br>Geral: 0m",
+            "user": "Moderador",
+            "affected": true
+        },
+        {
+            "command": "!commnight<br>!commnight -w",
+            "response": "Mostra informações sobre as streams \"Community Night\" streams. NOTA: A mensagem é enviada em EN-US e PT-BR",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "user": "Todos",
+            "affected": false
+        },
+        {
             "command": "!cutscene<br>!cutscene -w",
-            "response": "Mostra uma mensagem de chat relacionada ao comportamento de von Schappler durante cutscenes de jogos. NOTA: A mensagem é envidada em EN-US e PT-BR.",
+            "response": "Mostra uma mensagem de chat relacionada ao comportamento de von Schappler durante cutscenes de jogos. NOTA: A mensagem é envidada em EN-US e PT-BR",
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
             "cost": "0",
             "cd": "Usuário: 1m<br>Geral: 0m",
@@ -646,6 +746,15 @@
             "affected": true
         },
         {
+            "command": "!followed (val)<br>!followed (val) -w",
+            "response": "Mostra por quanto tempo um viewer segue von_Schappler. NOTE: troque (val) da conta a ser verificada, por exemplo: <code>!followed vonschappler_bot</code>. Se nenhum nome for colocado em (val), as informações do usuário do comando serão mostradas",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "user": "Todos",
+            "affected": true
+        },
+        {
             "command": "!gt (val)<br>!gt (val) -w",
             "response": "Mostra uma mensagem de chat com informações sobre a gamertag de von Schappler para uma plataforma especifica. NOTA: troque (val) por arenanet, blizzard, origin, steam, uplay ou xlive ao usar o comando, por exemplo: <code>!gt steam</code>",
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
@@ -662,6 +771,15 @@
             "cd": "Usuário: 5m<br>Geral: 1m",
             "user": "Todos",
             "affected": false
+        },
+        {
+            "command": "!giveaway<br>!giveaway -w",
+            "response": "Mostra uma mensagem de chat com informações sobre a giveaway atual, caso alguma esteja sendo feita",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "user": "Todos",
+            "affected": true
         },
         {
             "command": "!gamer",
@@ -710,7 +828,7 @@
         },
         {
             "command": "!lastvideo<br>!lastvideo -w",
-            "response": "Mostra uma mensagem de chat com o link para o último vídeo de von Schappler no YouTube.",
+            "response": "Mostra uma mensagem de chat com o link para o último vídeo de von Schappler no YouTube",
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
             "cost": "0",
             "cd": "Usuário: 5m<br>Geral: 1m",
@@ -732,6 +850,24 @@
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
             "cost": "0",
             "cd": "Usuário: 5m<br>Geral: 1m",
+            "user": "Todos",
+            "affected": true
+        },
+        {
+            "command": "!newgear<br>!newgear -w",
+            "response": "Mostra uma mensagem informando que a sessão atual tem o propósito de aquisição de novo equipamento para as lives",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "user": "Todos",
+            "affected": true
+        },
+        {
+            "command": "!puppet<br>!puppet -w",
+            "response": "Mostra uma mensagem de chat com informações sobre o puppet de von Schappler",
+            "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Greal: 1m",
             "user": "Todos",
             "affected": true
         },
@@ -764,7 +900,7 @@
         },
         {
             "command": "!schedule<br>!schedule -w",
-            "response": "Mostra uma mensagem de chat com o link para a agenda de streams de von Schappler.",
+            "response": "Mostra uma mensagem de chat com o link para a agenda de streams de von Schappler",
             "cost": "0",
             "cd": "Usuário: 5m<br>Geral: 1m",
             "group": "Grupo: Informações do canal<br>Tipo: Commando controlado por script",
@@ -916,21 +1052,57 @@
             "affected": false
         },
         {
-            "command": "!sfx (effects)",
-            "response": "Reproduz até três efeitos sonoros por uso. O custo de uso depende de quantos efeitos são reproduzidos e do custo indifidual de cada um. NOTA: ao usar <code>!sfx (effects)</code>, troque (effects) pelo(s) nome(s) do(s) trigger(s) , separados por espaço. Para uma listagem dos efeitos disponíveis e seus custos, use <code>!sfxlist</code>",
-            "cost": "Variável",
-            "cd": "Usuário: 5m<br>Geral: 1m",
-            "group": "Grupo: MultiSFX Script<br>Tipo: Comando controlado por script",
+            "command": "!cafe",
+            "response": "Reproduz o meme brasileiro \"Quero caféééééééé!\" (em PT-BR) na stream",
+            "cost": "0",
+            "cd": "Usuário: 5m<br>Greal: 1m",
+            "group": "Grupo: Multi Sound Effects v2.0.0<br>Tipo: Comando controlado por script",
             "user": "Todos",
             "affected": false
         },
         {
+            "command": "!f",
+            "response": "Reproduz a voice line de D.Va (Overwatch) \"Pede pra nerfar, noob!\" e o meme brasileiro \"E morreu...\" (em PT-BR) na stream",
+            "cost": "0",
+            "cd": "Usuário: 1m<br>Geral: 0m",
+            "group": "Grupo: Multi Sound Effects v2.0.0<br>Tipo: Comando controlado por script",
+            "user": "Todos",
+            "affected": false
+        },
+        {
+            "command": "!sfx (effects)",
+            "response": "Reproduz até três efeitos sonoros por uso. O custo de uso depende de quantos efeitos são reproduzidos e do custo indifidual de cada um. NOTA: ao usar <code>!sfx (effects)</code>, troque (effects) pelo(s) nome(s) do(s) trigger(s) , separados por espaço. Para uma listagem dos efeitos disponíveis e seus custos, use <code>!sfxlist</code>",
+            "cost": "Variável",
+            "cd": "Usuário: 5m<br>Geral: 1m",
+            "group": "Grupo: Multi Sound Effects v2.0.0<br>Tipo: Comando controlado por script",
+            "user": "Todos",
+            "affected": false
+        },
+        {
+            "command": "!sfxgui",
+            "response": "Abre a GUI para o Script \"Multi Sound Effects v2.0.0\" do Streamlabs Chatbot Script",
+            "cost": "0",
+            "cd": "Usuário: 0m<br>Geral: 0m",
+            "group": "Grupo: Multi Sound Effects v2.0.0<br>Tipo: Comando controlado por script",
+            "user": "Caster",
+            "affected": false
+        },
+        {
             "command": "!sfxlist",
-            "response": "Mostra uma mensagem de chat com a listagem de efeitos sonoros (e seus custos) que podem ser usados com o comando <code>!sfx (effects)</code>",
+            "response": "Mostra uma mensagem de chat com a listagem de efeitos sonoros (e seus custos) que podem ser usados com o comando <code>!sfx (effects)</code> . NOTA: A resposta será enviada à whisper do usuário de comando, como medida preventiva para evitar spams, quando possível",
             "cost": "0",
             "cd": "Usuário: 5m<br>Geral: 1m",
-            "group": "Grupo: MultiSFX Script<br>Tipo: Comando controlado por script",
+            "group": "Grupo: Multi Sound Effects v2.0.0<br>Tipo: Comando controlado por script",
             "user": "Todos",
+            "affected": false
+        },
+        {
+            "command": "!sfxrestart",
+            "response": "Reinicia o Script \"Multi Sound Effects v2.0.0\" do Streamlabs Chatbot ",
+            "cost": "0",
+            "cd": "Usuário: 0m<br>Geral: 0m",
+            "group": "Grupo: Multi Sound Effects v2.0.0<br>Tipo: Comando controlado por script",
+            "user": "Caster",
             "affected": false
         },
         {

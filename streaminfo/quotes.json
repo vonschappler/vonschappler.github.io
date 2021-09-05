@@ -64,6 +64,30 @@
             "text": "\"I'm up! I'm going down. I'm down :(\" - von Schappler",
             "id": 15,
             "command": "!quote 15"
+        }, {
+            "text": "Hoje o \"coffeedrate\" virou \"choppdrate\".",
+            "id": 16,
+            "command": "!quote 16"
+        }, {
+            "text": "Resident Evil é o jogo que se joga de ré!",
+            "id": 17,
+            "command": "!quote 17"
+        }, {
+            "text": "Resident evil, por que me ama tanto assim?",
+            "id": 18,
+            "command": "!quote 18"
+        }, {
+            "text": "Tenho um GPS no meu furico!",
+            "id": 19,
+            "command": "!quote 19"
+        }, {
+            "text": "Minha estratégia deu quase certo, so faltou eu ficar vivo!",
+            "id": 20,
+            "command": "!quote 20"
+        }, {
+            "text": "O primeiro puzzle de Resident Evil 0 é descobrir como mover o personagem!",
+            "id": 21,
+            "command": "!quote 21"
         }
     ]
 }
