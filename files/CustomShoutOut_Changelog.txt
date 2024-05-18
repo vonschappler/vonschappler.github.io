@@ -1,9 +1,0 @@
-ChangeLog
-
-v1.1.0:tv
- - Added the possibility to send manual shouts to unsaved casters
- - Added a button to allow fetch information back from backup to the main castes file
- - Updated the ReadMe.txt file to reflect this add-on
- 
-v1.0.0:tv
- - This is the initial launch, nothing to report.
