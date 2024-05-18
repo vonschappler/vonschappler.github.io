@@ -91,8 +91,8 @@ const webSitesListEn = [
       "A simple React Application made with class components to inspect the weekly weather on a given city.",
     creationDate: "Dec 13, 2023",
     previewImage: "web/react-classy-weather.png",
-    previewURL: "https://github.com/vonschappler/react-classy-weather",
-    codeURL: "https://vonschappler.github.io/react-classy-weather/",
+    previewURL: "https://vonschappler.github.io/react-classy-weather/",
+    codeURL: "https://github.com/vonschappler/react-classy-weather",
   },
   {
     title: "React Eat n' Split",
@@ -192,8 +192,8 @@ const webSitesListPt = [
       "Uma aplicação simples, desenvolvida com o uso de classes em React, para soliticar a previsão meteorológica de uma dada cidade.",
     creationDate: "13/dez/2023",
     previewImage: "web/react-classy-weather.png",
-    previewURL: "https://github.com/vonschappler/react-classy-weather",
-    codeURL: "https://vonschappler.github.io/react-classy-weather/",
+    previewURL: "https://vonschappler.github.io/react-classy-weather/",
+    codeURL: "https://github.com/vonschappler/react-classy-weather",
   },
   {
     title: "React Eat n' Split",
