@@ -445,10 +445,10 @@ const gameLibPt = {
 };
 const partnersTwEn = sortArrayWithKeys(partnersTwListEn, "username");
 const partnersTwPt = sortArrayWithKeys(partnersTwListPT, "username");
-const webSitesEn = sortArrayWithKeys(webSitesListEn, "name");
-const webSitesPt = sortArrayWithKeys(webSitesListPt, "name");
-const scriptsEn = sortArrayWithKeys(scriptsListEn, "name");
-const scriptsPt = sortArrayWithKeys(scriptsListPt, "name");
+const webSitesEn = sortArrayWithKeys(webSitesListEn, "title");
+const webSitesPt = sortArrayWithKeys(webSitesListPt, "title");
+const scriptsEn = sortArrayWithKeys(scriptsListEn, "title");
+const scriptsPt = sortArrayWithKeys(scriptsListPt, "title");
 const reasonEn = createComboBoxList(reasonListEn);
 const reasonPt = createComboBoxList(reasonListPt);
 const prefEn = createComboBoxList(prefListEn);
