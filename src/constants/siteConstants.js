@@ -183,9 +183,27 @@ const webSitesListEn = [
     previewURL: "https://vonschappler.github.io/react-world-wise/",
     codeURL: "https://github.com/vonschappler/react-world-wise",
   },
+  {
+    title: "Wild Oasis Website",
+    description:
+      "A Next.js project in which we have the main website for customers to create and edit their accounts as well as make cabins reservations.",
+    creationDate: "May 27, 2024",
+    previewImage: "web/vercel-wild-oasis.png",
+    codeURL: "https://vonschappler.github.io/vercel-wild-oasis/",
+    previewURL: "https://von-wild-oasis-site.vercel.app",
+  },
 ];
 
 const webSitesListPt = [
+  {
+    title: "Wild Oasis Website",
+    description:
+      "Projeto de criação do webite Wild Oasis, usando Next.js, que permite a criação de novos usuários capazes de reservar cabanas para suas férias.",
+    creationDate: "27/mai/2024",
+    previewImage: "web/vercel-wild-oasis.png",
+    codeURL: "https://vonschappler.github.io/vercel-wild-oasis/",
+    previewURL: "https://von-wild-oasis-site.vercel.app",
+  },
   {
     title: "React Classy Weather",
     description:
